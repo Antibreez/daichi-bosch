@@ -1,0 +1,119 @@
+.fancybox-bg {
+  background: #000;
+}
+
+.fancybox-is-open .fancybox-bg {
+  opacity: 0.5;
+}
+
+.modal {
+  overflow: visible;
+  padding: 48px 40px;
+  width: 100%;
+  max-width: 900px;
+  margin: 50px 0;
+  background: $color-white;
+
+  @include tablet {
+    margin: 0;
+    height: 100%;
+    padding: 80px 20px;
+  }
+
+  .input {
+    &__field {
+      input,
+      textarea {
+        background: $color-white;
+        border: 1px solid $grey-300;
+        border-radius: 0;
+
+        &:hover {
+          border-color: $grey-400;
+        }
+
+        &:focus {
+          border-color: $primary-200;
+        }
+      }
+
+      // .select2-container--default .select2-selection--single {
+      //   background: $color-white;
+      //   border: 1px solid $grey-300;
+      //   border-radius: 0;
+
+      //   &:hover {
+      //     border-color: $grey-400;
+      //   }
+      // }
+
+      // .select2-container--default .select2-selection__rendered {
+      //   background: $color-white;
+      //   border: 1px solid $grey-300;
+      //   border-radius: 0;
+
+      //   &:hover {
+      //     border-color: $grey-400;
+      //   }
+      // }
+    }
+  }
+
+  .radio,
+  .checkbox {
+    i {
+      background: $color-athens-gray;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+    // @include desktop {
+    //   margin-top: vw(30);
+    // }
+
+    // @include desktop-xl {
+    //   margin-top: 30px;
+    // }
+
+    // @include desktop-xxl {
+    //   margin-top: px(30);
+    // }
+  }
+
+  &--alert {
+    .form__text {
+      margin-bottom: 0;
+    }
+  }
+
+  // @include desktop {
+  //   padding: vw(48) vw(40);
+  //   max-width: vw(456);
+  // }
+
+  // @include desktop-xl {
+  //   padding: 48px 40px;
+  //   max-width: 456px;
+  // }
+
+  // @include desktop-xxl {
+  //   padding: px(48) px(40);
+  //   max-width: px(456);
+  // }
+}
+
+.select2-search__field {
+  border-color: $primary-200;
+}
+
+.modal#callback {
+  .form__button {
+    .btn {
+      width: 208px;
+    }
+  }
+}

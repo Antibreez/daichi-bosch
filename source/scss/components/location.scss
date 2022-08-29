@@ -1,0 +1,27 @@
+.location {
+  max-width: 832px;
+
+  &__field {
+  }
+
+  &__list {
+    ul {
+      margin: 0;
+      margin-top: 10px;
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-top: 12px;
+
+        a {
+          color: $primary-150;
+
+          &:hover {
+            color: $primary-200;
+          }
+        }
+      }
+    }
+  }
+}

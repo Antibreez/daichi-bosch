@@ -1,0 +1,598 @@
+.footer {
+  padding: 72px 0 24px;
+  background: $color-white;
+  border-top: 1px solid $grey-200;
+
+  @include desk-m {
+    padding: 56px 0 24px;
+  }
+
+  @include mob {
+    padding: 32px 0 24px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+
+    &:first-child {
+      @include tablet {
+        flex-direction: column;
+      }
+    }
+
+    & + & {
+      margin-top: 256px;
+
+      @include desk-m {
+        align-items: flex-end;
+      }
+
+      @include tablet {
+        margin-top: 92px;
+      }
+
+      @include mob {
+        margin-top: 77px;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+      }
+
+      // @include desktop {
+      //   margin-top: vw(104);
+      // }
+
+      // @include desktop-xl {
+      //   margin-top: 104px;
+      // }
+
+      // @include desktop-xxl {
+      //   margin-top: px(104);
+      // }
+    }
+
+    // @include desktop {
+    //   flex-direction: row;
+    //   justify-content: space-between;
+    // }
+  }
+
+  &__left {
+    flex-shrink: 0;
+    width: 530px;
+
+    @include desk-m {
+      width: 25%;
+    }
+
+    @include tablet {
+      width: 100%;
+      margin: 0 0 55px;
+    }
+    // @include desktop {
+    //   flex-shrink: 0;
+    //   margin-bottom: 0;
+    //   width: vw(530);
+    // }
+
+    // @include desktop-xl {
+    //   width: 530px;
+    // }
+
+    // @include desktop-xxl {
+    //   width: px(530);
+    // }
+  }
+
+  &__right {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    // @include desktop {
+    //   display: flex;
+    //   justify-content: space-between;
+    // }
+    @include mob {
+      flex-direction: column;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+
+    @include desk-m {
+      flex-direction: column;
+    }
+
+    @include tablet {
+      flex-direction: row;
+    }
+
+    // @include mobile {
+    //   margin-bottom: vmin(68);
+    // }
+  }
+
+  &__logo {
+    flex-shrink: 0;
+    margin: 0 40px 0 0;
+
+    @include desk-m {
+      margin: 0 0 32px;
+    }
+
+    @include tablet {
+      width: 50%;
+    }
+
+    @include mob {
+      margin-left: 16px;
+    }
+
+    img {
+      width: 108px;
+      height: auto;
+
+      // @include desktop {
+      //   width: vw(64);
+      // }
+
+      // @include desktop-xl {
+      //   width: 64px;
+      // }
+
+      // @include desktop-xxl {
+      //   width: px(64);
+      // }
+    }
+
+    a {
+      display: inline-block;
+    }
+
+    // @include desktop {
+    //   margin: vw(-8) vw(42) 0 0;
+    // }
+
+    // @include desktop-xl {
+    //   margin: -8px 42px 0 0;
+    // }
+
+    // @include desktop-xxl {
+    //   margin: px(-8) px(42) 0 0;
+    // }
+  }
+
+  &__phone {
+    margin-bottom: 20px;
+
+    &__number {
+      margin-bottom: 2px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.5;
+
+      &:hover {
+        a {
+          color: $primary-200;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: $primary-150;
+      }
+
+      // @include desktop {
+      //   margin-bottom: vw(4);
+      //   font-size: vw(18);
+      // }
+
+      // @include desktop-xl {
+      //   margin-bottom: 4px;
+      //   font-size: 18px;
+      // }
+
+      // @include desktop-xxl {
+      //   margin-bottom: px(4);
+      //   font-size: px(18);
+      // }
+    }
+
+    &__label {
+      font-size: 12px;
+      line-height: 1.5;
+      color: $grey-400;
+
+      // @include desktop {
+      //   font-size: vw(12);
+      // }
+
+      // @include desktop-xl {
+      //   font-size: 12px;
+      // }
+
+      // @include desktop-xxl {
+      //   font-size: px(12);
+      // }
+    }
+
+    // @include desktop {
+    //   margin-bottom: vw(18);
+    // }
+
+    // @include desktop-xl {
+    //   margin-bottom: 18px;
+    // }
+
+    // @include desktop-xxl {
+    //   margin-bottom: px(18);
+    // }
+  }
+
+  &__callback {
+    font-size: 14px;
+    font-weight: 500;
+
+    a {
+      text-decoration: none;
+
+      svg {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 8px;
+        width: 24px;
+        height: 24px;
+
+        // @include desktop {
+        //   margin-right: vw(16);
+        //   width: vw(16);
+        //   height: vw(16);
+        // }
+
+        // @include desktop-xl {
+        //   margin-right: 16px;
+        //   width: 16px;
+        //   height: 16px;
+        // }
+
+        // @include desktop-xxl {
+        //   margin-right: px(16);
+        //   width: px(16);
+        //   height: px(16);
+        // }
+      }
+    }
+
+    // @include desktop {
+    //   font-size: vw(14);
+    // }
+
+    // @include desktop-xl {
+    //   font-size: 14px;
+    // }
+
+    // @include desktop-xxl {
+    //   font-size: px(14);
+    // }
+  }
+
+  &__menu {
+    display: flex;
+    font-weight: 500;
+    flex-grow: 1;
+
+    @include desk-m {
+      width: 70%;
+      flex-grow: 0;
+    }
+
+    @include tablet {
+      width: 50%;
+      flex-direction: column;
+    }
+
+    @include mob {
+      margin-bottom: 40px;
+      width: 100%;
+    }
+
+    ul {
+      flex-shrink: 0;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      @include desk-m {
+        margin-right: auto;
+      }
+
+      @include tablet {
+        &:first-child {
+          margin-bottom: 40px;
+        }
+      }
+
+      + ul {
+        margin-left: auto;
+
+        @include desk-m {
+          margin-left: 0;
+        }
+
+        // @include desktop {
+        //   margin-left: vw(120);
+        // }
+
+        // @include desktop-xl {
+        //   margin-left: 120px;
+        // }
+
+        // @include desktop-xxl {
+        //   margin-left: px(120);
+        // }
+      }
+
+      li {
+        + li {
+          margin-top: 16px;
+
+          @include mob {
+            margin-top: 12px;
+          }
+
+          // @include desktop {
+          //   margin-top: vw(16);
+          // }
+
+          // @include desktop-xl {
+          //   margin-top: 16px;
+          // }
+
+          // @include desktop-xxl {
+          //   margin-top: px(16);
+          // }
+        }
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+
+    // @include mobile {
+    //   margin-bottom: vmin(48);
+    // }
+  }
+
+  &__catalog {
+    margin-left: 140px;
+
+    @include desk-m {
+      margin-left: 0;
+      flex-grow: 1;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    &__title {
+      margin-bottom: 16px;
+      font-weight: 500;
+
+      // @include desktop {
+      //   margin-bottom: vw(16);
+      // }
+
+      // @include desktop-xl {
+      //   margin-bottom: 16px;
+      // }
+
+      // @include desktop-xxl {
+      //   margin-bottom: px(16);
+      // }
+    }
+
+    &__list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+      line-height: 1.5;
+
+      li {
+        + li {
+          margin-top: 10px;
+
+          @include tablet {
+            margin-top: 8px;
+          }
+
+          // @include desktop {
+          //   margin-top: vw(8);
+          // }
+
+          // @include desktop-xl {
+          //   margin-top: 8px;
+          // }
+
+          // @include desktop-xxl {
+          //   margin-top: px(8);
+          // }
+        }
+      }
+
+      // @include desktop {
+      //   font-size: vw(14);
+      // }
+
+      // @include desktop-xl {
+      //   font-size: 14px;
+      // }
+
+      // @include desktop-xxl {
+      //   font-size: px(14);
+      // }
+    }
+  }
+
+  &__list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: $color-black;
+
+    & + .footer__list {
+      margin-left: auto;
+    }
+
+    @include tablet {
+      & + .footer__list {
+        margin-left: 0;
+      }
+    }
+
+    li {
+      margin-right: 16px;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+          color: $primary-150;
+        }
+      }
+
+      // @include desktop {
+      //   margin-right: vw(16);
+      // }
+
+      // @include desktop-xl {
+      //   margin-right: 16px;
+      // }
+
+      // @include desktop-xxl {
+      //   margin-right: px(16);
+      // }
+    }
+
+    // @include desktop {
+    //   margin: 0;
+    //   font-size: vw(12);
+    // }
+
+    // @include desktop-xl {
+    //   font-size: 12px;
+    // }
+
+    // @include desktop-xxl {
+    //   font-size: px(12);
+    // }
+  }
+
+  &__list--list {
+    @include desk-m {
+      flex-direction: column;
+
+      li {
+        order: 1;
+
+        &:first-child {
+          order: 2;
+        }
+
+        &:not(:first-child) {
+          margin-bottom: 8px;
+        }
+      }
+    }
+
+    @include tablet {
+      width: 50%;
+    }
+
+    @include mob {
+      width: 100%;
+    }
+    // @include mobile {
+    //   display: block;
+
+    //   li {
+    //     + li {
+    //       margin: vmin(16) 0 0;
+    //     }
+
+    //     &.for-desktop {
+    //       + li {
+    //         margin-top: 0;
+    //       }
+    //     }
+    //   }
+    // }
+  }
+
+  &__list--social {
+    // @include mobile {
+    //   order: -1;
+    // }
+    @include tablet {
+      width: 50%;
+    }
+
+    @include mob {
+      width: 100%;
+      margin-bottom: 34px;
+    }
+  }
+
+  &__dev {
+    font-size: vmin(12);
+    line-height: 1.5;
+    color: $color-gull-gray;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+
+      &:hover {
+        color: $color-blue-ribbon;
+      }
+    }
+
+    // @include mobile {
+    //   display: flex;
+    //   justify-content: space-between;
+    // }
+
+    // @include desktop {
+    //   font-size: vw(12);
+    // }
+
+    // @include desktop-xl {
+    //   font-size: 12px;
+    // }
+
+    // @include desktop-xxl {
+    //   font-size: px(12);
+    // }
+  }
+
+  // @include desktop {
+  //   padding: vw(72) 0 vw(24);
+  // }
+
+  // @include desktop-xl {
+  //   padding: 72px 0 24px;
+  // }
+
+  // @include desktop-xxl {
+  //   padding: px(72) 0 px(24);
+  // }
+}

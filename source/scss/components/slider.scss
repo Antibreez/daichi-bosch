@@ -1,0 +1,92 @@
+.slider {
+  margin-bottom: vmin(36);
+
+  &__image {
+    padding-bottom: 54.488%;
+    background: 50% 50% no-repeat;
+    background-size: cover;
+  }
+
+  @include desktop {
+    margin-bottom: vw(64);
+  }
+
+  @include desktop-xl {
+    margin-bottom: 64px;
+  }
+
+  @include desktop-xxl {
+    margin-bottom: px(64);
+  }
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0;
+}
+
+.swiper-pagination-bullet {
+  background-color: $grey-300;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $primary-150;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: $color-white;
+  color: $color-black;
+  transform: rotate(-90deg);
+  transition: $duration-normal;
+
+  svg {
+    width: 16px;
+    height: 8px;
+  }
+
+  &::after {
+    display: none;
+  }
+
+  &:hover {
+    color: $primary-150;
+    background-color: $grey-100;
+  }
+
+  @include tablet {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.swiper-button-next {
+  transform: rotate(90deg);
+  right: 32px;
+
+  @include tablet {
+    right: 24px;
+  }
+
+  @include mob {
+    right: 16px;
+  }
+}
+
+.swiper-button-prev {
+  left: 32px;
+
+  @include tablet {
+    left: 24px;
+  }
+
+  @include mob {
+    left: 16px;
+  }
+}
