@@ -1,1594 +1,2575 @@
 .page-product {
-	&__head {
-		margin-bottom: vmin(24);
-
-		&__content {
-			@include mobile {
-				margin-bottom: vmin(16);
-			}
-		}
-
-		@include desktop {
-			display: flex;
-			margin-bottom: vw(8);
-		}
-
-		@include desktop-xl {
-			margin-bottom: 8px;
-		}
-
-		@include desktop-xxl {
-			margin-bottom: px(8);
-		}
-	}
-
-	&__title {
-		margin-bottom: vmin(10);
-
-		span {
-			display: block;
-		}
-
-		@include desktop {
-			margin-bottom: 0;
-			max-width: vw(626);
-		}
-
-		@include desktop-xl {
-			max-width: 626px;
-		}
-
-		@include desktop-xxl {
-			max-width: px(626);
-		}
-	}
-
-	&__title--width-937 {
-		@include desktop {
-			max-width: vw(937);
-		}
-
-		@include desktop-xl {
-			max-width: 937px;
-		}
-
-		@include desktop-xxl {
-			max-width: px(937);
-		}
-	}
-
-	&__subtitle {
-		margin: 0;
-		font-weight: 400;
-	}
-
-	&__price {
-		margin-bottom: vmin(16);
-
-		@include desktop {
-			margin: vw(16) 0;
-		}
-
-		@include desktop-xl {
-			margin: 16px 0;
-		}
-
-		@include desktop-xxl {
-			margin: px(16) 0;
-		}
-	}
-
-	&__info {
-		&__item {
-			@include desktop {
-				margin-left: vw(120);
-			}
-
-			@include desktop-xl {
-				margin-left: 120px;
-			}
-
-			@include desktop-xxl {
-				margin-left: px(120);
-			}
-		}
-
-		&__price {
-			font-weight: 700;
-			font-size: vmin(30);
-			line-height: vmin(24);
-
-			@include desktop {
-				font-size: vw(40);
-				line-height: vw(30);
-			}
-
-			@include desktop-xl {
-				font-size: 40px;
-				line-height: 30px;
-			}
-
-			@include desktop-xxl {
-				font-size: px(40);
-				line-height: px(30);
-			}
-		}
-
-		@include desktop {
-			display: flex;
-			margin-left: vw(-120);
-		}
-
-		@include desktop-xl {
-			margin-left: -120px;
-		}
-
-		@include desktop-xxl {
-			margin-left: px(-120);
-		}
-	}
-
-	&__plus {
-		margin-bottom: vmin(4);
-
-		@include desktop {
-			margin-bottom: vw(4);
-		}
-
-		@include desktop-xl {
-			margin-bottom: 4px;
-		}
-
-		@include desktop-xxl {
-			margin-bottom: px(4);
-		}
-	}
-
-	&__cost {
-		margin-top: 0;
-
-		sup {
-			top: vmin(-5);
-			margin-left: vmin(4);
-			font-weight: 500;
-			font-size: vmin(12);
-			color: $color-gull-gray;
-
-			@include desktop {
-				top: vw(-15);
-				margin-left: vw(4);
-				font-size: vw(12);
-			}
-
-			@include desktop-xl {
-				top: -15px;
-				margin-left: 4px;
-				font-size: 12px;
-			}
-
-			@include desktop-xxl {
-				top: px(-15);
-				margin-left: px(4);
-				font-size: px(12);
-			}
-		}
-	}
-
-	&__text {
-		@include desktop {
-			max-width: vw(612);
-		}
-
-		@include desktop-xl {
-			max-width: 612px;
-		}
-
-		@include desktop-xxl {
-			max-width: px(612);
-		}
-	}
-
-	&__advantages {
-		display: flex;
-		margin-left: auto;
-		text-align: center;
-
-		&__item {
-			width: vmin(120);
-
-			&__image {
-				margin-bottom: vmin(8);
-
-				img {
-					width: vmin(40);
-					height: vmin(40);
-
-					@include desktop {
-						width: vw(40);
-						height: vw(40);
-					}
-
-					@include desktop-xl {
-						width: 40px;
-						height: 40px;
-					}
-
-					@include desktop-xxl {
-						width: px(40);
-						height: px(40);
-					}
-				}
-
-				@include desktop {
-					margin-bottom: vw(8);
-				}
-
-				@include desktop-xl {
-					margin-bottom: 8px;
-				}
-
-				@include desktop-xxl {
-					margin-bottom: px(8);
-				}
-			}
-
-			&__text {
-				font-weight: 600;
-				font-size: vmin(12);
-				line-height: 1.2;
-
-				@include desktop {
-					font-size: vw(12);
-				}
-
-				@include desktop-xl {
-					font-size: 12px;
-				}
-
-				@include desktop-xxl {
-					font-size: px(12);
-				}
-			}
-
-			& + & {
-				margin-left: vmin(15);
-
-				@include desktop {
-					margin-left: vw(15);
-				}
-
-				@include desktop-xl {
-					margin-left: 15px;
-				}
-
-				@include desktop-xxl {
-					margin-left: px(15);
-				}
-			}
-
-			@include desktop {
-				width: vw(120);
-			}
-
-			@include desktop-xl {
-				width: 120px;
-			}
-
-			@include desktop-xxl {
-				width: px(120);
-			}
-		}
-	}
-
-	&__advantages--1 {
-		.page-product__advantages__item {
-			width: auto;
-
-			&__image {
-				margin-bottom: 0;
-
-				img {
-					width: vmin(80);
-					height: vmin(56);
-
-					@include desktop {
-						width: vw(110);
-						height: vw(76);
-					}
-
-					@include desktop-xl {
-						width: 110px;
-						height: 76px;
-					}
-
-					@include desktop-xxl {
-						width: px(110);
-						height: px(76);
-					}
-				}
-			}
-		}
-	}
-
-	&__avail {
-		align-self: center;
-		margin: 0;
-
-		@include desktop {
-			margin: 0 0 0 auto;
-			max-width: vw(370);
-			text-align: right;
-		}
-
-		@include desktop-xl {
-			max-width: 370px;
-		}
-
-		@include desktop-xxl {
-			max-width: px(370);
-		}
-	}
-
-	&__text {
-		margin-bottom: vmin(8);
-
-		@include desktop {
-			margin-bottom: vw(8);
-		}
-
-		@include desktop-xl {
-			margin-bottom: 8px;
-		}
-
-		@include desktop-xxl {
-			margin-bottom: px(8);
-		}
-	}
-
-	&__area {
-		margin-bottom: vmin(15);
-
-		ul {
-			display: flex;
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-
-			li {
-				+ li {
-					margin-left: vmin(8);
-
-					@include desktop {
-						margin-left: vw(8);
-					}
-
-					@include desktop-xl {
-						margin-left: 8px;
-					}
-
-					@include desktop-xxl {
-						margin-left: px(8);
-					}
-				}
-
-				a {
-					display: block;
-					border-radius: vmin(2);
-					padding: vmin(4) vmin(10);
-					font-weight: 500;
-					text-align: center;
-					color: $color-cod-gray;
-					background: $color-athens-gray;
-
-					&.is-active {
-						color: $color-white;
-						background: $color-black;
-					}
-
-					@include desktop {
-						border-radius: vw(2);
-						padding: vw(4) vw(15);
-					}
-
-					@include desktop-xl {
-						border-radius: 2px;
-						padding: 4px 15px;
-					}
-
-					@include desktop-xxl {
-						border-radius: px(2);
-						padding: px(4) px(15);
-					}
-				}
-			}
-		}
-
-		@include desktop {
-			margin-bottom: vw(15);
-		}
-
-		@include desktop-xl {
-			margin-bottom: 15px;
-		}
-
-		@include desktop-xxl {
-			margin-bottom: px(15);
-		}
-	}
-
-	&__slider {
-		position: relative;
-		margin-bottom: vmin(65);
-
-		&::before {
-			@include desktop {
-				content: "";
-				position: absolute;
-				left: calc(-50vw - #{vw(-631)});
-				top: 0;
-				z-index: 5;
-				width: vw(196);
-				height: 100%;
-				background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
-			}
-
-			@include desktop-xl {
-				left: calc(-50vw - -631px);
-				width: 196px;
-			}
-
-			@include desktop-xxl {
-				left: calc(-50vw - #{px(-631)});
-				width: px(196);
-			}
-		}
-
-		&::after {
-			@include desktop {
-				content: "";
-				position: absolute;
-				right: calc(-50vw - #{vw(-631)});
-				top: 0;
-				z-index: 5;
-				width: vw(196);
-				height: 100%;
-				background: linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
-			}
-
-			@include desktop-xl {
-				right: calc(-50vw - -631px);
-				width: 196px;
-			}
-
-			@include desktop-xxl {
-				right: calc(-50vw - #{px(-631)});
-				width: px(196);
-			}
-		}
-
-		.swiper-container {
-			overflow: visible;
-		}
-
-		.swiper-slide {
-			@include desktop {
-				width: vw(400);
-			}
-
-			@include desktop-xl {
-				width: 400px;
-			}
-
-			@include desktop-xxl {
-				width: px(400);
-			}
-		}
-
-		&__image {
-			position: relative;
-			padding-bottom: 60%;
-			background: 50% 50% no-repeat;
-			background-size: contain;
-
-			img {
-				position: absolute;
-				left: 50%;
-				top: 50%;
-				max-width: 90%;
-				max-height: 80%;
-				transform: translate(-50%, -50%);
-			}
-
-			@include desktop {
-				padding-bottom: 100%;
-			}
-		}
-
-		@include desktop {
-			margin-bottom: vw(65);
-		}
-
-		@include desktop-xl {
-			margin-bottom: 65px;
-		}
-
-		@include desktop-xxl {
-			margin-bottom: px(65);
-		}
-	}
-
-	&__image {
-		margin: 0 0 vmin(36);
-		text-align: center;
-
-		img {
-			width: 100%;
-
-			@include desktop {
-				width: vw(652);
-			}
-
-			@include desktop-xl {
-				width: 652px;
-			}
-
-			@include desktop-xxl {
-				width: px(652);
-			}
-		}
-
-		@include desktop {
-			margin: vw(95) 0 vw(78);
-		}
-
-		@include desktop-xl {
-			margin: 95px 0 78px;
-		}
-
-		@include desktop-xxl {
-			margin: px(95) 0 px(78);
-		}
-	}
-
-	&__tab {
-		&__wrapper {
-			@include desktop {
-				max-width: vw(612);
-			}
-
-			@include desktop-xl {
-				max-width: 612px;
-			}
-
-			@include desktop-xxl {
-				max-width: px(612);
-			}
-		}
-
-		&__label {
-			margin-bottom: vmin(8);
-
-			@include desktop {
-				margin-bottom: 0;
-				margin-right: vw(16);
-				width: vw(300);
-			}
-
-			@include desktop-xl {
-				margin-right: 16px;
-				width: 300px;
-			}
-
-			@include desktop-xxl {
-				margin-right: px(16);
-				width: px(300);
-			}
-		}
-
-		.tab-list {
-			margin-bottom: vmin(36);
-			border-bottom: 1px solid $color-geyser;
-
-			ul {
-				li {
-					+ li {
-						margin-left: vmin(16);
-
-						@include desktop {
-							margin-left: vw(16);
-						}
-
-						@include desktop-xl {
-							margin-left: 16px;
-						}
-
-						@include desktop-xxl {
-							margin-left: px(16);
-						}
-					}
-
-					a {
-						color: $color-cod-gray;
-
-						&::after {
-							bottom: vmin(-20);
-
-							@include desktop {
-								bottom: vw(-25);
-							}
-
-							@include desktop-xl {
-								bottom: -25px;
-							}
-
-							@include desktop-xxl {
-								bottom: px(-25);
-							}
-						}
-					}
-				}
-			}
-
-			@include desktop {
-				display: flex;
-				margin-bottom: vw(80);
-				padding-bottom: vw(25);
-			}
-
-			@include desktop-xl {
-				margin-bottom: 80px;
-				padding-bottom: 25px;
-			}
-
-			@include desktop-xxl {
-				margin-bottom: px(80);
-				padding-bottom: px(25);
-			}
-		}
-
-		&__title,
-		&__text,
-		&__image {
-			margin-bottom: vmin(26);
-
-			@include desktop {
-				margin-bottom: vw(40);
-			}
-
-			@include desktop-xl {
-				margin-bottom: 40px;
-			}
-
-			@include desktop-xxl {
-				margin-bottom: px(40);
-			}
-		}
-
-		&__title--margin-20 {
-			@include desktop {
-				margin-bottom: vw(20);
-			}
-
-			@include desktop-xl {
-				margin-bottom: 20px;
-			}
-
-			@include desktop-xxl {
-				margin-bottom: px(20);
-			}
-		}
-
-		&__subtitle {
-			margin-top: 0;
-		}
-	}
-
-	&__models {
-		display: flex;
-		flex-wrap: wrap;
-
-		&__item {
-			display: block;
-			margin: 0 vmin(-10);
-			border-top: 1px solid $color-geyser;
-			border-bottom: 1px solid $color-geyser;
-			padding: 0 vmin(20) vmin(30);
-
-			&__content {
-				@include desktop {
-					padding: 0 vw(25);
-				}
-
-				@include desktop-xl {
-					padding: 0 25px;
-				}
-
-				@include desktop-xxl {
-					padding: 0 px(25);
-				}
-			}
-
-			&__list {
-				color: $color-cod-gray;
-
-				ul {
-					list-style-type: none;
-					margin: 0;
-					padding: 0;
-				}
-			}
-
-			& + & {
-				@include desktop {
-					border-left: 1px solid $color-geyser;
-				}
-			}
-
-			@include desktop {
-				margin: 0;
-				padding: 0 vw(23) vw(50);
-				width: 33.33334%;
-			}
-
-			@include desktop-xl {
-				padding: 0 23px 50px;
-			}
-
-			@include desktop-xxl {
-				padding: 0 px(23) px(50);
-			}
-		}
-
-		@include desktop {
-			margin: 0 calc(-50vw + #{vw(624)});
-		}
-
-		@include desktop-xl {
-			margin: 0 calc(-50vw + 624px);
-		}
-
-		@include desktop-xxl {
-			margin: 0 calc(-50vw + #{px(624)});
-		}
-	}
-
-	&__video {
-		&__row {
-			display: flex;
-			flex-wrap: wrap;
-			margin: 0 vmin(-12) vmin(-24);
-
-			@include desktop {
-				margin: 0 vw(-12) vw(-24);
-			}
-
-			@include desktop-xl {
-				margin: 0 -12px -24px;
-			}
-
-			@include desktop-xxl {
-				margin: 0 px(-12) px(-24);
-			}
-		}
-
-		&__col {
-			margin-bottom: vmin(24);
-			padding: 0 vmin(12);
-			width: 100%;
-
-			@include desktop {
-				margin-bottom: vw(24);
-				padding: 0 vw(12);
-				width: 50%;
-			}
-
-			@include desktop-xl {
-				margin-bottom: 24px;
-				padding: 0 12px;
-			}
-
-			@include desktop-xxl {
-				margin-bottom: px(24);
-				padding: 0 px(12);
-			}
-		}
-
-		&__col--width-100 {
-			.page-product__video__item__image {
-				@include desktop {
-					padding-bottom: 60.195%;
-				}
-			}
-
-			.page-product__video__item__play {
-				width: vmin(40);
-				height: vmin(40);
-
-				svg {
-					display: block;
-					width: vmin(12);
-					height: vmin(12);
-
-					@include desktop {
-						width: vw(19);
-						height: vw(19);
-					}
-
-					@include desktop-xl {
-						width: 19px;
-						height: 19px;
-					}
-
-					@include desktop-xxl {
-						width: px(19);
-						height: px(19);
-					}
-				}
-
-				@include desktop {
-					width: vw(64);
-					height: vw(64);
-				}
-
-				@include desktop-xl {
-					width: 64px;
-					height: 64px;
-				}
-
-				@include desktop-xxl {
-					width: px(64);
-					height: px(64);
-				}
-			}
-
-			@include desktop {
-				width: 100%;
-			}
-		}
-
-		&__item {
-			position: relative;
-			display: block;
-
-			&__image {
-				padding-bottom: 60.195%;
-				background: 50% 50% no-repeat;
-				background-size: cover;
-
-				@include desktop {
-					padding-bottom: 72%;
-				}
-			}
-
-			&__play {
-				position: absolute;
-				left: 50%;
-				top: 50%;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				border-radius: 50%;
-				width: vmin(40);
-				height: vmin(40);
-				background: $color-white;
-				transform: translate(-50%, -50%);
-
-				svg {
-					display: block;
-					width: vmin(12);
-					height: vmin(12);
-
-					@include desktop {
-						width: vw(12);
-						height: vw(12);
-					}
-
-					@include desktop-xl {
-						width: 12px;
-						height: 12px;
-					}
-
-					@include desktop-xxl {
-						width: px(12);
-						height: px(12);
-					}
-				}
-
-				@include desktop {
-					width: vw(40);
-					height: vw(40);
-				}
-
-				@include desktop-xl {
-					width: 40px;
-					height: 40px;
-				}
-
-				@include desktop-xxl {
-					width: px(40);
-					height: px(40);
-				}
-			}
-		}
-	}
-
-	&__accessories {
-		border: 1px solid $color-geyser;
-
-		&__image {
-			position: relative;
-			z-index: 5;
-			flex-shrink: 0;
-			width: 100%;
-			min-height: vmin(200);
-			text-align: center;
-
-			&::before {
-				content: "";
-				position: absolute;
-				right: 0;
-				top: 0;
-				z-index: -1;
-				width: 100%;
-				height: vmin(200);
-				background: url("../images/logo-accessories.jpg") 50% 50% no-repeat;
-				background-size: cover;
-
-				@include desktop {
-					height: vw(215);
-				}
-
-				@include desktop-xl {
-					height: 215px;
-				}
-
-				@include desktop-xxl {
-					height: px(215);
-				}
-			}
-
-			@include desktop {
-				margin-bottom: 0;
-				width: vw(320);
-				min-height: vw(215);
-			}
-
-			@include desktop-xl {
-				width: 320px;
-				min-height: 215px;
-			}
-
-			@include desktop-xxl {
-				width: px(320);
-				min-height: px(215);
-			}
-		}
-
-		&__content {
-			padding: vmin(20);
-			width: 100%;
-
-			@include desktop {
-				padding: vw(40) vw(35) vw(40) 0;
-			}
-
-			@include desktop-xl {
-				padding: 40px 35px 40px 0;
-			}
-
-			@include desktop-xxl {
-				padding: px(40) px(35) px(40) 0;
-			}
-		}
-
-		&__head {
-			margin-bottom: vmin(16);
-
-			@include desktop {
-				display: flex;
-				margin-bottom: vw(16);
-			}
-
-			@include desktop-xl {
-				margin-bottom: 16px;
-			}
-
-			@include desktop-xxl {
-				margin-bottom: px(16);
-			}
-		}
-
-		&__title {
-			@include mobile {
-				font-size: vmin(18);
-			}
-
-			@include desktop {
-				margin: 0;
-				max-width: vw(249);
-			}
-
-			@include desktop-xl {
-				max-width: 249px;
-			}
-
-			@include desktop-xxl {
-				max-width: px(249);
-			}
-		}
-
-		&__price {
-			margin: 0;
-
-			@include mobile {
-				font-size: vmin(18);
-			}
-
-			@include desktop {
-				margin: 0 0 0 auto;
-				padding-right: vw(15);
-			}
-
-			@include desktop-xl {
-				padding-right: 15px;
-			}
-
-			@include desktop-xxl {
-				padding-right: px(15);
-			}
-		}
-
-		&__row {
-			@include desktop {
-				display: flex;
-			}
-		}
-
-		&__info {
-			font-size: vmin(12);
-
-			ul {
-				list-style-type: none;
-				margin: 0;
-				padding: 0;
-
-				li {
-					display: flex;
-
-					+ li {
-						margin-top: 1px;
-					}
-				}
-			}
-
-			&__label {
-				flex-shrink: 0;
-				margin-right: vmin(30);
-				width: vmin(124);
-
-				@include desktop {
-					margin-right: vw(72);
-					width: vw(124);
-				}
-
-				@include desktop-xl {
-					margin-right: 72px;
-					width: 124px;
-				}
-
-				@include desktop-xxl {
-					margin-right: px(72);
-					width: px(124);
-				}
-			}
-
-			@include desktop {
-				font-size: vw(12);
-			}
-
-			@include desktop-xl {
-				font-size: 12px;
-			}
-
-			@include desktop-xxl {
-				font-size: px(12);
-			}
-		}
-
-		&__button {
-			margin-top: vmin(24);
-
-			.button {
-				@include desktop {
-					padding: vw(7) vw(19);
-					font-weight: 400;
-					font-size: vw(14);
-				}
-
-				@include desktop-xl {
-					padding: 7px 19px;
-					font-size: 14px;
-				}
-
-				@include desktop-xxl {
-					padding: px(7) px(19);
-					font-size: px(14);
-				}
-			}
-
-			@include desktop {
-				margin-top: 0;
-				margin-left: auto;
-			}
-		}
-
-		& + & {
-			margin-top: -1px;
-		}
-
-		@include desktop {
-			display: flex;
-		}
-	}
-
-	&__box {
-		margin-bottom: vmin(24);
-
-		@include desktop {
-			margin-bottom: vw(40);
-		}
-
-		@include desktop-xl {
-			margin-bottom: 40px;
-		}
-
-		@include desktop-xxl {
-			margin-bottom: px(40);
-		}
-	}
-
-	&__documentation {
-		margin: 0 vmin(-10);
-		padding: vmin(20);
-		background: $color-athens-gray;
-
-		&__title {
-			margin-bottom: vmin(16);
-			font-weight: 500;
-			font-size: vmin(18);
-
-			@include desktop {
-				margin-bottom: vw(20);
-				font-size: vw(20);
-			}
-
-			@include desktop-xl {
-				margin-bottom: 20px;
-				font-size: 20px;
-			}
-
-			@include desktop-xxl {
-				margin-bottom: px(20);
-				font-size: px(20);
-			}
-		}
-
-		&__item {
-			display: flex;
-
-			&__icon {
-				flex-shrink: 0;
-				margin-right: vmin(8);
-
-				svg {
-					width: vmin(24);
-					height: vmin(24);
-
-					@include desktop {
-						width: vw(24);
-						height: vw(24);
-					}
-
-					@include desktop-xl {
-						width: 24px;
-						height: 24px;
-					}
-
-					@include desktop-xxl {
-						width: px(24);
-						height: px(24);
-					}
-				}
-
-				@include desktop {
-					margin-right: vw(8);
-				}
-
-				@include desktop-xl {
-					margin-right: 8px;
-				}
-
-				@include desktop-xxl {
-					margin-right: px(8);
-				}
-			}
-
-			&__title {
-				margin-bottom: vmin(7);
-				padding-top: vmin(2);
-				line-height: 1.3;
-
-				@include desktop {
-					margin-bottom: vw(7);
-					padding-top: vw(2);
-				}
-
-				@include desktop-xl {
-					margin-bottom: 7px;
-					padding-top: 2px;
-				}
-
-				@include desktop-xxl {
-					margin-bottom: px(7);
-					padding-top: px(2);
-				}
-			}
-
-			&__text {
-				font-size: vmin(12);
-				color: rgba($color-gull-gray, 0.9);
-
-				@include desktop {
-					font-size: vw(12);
-				}
-
-				@include desktop-xl {
-					font-size: 12px;
-				}
-
-				@include desktop-xxl {
-					font-size: px(12);
-				}
-			}
-
-			& + & {
-				margin-top: vmin(15);
-
-				@include desktop {
-					margin-top: vw(15);
-				}
-
-				@include desktop-xl {
-					margin-top: 15px;
-				}
-
-				@include desktop-xxl {
-					margin-top: px(15);
-				}
-			}
-		}
-
-		@include desktop {
-			margin: 0;
-			padding: vw(40);
-		}
-
-		@include desktop-xl {
-			padding: 40px;
-		}
-
-		@include desktop-xxl {
-			padding: px(40);
-		}
-	}
-
-	&__table {
-		margin: vmin(-20) 0 vmin(26);
-		font-size: vmin(12);
-
-		table {
-			th {
-				width: 50%;
-			}
-
-			td {
-				padding: vmin(10) vmin(16);
-
-				@include desktop {
-					padding: vw(10) vw(16);
-				}
-
-				@include desktop-xl {
-					padding: 10px 16px;
-				}
-
-				@include desktop-xxl {
-					padding: px(10) px(16);
-				}
-			}
-
-			@include desktop {
-				width: vw(612);
-			}
-
-			@include desktop-xl {
-				width: 612px;
-			}
-
-			@include desktop-xxl {
-				width: px(612);
-			}
-		}
-
-		@include desktop {
-			margin: vw(-30) 0 vw(40);
-			font-size: vw(12);
-		}
-
-		@include desktop-xl {
-			margin: -30px 0 40px;
-			font-size: 12px;
-		}
-
-		@include desktop-xxl {
-			margin: px(-30) 0 px(40);
-			font-size: px(12);
-		}
-	}
-
-	&__button-white {
-		.button {
-			&:focus {
-				box-shadow: none;
-			}
-
-			@include desktop {
-				padding: vw(7) vw(18);
-				font-size: vw(14);
-			}
-
-			@include desktop-xl {
-				padding: 7px 18px;
-				font-size: 14px;
-			}
-
-			@include desktop-xxl {
-				padding: px(7) px(18);
-				font-size: px(14);
-			}
-		}
-	}
-
-	&__accordion {
-		border-top: solid 1px $color-geyser;
-	}
-
-	&__buy {
-		.tab-list {
-			margin-bottom: vmin(16);
-			border-bottom: none;
-
-			@include desktop {
-				margin-bottom: vw(16);
-			}
-
-			@include desktop-xl {
-				margin-bottom: 16px;
-			}
-
-			@include desktop-xxl {
-				margin-bottom: px(16);
-			}
-		}
-	}
-
-	&__shops {
-		&__row {
-			display: flex;
-			flex-wrap: wrap;
-			margin: 0 vmin(-16);
-
-			@include desktop {
-				margin: 0 vw(-16);
-			}
-
-			@include desktop-xl {
-				margin: 0 -16px;
-			}
-
-			@include desktop-xxl {
-				margin: 0 px(-16);
-			}
-		}
-
-		&__col {
-			padding: 0 vmin(16);
-			width: 100%;
-
-			&:nth-child(3n + 1) {
-				.page-product__shops__item {
-					margin-left: 0;
-					padding-left: 0;
-				}
-			}
-
-			@include desktop {
-				padding: 0 vw(16);
-				width: 33.33334%;
-			}
-
-			@include desktop-xl {
-				padding: 0 16px;
-			}
-
-			@include desktop-xxl {
-				padding: 0 px(16);
-			}
-		}
-
-		&__item {
-			border-bottom: solid 1px $color-geyser;
-			padding: vmin(24) 0 vmin(24);
-			height: 100%;
-
-			&__name {
-				margin-bottom: vmin(4);
-				font-weight: 600;
-				font-size: vmin(14);
-				line-height: 1.57;
-
-				@include desktop {
-					margin-bottom: vw(4);
-					font-size: vw(14);
-				}
-
-				@include desktop-xl {
-					margin-bottom: 4px;
-					font-size: 14px;
-				}
-
-				@include desktop-xxl {
-					margin-bottom: px(4);
-					font-size: px(14);
-				}
-			}
-
-			&__list {
-				list-style-type: none;
-				margin: 0;
-				padding: 0;
-				font-size: vmin(12);
-				line-height: 1.5;
-
-				li {
-					+ li {
-						margin-top: vmin(4);
-
-						@include desktop {
-							margin-top: vw(4);
-						}
-
-						@include desktop-xl {
-							margin-top: 4px;
-						}
-
-						@include desktop-xxl {
-							margin-top: px(4);
-						}
-					}
-				}
-
-				@include desktop {
-					font-size: vw(12);
-				}
-
-				@include desktop-xl {
-					font-size: 12px;
-				}
-
-				@include desktop-xxl {
-					font-size: px(12);
-				}
-			}
-
-			@include desktop {
-				margin-left: vw(-32);
-				padding: vw(24) 0 vw(24) vw(32);
-			}
-
-			@include desktop-xl {
-				margin-left: vw(-32);
-				padding: vw(24) 0 vw(24) vw(32);
-			}
-
-			@include desktop-xxl {
-				margin-left: px(-32);
-				padding: px(24) 0 px(24) px(32);
-			}
-		}
-
-		.nano-content {
-			@include desktop {
-				padding-right: vw(72);
-			}
-
-			@include desktop-xl {
-				padding-right: 72px;
-			}
-
-			@include desktop-xxl {
-				padding-right: px(72);
-			}
-		}
-
-		&.nano {
-			> .nano-pane {
-				left: auto;
-				right: 0;
-				z-index: 10;
-				border-radius: 0;
-				width: vmin(3);
-				box-shadow: none;
-				background: $color-athens-gray;
-				opacity: 1;
-
-				.nano-slider {
-					border-radius: 0;
-					width: 100%;
-					background: $color-blue-ribbon;
-					opacity: 1;
-				}
-
-				@include mobile {
-					display: none;
-				}
-
-				@include desktop {
-					width: vw(3);
-				}
-
-				@include desktop-xl {
-					width: 3px;
-				}
-
-				@include desktop-xxl {
-					width: px(3);
-				}
-			}
-
-			> .nano-content {
-				@include mobile {
-					position: relative;
-				}
-			}
-
-			@include desktop {
-				height: vw(680);
-			}
-
-			@include desktop-xl {
-				height: 680px;
-			}
-
-			@include desktop-xxl {
-				height: px(680);
-			}
-		}
-	}
-
-	&__map {
-		height: vmin(300);
-
-		@include desktop {
-			height: vw(440);
-		}
-
-		@include desktop-xl {
-			height: 440px;
-		}
-
-		@include desktop-xxl {
-			height: px(440);
-		}
-	}
+  &__head {
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include desk-m {
+      margin-bottom: 45px;
+    }
+
+    @include mob {
+      margin-bottom: 60px;
+    }
+
+    &__content {
+      @include mobile {
+        margin-bottom: vmin(16);
+      }
+    }
+
+    // @include desktop {
+    //   display: flex;
+    //   margin-bottom: vw(8);
+    // }
+
+    // @include desktop-xl {
+    //   margin-bottom: 8px;
+    // }
+
+    // @include desktop-xxl {
+    //   margin-bottom: px(8);
+    // }
+
+    .page-product__advantages {
+      margin-left: auto;
+      margin-bottom: 0;
+
+      @include tablet {
+        width: 100%;
+        max-width: none;
+        justify-content: flex-start;
+        margin: 24px 0 0;
+      }
+
+      @include mob {
+        justify-content: center;
+      }
+    }
+
+    .page-product__advantages__item {
+      width: 104px;
+
+      @include mob {
+        width: auto;
+        max-width: 164px;
+        padding: 0 10px;
+        flex-grow: 1;
+      }
+
+      & + .page-product__advantages__item {
+        margin-left: 32px;
+
+        @include mob {
+          margin-left: 16px;
+        }
+      }
+    }
+
+    &__text {
+      font-size: 24px;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+      margin-left: auto;
+      padding-top: 6px;
+
+      @include desk-m {
+        width: 100%;
+        margin-top: 16px;
+      }
+
+      @include mob {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &__main-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 118px;
+
+    @include desk-m {
+      margin-bottom: 53px;
+    }
+
+    @include mob {
+      margin-bottom: 48px;
+    }
+
+    img {
+      width: 530px;
+      height: auto;
+
+      @include desk-m {
+        width: 520px;
+      }
+
+      @include tablet {
+        width: 500px;
+      }
+
+      @include mob {
+        width: 330px;
+      }
+    }
+
+    &.climate-line-2000 {
+      img {
+        width: 664px;
+        height: auto;
+
+        @include desk-m {
+          width: 540px;
+        }
+
+        @include mob {
+          width: 330px;
+        }
+      }
+    }
+  }
+
+  &__title {
+    font-size: 44px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 0;
+    max-width: 612px;
+
+    span {
+      display: block;
+    }
+
+    @include desk-m {
+      font-size: 40px;
+    }
+
+    @include mob {
+      font-size: 30px;
+      line-height: 1.15;
+    }
+
+    // @include desktop {
+    // 	margin-bottom: 0;
+    // 	max-width: vw(626);
+    // }
+
+    // @include desktop-xl {
+    // 	max-width: 626px;
+    // }
+
+    // @include desktop-xxl {
+    // 	max-width: px(626);
+    // }
+  }
+
+  &__title--width-937 {
+    @include desktop {
+      max-width: vw(937);
+    }
+
+    @include desktop-xl {
+      max-width: 937px;
+    }
+
+    @include desktop-xxl {
+      max-width: px(937);
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-weight: 400;
+  }
+
+  &__price {
+    margin-bottom: vmin(16);
+
+    @include desktop {
+      margin: vw(16) 0;
+    }
+
+    @include desktop-xl {
+      margin: 16px 0;
+    }
+
+    @include desktop-xxl {
+      margin: px(16) 0;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-shrink: 0;
+    margin-bottom: 64px;
+
+    @include mob {
+      flex-direction: column;
+      margin-top: -28px;
+      margin-bottom: 40px;
+    }
+
+    // &__item {
+    //   @include desktop {
+    //     margin-left: vw(120);
+    //   }
+
+    //   @include desktop-xl {
+    //     margin-left: 120px;
+    //   }
+
+    //   @include desktop-xxl {
+    //     margin-left: px(120);
+    //   }
+    // }
+
+    &__data {
+      width: 407px;
+      flex-shrink: 0;
+
+      @include desk-m {
+        width: 373px;
+      }
+
+      @include tablet {
+        width: 305px;
+        margin-right: 70px;
+      }
+
+      @include mob {
+        width: 100%;
+        margin: 0 0 32px;
+      }
+    }
+
+    &__price-text {
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 0 0 1px;
+    }
+
+    &__price {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 1.3;
+      margin: 0 0 3px;
+
+      @include desk-m {
+        font-size: 32px;
+        line-height: 1.3;
+        margin-bottom: 8px;
+      }
+
+      // @include desktop {
+      //   font-size: vw(40);
+      //   line-height: vw(30);
+      // }
+
+      // @include desktop-xl {
+      //   font-size: 40px;
+      //   line-height: 30px;
+      // }
+
+      // @include desktop-xxl {
+      //   font-size: px(40);
+      //   line-height: px(30);
+      // }
+    }
+
+    &__price-note {
+      font-size: 12px;
+      line-height: 1.5;
+      margin: 0 0 25px;
+      color: $grey-400;
+
+      @include mob {
+        margin-bottom: 0;
+      }
+    }
+
+    &__btn-block {
+      display: flex;
+      flex-direction: column;
+
+      a {
+        width: 255px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        &:not(:last-child) {
+          margin-bottom: 8px;
+        }
+
+        @include mob {
+          width: 100%;
+        }
+      }
+    }
+
+    &__img {
+      flex-grow: 1;
+      margin-left: auto;
+
+      @include desk-m {
+        padding-top: 35px;
+      }
+
+      @include tablet {
+        padding-top: 0;
+        margin-top: -82px;
+      }
+
+      @include mob {
+        width: 100%;
+        margin: 0 0 40px;
+        padding: 0;
+      }
+    }
+
+    // @include desktop {
+    //   display: flex;
+    //   margin-left: vw(-120);
+    // }
+
+    // @include desktop-xl {
+    //   margin-left: -120px;
+    // }
+
+    // @include desktop-xxl {
+    //   margin-left: px(-120);
+    // }
+  }
+
+  &__preview {
+    display: flex;
+    align-items: center;
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__preview-main-img {
+    width: 472px;
+    height: 472px;
+    flex-shrink: 0;
+    margin-right: 76px;
+    position: relative;
+    margin-left: auto;
+
+    @include desk-m {
+      width: 348px;
+      height: 348px;
+      margin-right: 40px;
+    }
+
+    @include tablet {
+      width: 296px;
+      height: 296px;
+      margin: 0 0 50px;
+    }
+
+    @include mob {
+      margin-bottom: 32px;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+
+  &__preview-slider {
+    height: 304px;
+    margin: 0;
+
+    @include tablet {
+      height: 64px;
+      width: 304px;
+    }
+
+    @include mob {
+      height: 40px;
+      width: 208px;
+    }
+  }
+
+  &__preview-slide {
+    width: 62px;
+    height: 62px;
+    position: relative;
+    border: 1px solid transparent;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    &.is-active {
+      border-color: $primary-200;
+    }
+
+    @include tablet {
+      &:not(:last-child) {
+        margin-bottom: 0;
+        margin-right: 16px;
+      }
+    }
+
+    @include mob {
+      width: 38px;
+      height: 38px;
+    }
+
+    img {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      width: calc(100% - 10px);
+      height: calc(100% - 10px);
+      object-fit: contain;
+      object-position: center;
+
+      @include mob {
+        top: 3px;
+        left: 3px;
+        width: calc(100% - 6px);
+        height: calc(100% - 6px);
+      }
+    }
+  }
+
+  &__plus {
+    margin-bottom: vmin(4);
+
+    @include desktop {
+      margin-bottom: vw(4);
+    }
+
+    @include desktop-xl {
+      margin-bottom: 4px;
+    }
+
+    @include desktop-xxl {
+      margin-bottom: px(4);
+    }
+  }
+
+  &__cost {
+    margin-top: 0;
+
+    sup {
+      top: vmin(-5);
+      margin-left: vmin(4);
+      font-weight: 500;
+      font-size: vmin(12);
+      color: $color-gull-gray;
+
+      @include desktop {
+        top: vw(-15);
+        margin-left: vw(4);
+        font-size: vw(12);
+      }
+
+      @include desktop-xl {
+        top: -15px;
+        margin-left: 4px;
+        font-size: 12px;
+      }
+
+      @include desktop-xxl {
+        top: px(-15);
+        margin-left: px(4);
+        font-size: px(12);
+      }
+    }
+  }
+
+  &__text {
+    @include desktop {
+      max-width: vw(612);
+    }
+
+    @include desktop-xl {
+      max-width: 612px;
+    }
+
+    @include desktop-xxl {
+      max-width: px(612);
+    }
+  }
+
+  &__advantages {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 80px;
+
+    @include mob {
+      flex-wrap: wrap;
+      margin-top: -16px;
+      max-width: 376px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 64px;
+    }
+
+    &__item {
+      width: 200px;
+
+      @include tablet {
+        width: 164px;
+      }
+
+      @include mob {
+        margin-top: 16px;
+      }
+
+      &__image {
+        margin-bottom: 6px;
+
+        img {
+          // @include desktop {
+          //   width: vw(40);
+          //   height: vw(40);
+          // }
+
+          // @include desktop-xl {
+          //   width: 40px;
+          //   height: 40px;
+          // }
+
+          // @include desktop-xxl {
+          //   width: px(40);
+          //   height: px(40);
+          // }
+        }
+
+        // @include desktop {
+        //   margin-bottom: vw(8);
+        // }
+
+        // @include desktop-xl {
+        //   margin-bottom: 8px;
+        // }
+
+        // @include desktop-xxl {
+        //   margin-bottom: px(8);
+        // }
+      }
+
+      &__text {
+        font-size: 12px;
+        line-height: 1.5;
+
+        @include mob {
+          letter-spacing: -0.02em;
+        }
+
+        // @include desktop {
+        //   font-size: vw(12);
+        // }
+
+        // @include desktop-xl {
+        //   font-size: 12px;
+        // }
+
+        // @include desktop-xxl {
+        //   font-size: px(12);
+        // }
+      }
+
+      & + & {
+        margin-left: 8px;
+
+        @include tablet {
+          margin-left: 16px;
+        }
+
+        @include mob {
+          &:nth-child(2n + 3) {
+            margin-left: 0;
+          }
+        }
+
+        // @include desktop {
+        //   margin-left: vw(15);
+        // }
+
+        // @include desktop-xl {
+        //   margin-left: 15px;
+        // }
+
+        // @include desktop-xxl {
+        //   margin-left: px(15);
+        // }
+      }
+
+      // @include desktop {
+      //   width: vw(120);
+      // }
+
+      // @include desktop-xl {
+      //   width: 120px;
+      // }
+
+      // @include desktop-xxl {
+      //   width: px(120);
+      // }
+    }
+  }
+
+  &__advantages--1 {
+    .page-product__advantages__item {
+      width: auto;
+
+      &__image {
+        margin-bottom: 0;
+
+        img {
+          width: vmin(80);
+          height: vmin(56);
+
+          @include desktop {
+            width: vw(110);
+            height: vw(76);
+          }
+
+          @include desktop-xl {
+            width: 110px;
+            height: 76px;
+          }
+
+          @include desktop-xxl {
+            width: px(110);
+            height: px(76);
+          }
+        }
+      }
+    }
+  }
+
+  &__avail {
+    align-self: center;
+    margin: 0;
+
+    @include desktop {
+      margin: 0 0 0 auto;
+      max-width: vw(370);
+      text-align: right;
+    }
+
+    @include desktop-xl {
+      max-width: 370px;
+    }
+
+    @include desktop-xxl {
+      max-width: px(370);
+    }
+  }
+
+  &__text {
+    margin-bottom: vmin(8);
+
+    @include desktop {
+      margin-bottom: vw(8);
+    }
+
+    @include desktop-xl {
+      margin-bottom: 8px;
+    }
+
+    @include desktop-xxl {
+      margin-bottom: px(8);
+    }
+  }
+
+  &__area {
+    margin-bottom: 32px;
+
+    &-text {
+      font-size: 14px;
+      left: 1.5;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        flex-shrink: 0;
+        + li {
+          margin-left: 8px;
+
+          // @include desktop {
+          //   margin-left: vw(8);
+          // }
+
+          // @include desktop-xl {
+          //   margin-left: 8px;
+          // }
+
+          // @include desktop-xxl {
+          //   margin-left: px(8);
+          // }
+        }
+
+        a {
+          display: block;
+          padding: 6px 16px;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 1.5;
+          text-align: center;
+          color: $color-black;
+          background: $grey-100;
+
+          &.is-active {
+            color: $color-white;
+            background: $primary-200;
+          }
+
+          // @include desktop {
+          //   border-radius: vw(2);
+          //   padding: vw(4) vw(15);
+          // }
+
+          // @include desktop-xl {
+          //   border-radius: 2px;
+          //   padding: 4px 15px;
+          // }
+
+          // @include desktop-xxl {
+          //   border-radius: px(2);
+          //   padding: px(4) px(15);
+          // }
+        }
+      }
+    }
+
+    // @include desktop {
+    //   margin-bottom: vw(15);
+    // }
+
+    // @include desktop-xl {
+    //   margin-bottom: 15px;
+    // }
+
+    // @include desktop-xxl {
+    //   margin-bottom: px(15);
+    // }
+  }
+
+  &__slider {
+    position: relative;
+    margin-bottom: 180px;
+
+    @include desk-m {
+      margin-bottom: 150px;
+    }
+
+    @include mob {
+      margin-bottom: 100px;
+    }
+
+    // &::before {
+    //   @include desktop {
+    //     content: "";
+    //     position: absolute;
+    //     left: calc(-50vw - #{vw(-631)});
+    //     top: 0;
+    //     z-index: 5;
+    //     width: vw(196);
+    //     height: 100%;
+    //     background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+    //   }
+
+    //   @include desktop-xl {
+    //     left: calc(-50vw - -631px);
+    //     width: 196px;
+    //   }
+
+    //   @include desktop-xxl {
+    //     left: calc(-50vw - #{px(-631)});
+    //     width: px(196);
+    //   }
+    // }
+
+    // &::after {
+    //   @include desktop {
+    //     content: "";
+    //     position: absolute;
+    //     right: calc(-50vw - #{vw(-631)});
+    //     top: 0;
+    //     z-index: 5;
+    //     width: vw(196);
+    //     height: 100%;
+    //     background: linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+    //   }
+
+    //   @include desktop-xl {
+    //     right: calc(-50vw - -631px);
+    //     width: 196px;
+    //   }
+
+    //   @include desktop-xxl {
+    //     right: calc(-50vw - #{px(-631)});
+    //     width: px(196);
+    //   }
+    // }
+
+    .swiper-container {
+      overflow: visible;
+    }
+
+    .swiper-wrapper {
+      justify-content: center;
+    }
+
+    .swiper-slide {
+      width: 400px;
+
+      @include desk-m {
+        width: 30%;
+      }
+
+      @include tablet {
+        // width: 30% !important;
+      }
+      // @include desktop {
+      //   width: vw(400);
+      // }
+
+      // @include desktop-xl {
+      //   width: 400px;
+      // }
+
+      // @include desktop-xxl {
+      //   width: px(400);
+      // }
+    }
+
+    &__image {
+      position: relative;
+      padding-bottom: 70%;
+      background: 50% 50% no-repeat;
+      background-size: contain;
+
+      img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        max-width: 80%;
+        max-height: 80%;
+        transform: translate(-50%, -50%);
+      }
+
+      // @include desktop {
+      //   padding-bottom: 100%;
+      // }
+    }
+
+    // @include desktop {
+    //   margin-bottom: vw(65);
+    // }
+
+    // @include desktop-xl {
+    //   margin-bottom: 65px;
+    // }
+
+    // @include desktop-xxl {
+    //   margin-bottom: px(65);
+    // }
+  }
+
+  &__market {
+    padding: 72px 184px 104px;
+    background: $grey-100;
+    margin: 0 0 112px;
+
+    @include desk-m {
+      padding: 72px 85px 108px;
+      margin-bottom: 64px;
+    }
+
+    @include tablet {
+      padding: 57px 55px 60px;
+    }
+
+    @include mob {
+      padding: 24px 22px 33px;
+      margin-bottom: 56px;
+    }
+  }
+
+  &__market-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include mob {
+      flex-wrap: wrap;
+      max-width: 380px;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    a {
+      display: block;
+      flex-shrink: 0;
+
+      &:first-child {
+        img {
+          width: 106px;
+          height: auto;
+
+          @include desk-m {
+            width: 90px;
+          }
+
+          @include mob {
+            width: 85px;
+          }
+        }
+
+        @include desk-m {
+          margin-left: 10px;
+        }
+
+        @include tablet {
+          margin-left: 0;
+        }
+
+        @include mob {
+          margin-left: 26px;
+          margin-right: 26px;
+          margin-bottom: 34px;
+        }
+      }
+
+      &:nth-child(2) {
+        img {
+          width: 180px;
+          height: auto;
+
+          @include desk-m {
+            width: 153px;
+          }
+
+          @include mob {
+            width: 131px;
+          }
+        }
+
+        @include mob {
+          margin-bottom: auto;
+        }
+      }
+
+      &:nth-child(3) {
+        img {
+          width: 153px;
+
+          @include desk-m {
+            width: 130px;
+          }
+
+          @include mob {
+            width: 137px;
+          }
+        }
+      }
+
+      &:last-child {
+        img {
+          width: 89px;
+          height: auto;
+
+          @include desk-m {
+            width: 76px;
+          }
+
+          @include mob {
+            width: 70px;
+          }
+        }
+
+        @include mob {
+          margin-right: 34px;
+        }
+      }
+    }
+  }
+
+  &__market-title {
+    font-size: 32px;
+    line-height: 1.15;
+    text-align: center;
+    margin: 0 0 78px;
+
+    @include mob {
+      font-size: 20px;
+      line-height: 1.3;
+      margin-bottom: 63px;
+      letter-spacing: -0.02em;
+    }
+  }
+
+  &__chars {
+    .swiper {
+      overflow: visible;
+    }
+
+    table {
+      table-layout: fixed;
+      border-collapse: collapse;
+      font-size: 12px;
+      line-height: 1.5;
+      width: auto;
+      max-width: none;
+
+      col {
+        min-width: 212px;
+
+        &:nth-child(2) {
+          min-width: 147px;
+        }
+
+        &:nth-child(3) {
+          min-width: 65px;
+        }
+      }
+
+      th {
+        font-size: 14px;
+        line-height: 1.5;
+        font-weight: 500;
+        padding-bottom: 10px;
+        text-align: left;
+
+        &:not(:first-child) {
+          color: $primary-150;
+        }
+      }
+
+      td {
+        border-top: 1px solid $grey-200;
+        padding: 10px 5px 10px 0;
+      }
+
+      .price {
+        font-size: 14px;
+        font-weight: 700;
+      }
+    }
+
+    .buttons-block {
+      display: flex;
+      flex-direction: column;
+      padding-top: 6px;
+
+      a {
+        max-width: 150px;
+        &:not(:last-child) {
+          margin-bottom: 8px;
+        }
+
+        &.big {
+          max-width: 190px;
+        }
+      }
+    }
+  }
+
+  &__chars-slide {
+    width: min-content;
+  }
+
+  &__side-title {
+    font-size: 32px;
+    line-height: 1.15;
+    font-weight: 700;
+    margin-bottom: auto;
+
+    @include mob {
+      font-size: 24px;
+    }
+  }
+
+  &__side-text {
+    margin: 80px 0 auto;
+
+    & ~ .page-product__side-title {
+      margin-bottom: 0;
+    }
+
+    @include desk-m {
+      margin-top: 40px;
+    }
+
+    @include tablet {
+      margin-top: 24px;
+    }
+
+    @include mob {
+      margin-top: 32px;
+    }
+  }
+
+  &__comfort-list {
+    display: flex;
+    max-width: calc(100% - 424px);
+    margin: 0 0 90px;
+
+    @include desk-m {
+      max-width: 66%;
+      flex-wrap: wrap;
+      margin-top: -24px;
+      margin-bottom: 84px;
+    }
+
+    @include tablet {
+      max-width: 100%;
+    }
+
+    @include mob {
+      margin-top: -30px;
+    }
+  }
+
+  &__comfort-item {
+    width: calc((100% - 72px) / 4);
+
+    &:not(:nth-child(4n)) {
+      margin-right: 24px;
+    }
+
+    @include desk-m {
+      margin-top: 24px;
+      width: calc((100% - 24px) / 2);
+
+      &:not(:nth-child(4n)) {
+        margin-right: 0;
+      }
+
+      &:not(:nth-child(2n)) {
+        margin-right: 24px;
+      }
+    }
+
+    @include mob {
+      width: 100%;
+      margin-top: 30px;
+
+      &:nth-child(n) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__comfort-item-img {
+    width: 100%;
+    height: 120px;
+    background: $grey-100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+
+    @include mob {
+      height: 140px;
+    }
+
+    img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &__comfort-item-title {
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 700;
+    margin: 0 0 8px;
+  }
+
+  &__comfort-item-text {
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0;
+
+    @include tablet {
+      font-size: 14px;
+    }
+
+    @include mob {
+      font-size: 16px;
+    }
+  }
+
+  &__image {
+    margin: 0 0 vmin(36);
+    text-align: center;
+
+    img {
+      width: 100%;
+
+      @include desktop {
+        width: vw(652);
+      }
+
+      @include desktop-xl {
+        width: 652px;
+      }
+
+      @include desktop-xxl {
+        width: px(652);
+      }
+    }
+
+    @include desktop {
+      margin: vw(95) 0 vw(78);
+    }
+
+    @include desktop-xl {
+      margin: 95px 0 78px;
+    }
+
+    @include desktop-xxl {
+      margin: px(95) 0 px(78);
+    }
+  }
+
+  &__tab {
+    .wrapper__side {
+      align-self: stretch;
+    }
+
+    &__wrapper {
+      @include desktop {
+        max-width: vw(612);
+      }
+
+      @include desktop-xl {
+        max-width: 612px;
+      }
+
+      @include desktop-xxl {
+        max-width: px(612);
+      }
+    }
+
+    &__label {
+      margin-bottom: vmin(8);
+
+      @include desktop {
+        margin-bottom: 0;
+        margin-right: vw(16);
+        width: vw(300);
+      }
+
+      @include desktop-xl {
+        margin-right: 16px;
+        width: 300px;
+      }
+
+      @include desktop-xxl {
+        margin-right: px(16);
+        width: px(300);
+      }
+    }
+
+    .tab-list {
+      margin-bottom: 80px;
+      border-bottom: 1px solid $grey-200;
+      height: 52px;
+
+      @include desk-m {
+        margin-bottom: 64px;
+      }
+
+      @include mob {
+        margin-bottom: 48px;
+      }
+
+      &.two-rows {
+        height: 73px;
+
+        @include mob {
+          height: auto;
+        }
+
+        ul {
+          height: 73px;
+          overflow-x: auto;
+
+          @include mob {
+            height: auto;
+            align-content: flex-start;
+
+            &:first-child {
+              margin-bottom: 24px;
+            }
+
+            & + ul {
+              min-height: 48px;
+              width: calc(100% + 32px);
+              margin-left: -16px;
+              padding-left: 16px;
+
+              li {
+                &:last-child {
+                  margin-right: 16px;
+                }
+              }
+            }
+          }
+
+          li {
+            min-height: 48px;
+
+            @include mob {
+              min-height: 24px;
+            }
+
+            &:first-child {
+              @include mob {
+                width: 100%;
+                max-width: none;
+                min-height: 48px;
+
+                a {
+                  max-width: 256px;
+                }
+              }
+            }
+
+            & + li {
+              &:nth-child(2) {
+                margin-left: 64px;
+
+                @include tablet {
+                  margin-left: 43px;
+                }
+
+                @include mob {
+                  margin-left: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &.no-active {
+        ul {
+          li {
+            a.is-active {
+              &::after {
+                opacity: 0;
+              }
+            }
+          }
+        }
+      }
+
+      ul {
+        overflow-x: auto;
+        align-items: flex-start;
+        height: 52px;
+        width: calc(100% + 32px);
+        margin-left: -16px;
+        padding-left: 16px;
+        padding-right: 16px;
+
+        li {
+          display: flex;
+          min-height: 24px;
+
+          &:first-child {
+            max-width: 256px;
+          }
+
+          + li {
+            margin-left: 24px;
+
+            // @include desktop {
+            //   margin-left: vw(16);
+            // }
+
+            // @include desktop-xl {
+            //   margin-left: 16px;
+            // }
+
+            // @include desktop-xxl {
+            //   margin-left: px(16);
+            // }
+          }
+
+          a {
+            color: $color-black;
+            display: flex;
+            align-items: center;
+
+            &:hover {
+              color: $primary-150;
+            }
+
+            svg {
+              width: 24px;
+              height: 24px;
+              margin-right: 8px;
+            }
+
+            &::after {
+              bottom: -27px;
+
+              // @include desktop {
+              //   bottom: vw(-25);
+              // }
+
+              // @include desktop-xl {
+              //   bottom: -25px;
+              // }
+
+              // @include desktop-xxl {
+              //   bottom: px(-25);
+              // }
+            }
+          }
+        }
+      }
+
+      // @include desktop {
+      //   display: flex;
+      //   margin-bottom: vw(80);
+      //   padding-bottom: vw(25);
+      // }
+
+      // @include desktop-xl {
+      //   margin-bottom: 80px;
+      //   padding-bottom: 25px;
+      // }
+
+      // @include desktop-xxl {
+      //   margin-bottom: px(80);
+      //   padding-bottom: px(25);
+      // }
+    }
+
+    &__title,
+    &__text,
+    &__image {
+      margin-bottom: 40px;
+
+      @include mob {
+        margin-bottom: 33px;
+      }
+
+      // @include desktop {
+      //   margin-bottom: vw(40);
+      // }
+
+      // @include desktop-xl {
+      //   margin-bottom: 40px;
+      // }
+
+      // @include desktop-xxl {
+      //   margin-bottom: px(40);
+      // }
+    }
+
+    &__title {
+      font-size: 32px;
+      line-height: 1.15;
+      margin-bottom: 44px;
+
+      @include mob {
+        font-size: 24px;
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+      }
+    }
+
+    &__title--margin-20 {
+      @include desktop {
+        margin-bottom: vw(20);
+      }
+
+      @include desktop-xl {
+        margin-bottom: 20px;
+      }
+
+      @include desktop-xxl {
+        margin-bottom: px(20);
+      }
+    }
+
+    &__subtitle {
+      margin-top: 0;
+    }
+  }
+
+  &__models {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+      display: block;
+      margin: 0 vmin(-10);
+      border-top: 1px solid $color-geyser;
+      border-bottom: 1px solid $color-geyser;
+      padding: 0 vmin(20) vmin(30);
+
+      &__content {
+        @include desktop {
+          padding: 0 vw(25);
+        }
+
+        @include desktop-xl {
+          padding: 0 25px;
+        }
+
+        @include desktop-xxl {
+          padding: 0 px(25);
+        }
+      }
+
+      &__list {
+        color: $color-cod-gray;
+
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+        }
+      }
+
+      & + & {
+        @include desktop {
+          border-left: 1px solid $color-geyser;
+        }
+      }
+
+      @include desktop {
+        margin: 0;
+        padding: 0 vw(23) vw(50);
+        width: 33.33334%;
+      }
+
+      @include desktop-xl {
+        padding: 0 23px 50px;
+      }
+
+      @include desktop-xxl {
+        padding: 0 px(23) px(50);
+      }
+    }
+
+    @include desktop {
+      margin: 0 calc(-50vw + #{vw(624)});
+    }
+
+    @include desktop-xl {
+      margin: 0 calc(-50vw + 624px);
+    }
+
+    @include desktop-xxl {
+      margin: 0 calc(-50vw + #{px(624)});
+    }
+  }
+
+  &__video {
+    &__row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 vmin(-12) vmin(-24);
+
+      @include desktop {
+        margin: 0 vw(-12) vw(-24);
+      }
+
+      @include desktop-xl {
+        margin: 0 -12px -24px;
+      }
+
+      @include desktop-xxl {
+        margin: 0 px(-12) px(-24);
+      }
+    }
+
+    &__col {
+      margin-bottom: vmin(24);
+      padding: 0 vmin(12);
+      width: 100%;
+
+      @include desktop {
+        margin-bottom: vw(24);
+        padding: 0 vw(12);
+        width: 50%;
+      }
+
+      @include desktop-xl {
+        margin-bottom: 24px;
+        padding: 0 12px;
+      }
+
+      @include desktop-xxl {
+        margin-bottom: px(24);
+        padding: 0 px(12);
+      }
+    }
+
+    &__col--width-100 {
+      .page-product__video__item__image {
+        @include desktop {
+          padding-bottom: 60.195%;
+        }
+      }
+
+      .page-product__video__item__play {
+        width: vmin(40);
+        height: vmin(40);
+
+        svg {
+          display: block;
+          width: vmin(12);
+          height: vmin(12);
+
+          @include desktop {
+            width: vw(19);
+            height: vw(19);
+          }
+
+          @include desktop-xl {
+            width: 19px;
+            height: 19px;
+          }
+
+          @include desktop-xxl {
+            width: px(19);
+            height: px(19);
+          }
+        }
+
+        @include desktop {
+          width: vw(64);
+          height: vw(64);
+        }
+
+        @include desktop-xl {
+          width: 64px;
+          height: 64px;
+        }
+
+        @include desktop-xxl {
+          width: px(64);
+          height: px(64);
+        }
+      }
+
+      @include desktop {
+        width: 100%;
+      }
+    }
+
+    &__item {
+      position: relative;
+      display: block;
+
+      &__image {
+        padding-bottom: 60.195%;
+        background: 50% 50% no-repeat;
+        background-size: cover;
+
+        @include desktop {
+          padding-bottom: 72%;
+        }
+      }
+
+      &__play {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        width: vmin(40);
+        height: vmin(40);
+        background: $color-white;
+        transform: translate(-50%, -50%);
+
+        svg {
+          display: block;
+          width: vmin(12);
+          height: vmin(12);
+
+          @include desktop {
+            width: vw(12);
+            height: vw(12);
+          }
+
+          @include desktop-xl {
+            width: 12px;
+            height: 12px;
+          }
+
+          @include desktop-xxl {
+            width: px(12);
+            height: px(12);
+          }
+        }
+
+        @include desktop {
+          width: vw(40);
+          height: vw(40);
+        }
+
+        @include desktop-xl {
+          width: 40px;
+          height: 40px;
+        }
+
+        @include desktop-xxl {
+          width: px(40);
+          height: px(40);
+        }
+      }
+    }
+  }
+
+  &__accessories {
+    border: 1px solid $grey-200;
+    display: flex;
+
+    @include desk-m {
+      flex-direction: column;
+    }
+
+    &__image {
+      position: relative;
+      z-index: 5;
+      flex-shrink: 0;
+      width: 320px;
+      min-height: 215px;
+      text-align: center;
+      max-height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include desk-m {
+        width: 100%;
+        height: 300px;
+      }
+
+      @include mob {
+        height: 250px;
+      }
+
+      img {
+        max-height: 90%;
+
+        @include desk-m {
+          max-width: 300px;
+        }
+
+        @include mob {
+          max-width: 270px;
+        }
+      }
+
+      // &::before {
+      //   content: "BOSCH";
+      //   position: absolute;
+      //   right: 0;
+      //   top: 0;
+      //   vertical-align: middle;
+      //   z-index: -1;
+      //   width: 100%;
+      //   height: 100%;
+      //   display: flex;
+      //   align-items: center;
+      //   justify-content: center;
+      //   font-size: 44px;
+      //   font-weight: 700;
+      //   color: $grey-100;
+      //   //background: url("../images/logo-accessories.jpg") 50% 50% no-repeat;
+      //   background-size: cover;
+
+      //   // @include desktop {
+      //   //   height: vw(215);
+      //   // }
+
+      //   // @include desktop-xl {
+      //   //   height: 215px;
+      //   // }
+
+      //   // @include desktop-xxl {
+      //   //   height: px(215);
+      //   // }
+      // }
+
+      // @include desktop {
+      //   margin-bottom: 0;
+      //   width: vw(320);
+      //   min-height: vw(215);
+      // }
+
+      // @include desktop-xl {
+      //   width: 320px;
+      //   min-height: 215px;
+      // }
+
+      // @include desktop-xxl {
+      //   width: px(320);
+      //   min-height: px(215);
+      // }
+    }
+
+    &__content {
+      padding: 40px 35px 40px 0;
+      width: 100%;
+
+      @include desk-m {
+        padding: 40px 35px;
+      }
+
+      @include mob {
+        padding: 24px 16px;
+      }
+
+      // @include desktop {
+      //   padding: vw(40) vw(35) vw(40) 0;
+      // }
+
+      // @include desktop-xl {
+      //   padding: 40px 35px 40px 0;
+      // }
+
+      // @include desktop-xxl {
+      //   padding: px(40) px(35) px(40) 0;
+      // }
+    }
+
+    &__head {
+      margin-bottom: 16px;
+      display: flex;
+
+      @include mob {
+        flex-direction: column;
+      }
+
+      // @include desktop {
+      //   display: flex;
+      //   margin-bottom: vw(16);
+      // }
+
+      // @include desktop-xl {
+      //   margin-bottom: 16px;
+      // }
+
+      // @include desktop-xxl {
+      //   margin-bottom: px(16);
+      // }
+    }
+
+    &__title {
+      max-width: 249px;
+
+      @include mob {
+        margin-bottom: 16px;
+        max-width: none;
+      }
+
+      // @include mobile {
+      //   font-size: vmin(18);
+      // }
+
+      // @include desktop {
+      //   margin: 0;
+      //   max-width: vw(249);
+      // }
+
+      // @include desktop-xl {
+      //   max-width: 249px;
+      // }
+
+      // @include desktop-xxl {
+      //   max-width: px(249);
+      // }
+    }
+
+    &__price {
+      margin: 0 0 0 auto;
+
+      @include mob {
+        margin: 0;
+      }
+
+      // @include mobile {
+      //   font-size: vmin(18);
+      // }
+
+      // @include desktop {
+      //   margin: 0 0 0 auto;
+      //   padding-right: vw(15);
+      // }
+
+      // @include desktop-xl {
+      //   padding-right: 15px;
+      // }
+
+      // @include desktop-xxl {
+      //   padding-right: px(15);
+      // }
+    }
+
+    &__row {
+      display: flex;
+
+      @include mob {
+        flex-direction: column;
+      }
+
+      // @include desktop {
+      //   display: flex;
+      // }
+    }
+
+    &__info {
+      font-size: 12px;
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+          display: flex;
+
+          + li {
+            margin-top: 1px;
+          }
+        }
+      }
+
+      &__label {
+        flex-shrink: 0;
+        margin-right: 40px;
+        width: 140px;
+
+        @include mob {
+          width: 45%;
+          margin-right: 16px;
+        }
+
+        // @include desktop {
+        //   margin-right: vw(72);
+        //   width: vw(124);
+        // }
+
+        // @include desktop-xl {
+        //   margin-right: 72px;
+        //   width: 124px;
+        // }
+
+        // @include desktop-xxl {
+        //   margin-right: px(72);
+        //   width: px(124);
+        // }
+
+        & + span {
+          padding-right: 15px;
+          flex-shrink: 0;
+
+          @include mob {
+            padding-right: 0;
+            flex-shrink: 1;
+          }
+        }
+      }
+
+      // @include desktop {
+      //   font-size: vw(12);
+      // }
+
+      // @include desktop-xl {
+      //   font-size: 12px;
+      // }
+
+      // @include desktop-xxl {
+      //   font-size: px(12);
+      // }
+    }
+
+    &__button {
+      margin-top: 0;
+      margin-left: auto;
+
+      @include mob {
+        margin: 24px 0 0;
+      }
+
+      a {
+        width: 116px;
+        min-width: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        // @include desktop {
+        //   padding: vw(7) vw(19);
+        //   font-weight: 400;
+        //   font-size: vw(14);
+        // }
+
+        // @include desktop-xl {
+        //   padding: 7px 19px;
+        //   font-size: 14px;
+        // }
+
+        // @include desktop-xxl {
+        //   padding: px(7) px(19);
+        //   font-size: px(14);
+        // }
+      }
+
+      // @include desktop {
+      //   margin-top: 0;
+      //   margin-left: auto;
+      // }
+    }
+
+    & + & {
+      margin-top: -1px;
+    }
+  }
+
+  &__box {
+    margin-bottom: vmin(24);
+
+    @include desktop {
+      margin-bottom: vw(40);
+    }
+
+    @include desktop-xl {
+      margin-bottom: 40px;
+    }
+
+    @include desktop-xxl {
+      margin-bottom: px(40);
+    }
+  }
+
+  &__documentation {
+    margin: 0;
+    padding: 37px 40px;
+    background: $grey-100;
+
+    @include mob {
+      padding: 30px 16px 40px;
+      width: calc(100% + 32px);
+      margin-left: -16px;
+    }
+
+    &__title {
+      margin: 0 0 23px;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.3;
+
+      // @include desktop {
+      //   margin-bottom: vw(20);
+      //   font-size: vw(20);
+      // }
+
+      // @include desktop-xl {
+      //   margin-bottom: 20px;
+      //   font-size: 20px;
+      // }
+
+      // @include desktop-xxl {
+      //   margin-bottom: px(20);
+      //   font-size: px(20);
+      // }
+    }
+
+    &__item {
+      display: flex;
+
+      &__icon {
+        flex-shrink: 0;
+        margin-right: 8px;
+
+        svg {
+          width: 24px;
+          height: 24px;
+          color: $primary-150;
+
+          // @include desktop {
+          //   width: vw(24);
+          //   height: vw(24);
+          // }
+
+          // @include desktop-xl {
+          //   width: 24px;
+          //   height: 24px;
+          // }
+
+          // @include desktop-xxl {
+          //   width: px(24);
+          //   height: px(24);
+          // }
+        }
+
+        // @include desktop {
+        //   margin-right: vw(8);
+        // }
+
+        // @include desktop-xl {
+        //   margin-right: 8px;
+        // }
+
+        // @include desktop-xxl {
+        //   margin-right: px(8);
+        // }
+      }
+
+      &__title {
+        margin-bottom: 5px;
+        color: $primary-150;
+
+        @include mob {
+          font-size: 14px;
+          line-height: 1.5;
+        }
+
+        // @include desktop {
+        //   margin-bottom: vw(7);
+        //   padding-top: vw(2);
+        // }
+
+        // @include desktop-xl {
+        //   margin-bottom: 7px;
+        //   padding-top: 2px;
+        // }
+
+        // @include desktop-xxl {
+        //   margin-bottom: px(7);
+        //   padding-top: px(2);
+        // }
+      }
+
+      &__text {
+        font-size: 12px;
+        line-height: 1.5;
+        color: $color-black;
+
+        // @include desktop {
+        //   font-size: vw(12);
+        // }
+
+        // @include desktop-xl {
+        //   font-size: 12px;
+        // }
+
+        // @include desktop-xxl {
+        //   font-size: px(12);
+        // }
+      }
+
+      & + & {
+        margin-top: 16px;
+
+        // @include desktop {
+        //   margin-top: vw(15);
+        // }
+
+        // @include desktop-xl {
+        //   margin-top: 15px;
+        // }
+
+        // @include desktop-xxl {
+        //   margin-top: px(15);
+        // }
+      }
+
+      &:hover {
+        .page-product__documentation__item__title,
+        .page-product__documentation__item__icon {
+          color: $primary-200;
+        }
+
+        .page-product__documentation__item__text {
+          color: $color-black;
+        }
+      }
+    }
+
+    // @include desktop {
+    //   margin: 0;
+    //   padding: vw(40);
+    // }
+
+    // @include desktop-xl {
+    //   padding: 40px;
+    // }
+
+    // @include desktop-xxl {
+    //   padding: px(40);
+    // }
+  }
+
+  &__table {
+    margin: 0 0 40px;
+    font-size: 12px;
+
+    @include tablet {
+      margin-top: 0;
+    }
+
+    @include mob {
+      width: 100vw;
+
+      margin-left: -16px;
+    }
+
+    table {
+      width: 612px;
+      border-top: 1px solid $grey-200;
+
+      thead {
+        display: none;
+      }
+
+      th {
+        width: 50%;
+      }
+
+      td {
+        padding: 10px 16px;
+
+        // @include desktop {
+        //   padding: vw(10) vw(16);
+        // }
+
+        // @include desktop-xl {
+        //   padding: 10px 16px;
+        // }
+
+        // @include desktop-xxl {
+        //   padding: px(10) px(16);
+        // }
+      }
+
+      @include mob {
+        table-layout: fixed;
+        margin-left: 16px;
+        margin-right: 32px;
+
+        th,
+        td {
+          max-width: 90vw;
+        }
+      }
+
+      // @include desktop {
+      //   width: vw(612);
+      // }
+
+      // @include desktop-xl {
+      //   width: 612px;
+      // }
+
+      // @include desktop-xxl {
+      //   width: px(612);
+      // }
+    }
+
+    // @include desktop {
+    //   margin: vw(-30) 0 vw(40);
+    //   font-size: vw(12);
+    // }
+
+    // @include desktop-xl {
+    //   margin: -30px 0 40px;
+    //   font-size: 12px;
+    // }
+
+    // @include desktop-xxl {
+    //   margin: px(-30) 0 px(40);
+    //   font-size: px(12);
+    // }
+  }
+
+  &__button-white {
+    .button {
+      &:focus {
+        box-shadow: none;
+      }
+
+      @include desktop {
+        padding: vw(7) vw(18);
+        font-size: vw(14);
+      }
+
+      @include desktop-xl {
+        padding: 7px 18px;
+        font-size: 14px;
+      }
+
+      @include desktop-xxl {
+        padding: px(7) px(18);
+        font-size: px(14);
+      }
+    }
+  }
+
+  &__accordion {
+    border-top: solid 1px $color-geyser;
+  }
+
+  &__buy {
+    .tab-list {
+      margin-bottom: vmin(16);
+      border-bottom: none;
+
+      @include desktop {
+        margin-bottom: vw(16);
+      }
+
+      @include desktop-xl {
+        margin-bottom: 16px;
+      }
+
+      @include desktop-xxl {
+        margin-bottom: px(16);
+      }
+    }
+  }
+
+  &__shops {
+    &__row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 vmin(-16);
+
+      @include desktop {
+        margin: 0 vw(-16);
+      }
+
+      @include desktop-xl {
+        margin: 0 -16px;
+      }
+
+      @include desktop-xxl {
+        margin: 0 px(-16);
+      }
+    }
+
+    &__col {
+      padding: 0 vmin(16);
+      width: 100%;
+
+      &:nth-child(3n + 1) {
+        .page-product__shops__item {
+          margin-left: 0;
+          padding-left: 0;
+        }
+      }
+
+      @include desktop {
+        padding: 0 vw(16);
+        width: 33.33334%;
+      }
+
+      @include desktop-xl {
+        padding: 0 16px;
+      }
+
+      @include desktop-xxl {
+        padding: 0 px(16);
+      }
+    }
+
+    &__item {
+      border-bottom: solid 1px $color-geyser;
+      padding: vmin(24) 0 vmin(24);
+      height: 100%;
+
+      &__name {
+        margin-bottom: vmin(4);
+        font-weight: 600;
+        font-size: vmin(14);
+        line-height: 1.57;
+
+        @include desktop {
+          margin-bottom: vw(4);
+          font-size: vw(14);
+        }
+
+        @include desktop-xl {
+          margin-bottom: 4px;
+          font-size: 14px;
+        }
+
+        @include desktop-xxl {
+          margin-bottom: px(4);
+          font-size: px(14);
+        }
+      }
+
+      &__list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-size: vmin(12);
+        line-height: 1.5;
+
+        li {
+          + li {
+            margin-top: vmin(4);
+
+            @include desktop {
+              margin-top: vw(4);
+            }
+
+            @include desktop-xl {
+              margin-top: 4px;
+            }
+
+            @include desktop-xxl {
+              margin-top: px(4);
+            }
+          }
+        }
+
+        @include desktop {
+          font-size: vw(12);
+        }
+
+        @include desktop-xl {
+          font-size: 12px;
+        }
+
+        @include desktop-xxl {
+          font-size: px(12);
+        }
+      }
+
+      @include desktop {
+        margin-left: vw(-32);
+        padding: vw(24) 0 vw(24) vw(32);
+      }
+
+      @include desktop-xl {
+        margin-left: vw(-32);
+        padding: vw(24) 0 vw(24) vw(32);
+      }
+
+      @include desktop-xxl {
+        margin-left: px(-32);
+        padding: px(24) 0 px(24) px(32);
+      }
+    }
+
+    .nano-content {
+      @include desktop {
+        padding-right: vw(72);
+      }
+
+      @include desktop-xl {
+        padding-right: 72px;
+      }
+
+      @include desktop-xxl {
+        padding-right: px(72);
+      }
+    }
+
+    &.nano {
+      > .nano-pane {
+        left: auto;
+        right: 0;
+        z-index: 10;
+        border-radius: 0;
+        width: vmin(3);
+        box-shadow: none;
+        background: $color-athens-gray;
+        opacity: 1;
+
+        .nano-slider {
+          border-radius: 0;
+          width: 100%;
+          background: $color-blue-ribbon;
+          opacity: 1;
+        }
+
+        @include mobile {
+          display: none;
+        }
+
+        @include desktop {
+          width: vw(3);
+        }
+
+        @include desktop-xl {
+          width: 3px;
+        }
+
+        @include desktop-xxl {
+          width: px(3);
+        }
+      }
+
+      > .nano-content {
+        @include mobile {
+          position: relative;
+        }
+      }
+
+      @include desktop {
+        height: vw(680);
+      }
+
+      @include desktop-xl {
+        height: 680px;
+      }
+
+      @include desktop-xxl {
+        height: px(680);
+      }
+    }
+  }
+
+  &__map {
+    height: vmin(300);
+
+    @include desktop {
+      height: vw(440);
+    }
+
+    @include desktop-xl {
+      height: 440px;
+    }
+
+    @include desktop-xxl {
+      height: px(440);
+    }
+  }
 }

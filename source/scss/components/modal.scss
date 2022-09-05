@@ -16,8 +16,15 @@
 
   @include tablet {
     margin: 0;
-    height: 100%;
+    min-height: 100%;
     padding: 80px 20px;
+  }
+
+  &__status-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
   }
 
   .input {
@@ -34,6 +41,10 @@
 
         &:focus {
           border-color: $primary-200;
+        }
+
+        &.error {
+          border-color: $fail;
         }
       }
 

@@ -7,7 +7,6 @@ $btn.on("click", function () {
 
 $(document).on("click", function (e) {
   const $target = $(e.target);
-  console.log($target[0]);
 
   if (
     !$target.hasClass("intro__download-block") &&

@@ -17,6 +17,18 @@
   }
 }
 
+.for-mob {
+  @media (min-width: $tablet) {
+    display: none !important;
+  }
+}
+
+.for-tablet {
+  @include mob {
+    display: none !important;
+  }
+}
+
 .clearfix {
   overflow: auto;
 
@@ -168,29 +180,58 @@
 }
 
 .wrapper {
+  display: flex;
+
+  @include tablet {
+    flex-direction: column;
+  }
+
   &__side {
-    @include desktop {
-      flex-shrink: 0;
-      align-self: flex-end;
-      width: vw(424);
+    width: 424px;
+    flex-shrink: 0;
+
+    @include desk-m {
+      width: 34%;
     }
 
-    @include desktop-xl {
-      width: 424px;
+    @include tablet {
+      width: 100%;
+      margin-bottom: 24px;
+
+      &.empty {
+        margin-bottom: 0;
+      }
     }
 
-    @include desktop-xxl {
-      width: px(424);
+    @include mob {
+      margin-bottom: 24px;
+
+      &.empty {
+        margin-bottom: 0;
+      }
     }
+    // @include desktop {
+    //   flex-shrink: 0;
+    //   align-self: flex-end;
+    //   width: vw(424);
+    // }
+
+    // @include desktop-xl {
+    //   width: 424px;
+    // }
+
+    // @include desktop-xxl {
+    //   width: px(424);
+    // }
   }
 
   &__content {
     width: 100%;
   }
 
-  @include desktop {
-    display: flex;
-  }
+  // @include desktop {
+  //   display: flex;
+  // }
 }
 
 h1,
@@ -778,27 +819,51 @@ h4,
 }
 
 .progress {
-  margin-top: vmin(30);
+  margin-top: 60px;
   height: 1px;
+  width: 100%;
   background: $color-geyser;
+  overflow: hidden;
+
+  @include mob {
+    margin-top: 44px;
+  }
 
   span {
     display: block;
     height: 1px;
-    background: $color-black;
     transform-origin: 0 0;
+    background: $primary-200;
   }
 
-  @include desktop {
-    margin-top: vw(40);
+  // @include desktop {
+  //   margin-top: vw(40);
+  // }
+
+  // @include desktop-xl {
+  //   margin-top: 40px;
+  // }
+
+  // @include desktop-xxl {
+  //   margin-top: px(40);
+  // }
+
+  .swiper-pagination-progressbar-fill {
+    background: $primary-200;
   }
 
-  @include desktop-xl {
-    margin-top: 40px;
-  }
+  .swiper-scrollbar-drag {
+    background: $primary-200;
 
-  @include desktop-xxl {
-    margin-top: px(40);
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 100%;
+      height: 1px;
+      width: 100vw;
+      background: $primary-200;
+    }
   }
 }
 
@@ -1730,6 +1795,16 @@ h4,
   //   width: px(64);
   //   height: px(64);
   // }
+}
+
+.swiper-container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
 }
 
 @keyframes buttonLoading {

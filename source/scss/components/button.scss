@@ -318,6 +318,12 @@
   padding: 12px 32px;
 }
 
+.btn.btn-s {
+  padding: 9px 17px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 .btn-secondary {
   background-color: $color-white;
   color: $color-black;
@@ -345,4 +351,10 @@
 
 .btn-secondary.btn-m {
   padding: 11px 32px;
+}
+
+.btn-secondary.btn-s {
+  padding: 8px 17px;
+  font-size: 14px;
+  line-height: 1.5;
 }
