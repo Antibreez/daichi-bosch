@@ -2239,6 +2239,13 @@
     margin: 0 0 40px;
     font-size: 12px;
 
+    -ms-overflow-style: none; /* IE и Edge */
+    scrollbar-width: none; /* Firefox */
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
     @include tablet {
       margin-top: 0;
     }

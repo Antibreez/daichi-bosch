@@ -7,6 +7,13 @@
     padding: 0;
     display: flex;
 
+    -ms-overflow-style: none; /* IE и Edge */
+    scrollbar-width: none; /* Firefox */
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
     li {
       display: inline-block;
       flex-shrink: 0;
