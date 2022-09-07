@@ -1,0 +1,61 @@
+.promo-catalogs {
+  .page-title {
+    max-width: 506px;
+  }
+
+  &__promo-img {
+    width: 100%;
+    height: 704px;
+    margin-bottom: 80px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .tab-list {
+    border-bottom: 1px solid $grey-200;
+
+    ul {
+      overflow-x: auto;
+    }
+
+    li + li {
+      margin-left: 24px;
+    }
+  }
+
+  &__section-title {
+    max-width: 296px;
+    padding-right: 24px;
+    margin: 0;
+    font-size: 32px;
+    line-height: 1.15;
+    font-weight: 700;
+  }
+
+  &__docs {
+    margin-top: -16px;
+  }
+
+  &__doc-link {
+    display: flex;
+    padding: 32px;
+    border: 1px solid $grey-300;
+  }
+
+  &__link-icon {
+    flex-shrink: 0;
+    margin-right: 16px;
+
+    svg {
+      width: 64px;
+      height: 64px;
+    }
+  }
+
+  &__link-info-name {
+  }
+}

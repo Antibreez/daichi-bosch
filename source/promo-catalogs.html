@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="./images/favicon.png" />
+    <link rel="stylesheet" href="./css/style.min.css?v=1640005157494" />
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-N7W63LX");
+    </script>
+  </head>
+  <body>
+    <div class="main">
+      <header class="header anime" data-app="header">
+        <div class="header__line"></div>
+        <div class="container">
+          <div class="header__container">
+            <div class="header__logo">
+              <a href=""><img src="./img/logo.svg" alt="" /></a>
+            </div>
+            <div class="header__right">
+              <ul class="header__menu for-desktop">
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Для партнеров</a></li>
+                <li><a href="#">Где купить</a></li>
+                <li><a href="#">Новости</a></li>
+                <li>
+                  <a class="is-arrow" href="#">Еще</a>
+                  <div class="header__menu__drop">
+                    <div class="header__menu__drop__content">
+                      <div class="header__menu__drop__wrap">
+                        <ul class="header__menu__drop__menu">
+                          <li><a href="#">Поддержка</a></li>
+                          <li><a href="#">Контакты</a></li>
+                        </ul>
+                        <div class="header__menu__drop__contacts">
+                          <div class="header__menu__drop__contacts__phone">
+                            <a href="tel:8 800 200 00 05">8 800 200 00 05</a>
+                          </div>
+                          <div class="header__menu__drop__contacts__phone-label">Служба поддержки</div>
+                          <div class="header__menu__drop__contacts__callback">
+                            <a href="#callback" data-fancybox>
+                              <svg>
+                                <use xlink:href="./img/sprite.svg#comment"></use>
+                              </svg>
+                              Обратная связь
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="header__menu__drop__footer">
+                        <div class="header__menu__drop__location">
+                          <a href="#location" data-fancybox>
+                            <svg>
+                              <use xlink:href="./img/sprite.svg#location"></use>
+                            </svg>
+                            <span>Москва</span>
+                          </a>
+                        </div>
+                        <div class="is-hidden">
+                          <div class="modal form location" id="location" data-param="change-city">
+                            <div class="h3 form__title">Выбор города</div>
+                            <div
+                              class="location__field input"
+                              data-app="select-location"
+                              data-ajax="./ajax/location.json">
+                              <div class="input__field input__field--search">
+                                <select data-placeholder="Введите название города">
+                                  <option></option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="location__list">
+                              <ul>
+                                <li><a href="?change-city=Москва">Москва</a></li>
+                                <li><a href="?change-city=Петербург">Санкт-Петербург</a></li>
+                                <li><a href="?change-city=Калининград">Калининград</a></li>
+                                <li><a href="?change-city=Краснодар">Краснодар</a></li>
+                                <li><a href="?change-city=Красноярск">Красноярск</a></li>
+                                <li><a href="?change-city=Севастополь">Севастополь</a></li>
+                                <li><a href="?change-city=Симферополь">Симферополь</a></li>
+                                <li><a href="?change-city=Уфа">Уфа</a></li>
+                                <li><a href="?change-city=Ялта">Ялта</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="header__search-open">
+                <a href="#">
+                  <svg>
+                    <use xlink:href="./img/sprite.svg#search"></use>
+                  </svg>
+                </a>
+              </div>
+              <form class="header__search" action="search.html" method="get" data-type="submit">
+                <input
+                  class="header__search__field"
+                  type="text"
+                  name="q"
+                  placeholder="Поиск по сайту"
+                  data-validation='{"maxlength":300,"messages":{"required":"Введите поисковый запрос"}}'
+                  required />
+                <button class="header__search__submit" type="submit">
+                  <svg>
+                    <use xlink:href="./img/sprite.svg#search"></use>
+                  </svg>
+                </button>
+              </form>
+              <button class="header__burger for-mobile"><i></i><i></i><i></i></button>
+            </div>
+            <div class="modal header__location for-desktop">
+              <div class="h3 form__title">Ваш город — Москва?</div>
+              <div class="modal__footer">
+                <a class="btn-secondary" href="#location" data-fancybox>Выбрать другой</a>
+                <button class="btn header__location__confirm" type="button">Верно</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="mobile-menu for-mobile" data-app="mobile-menu">
+        <div class="mobile-menu__list">
+          <ul>
+            <li>
+              <a href="#">Каталог</a>
+              <ul>
+                <li><a href="#">Бытовые кондиционеры</a></li>
+                <li><a href="#">Внутренние блоки для систем VRF</a></li>
+                <li><a href="#">Наружные блоки для систем VRF</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Для партнеров</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Поддержка</a></li>
+            <li><a href="#">Где купить</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="mobile-menu__support">
+          <div class="mobile-menu__support__location">
+            <a href="#">
+              <svg>
+                <use xlink:href="./img/sprite.svg#location"></use>
+              </svg>
+              Москва
+            </a>
+          </div>
+          <div class="mobile-menu__support__phone"><a href="tel:+78002000005">8 800 200 00 05</a></div>
+          <div class="mobile-menu__support__text">Служба поддержки</div>
+        </div>
+        <div class="mobile-menu__button">
+          <a class="btn btn-m" href="#callback" data-fancybox>Обратная связь</a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="container">
+          <div class="breadcrumbs">
+            <ul>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="#">Поддержка</a></li>
+              <li>Рекламные материалы</li>
+            </ul>
+          </div>
+          <div class="promo-catalogs anime">
+            <h1 class="page-title">Рекламные материалы</h1>
+            <div class="promo-catalogs__promo-img">
+              <img src="./img/support-warranty-1.jpg" alt="" />
+            </div>
+            <div class="tab-list">
+              <ul>
+                <li><a href="#">Каталоги и листовки</a></li>
+                <li><a href="#">Логотипы</a></li>
+                <li><a href="#">Изображения</a></li>
+              </ul>
+            </div>
+            <div class="wrapper">
+              <div class="wrapper__side">
+                <h3 class="promo-catalogs__section-title">Каталоги и листовки</h3>
+              </div>
+              <div class="wrapper__content">
+                <div class="promo-catalogs__docs">
+                  <div class="promo-catalogs__doc-link">
+                    <div class="promo-catalogs__link-icon">
+                      <svg>
+                        <use xlink:href="./img/sprite.svg#doc-big"></use>
+                      </svg>
+                    </div>
+                    <div class="promo-catalogs__link-info">
+                      <div class="promo-catalogs__link-info-name">
+                        Bosch. Каталог 2022. Климат под вашим контролем. Бытовые кондиционеры. DB22-04.01.01
+                      </div>
+                      <div class="promo-catalogs__link-info-size">PDF, 1.69 Мб</div>
+                    </div>
+                    <div class="promo-catalogs__link-actions">
+                      <a href="#">
+                        <svg>
+                          <use xlink:href="./img/sprite.svg#eye"></use>
+                        </svg>
+                      </a>
+                      <a href="#">
+                        <svg>
+                          <use xlink:href="./img/sprite.svg#download"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__container">
+            <div class="footer__left">
+              <div class="footer__contacts">
+                <div class="footer__logo">
+                  <a href="#"><img src="./img/logo.svg" alt="Bosch" /></a>
+                </div>
+                <div class="footer__contacts__content">
+                  <div class="footer__phone">
+                    <div class="footer__phone__number"><a href="tel:8 800 200 00 05">8 800 200 00 05</a></div>
+                    <div class="footer__phone__label">Служба поддержки</div>
+                  </div>
+                  <div class="footer__callback">
+                    <a href="#callback" data-fancybox>
+                      <svg>
+                        <use xlink:href="./img/sprite.svg#comment"></use></svg
+                      >Обратная связь</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__right">
+              <div class="footer__menu">
+                <ul>
+                  <li><a href="#">Поддержка</a></li>
+                  <li><a href="#">Где купить</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">Для партнеров</a></li>
+                  <li><a href="#">Новости</a></li>
+                </ul>
+              </div>
+              <div class="footer__catalog">
+                <div class="footer__catalog__title"><a href="#">Каталог</a></div>
+                <ul class="footer__catalog__list">
+                  <li><a href="#">Бытовые кондиционеры</a></li>
+                  <li><a href="#">Внутренние блоки для&nbsp;систем&nbsp;VRF</a></li>
+                  <li><a href="#">Наружные блоки для&nbsp;систем&nbsp;VRF</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer__container">
+            <ul class="footer__list footer__list--list">
+              <li>© Bosch 2022</li>
+              <li><a href="#">Политика конфиденциальности</a></li>
+              <li><a href="#">Пользовательское соглашение</a></li>
+            </ul>
+            <ul class="footer__list footer__list--social">
+              <li><a href="#">ВКонтакте</a></li>
+              <li><a href="#">Youtube</a></li>
+            </ul>
+            <div class="footer__list"></div>
+          </div>
+        </div>
+      </footer>
+      <div class="is-hidden">
+        <form class="modal form" id="callback" action="./ajax/callback.json" method="get" data-event="Feedback">
+          <div class="h3 form__title">Обратная связь</div>
+          <div class="form__text">
+            Оставьте ваши контактные данные, и&nbsp;наш специалист свяжется с вами в течение 30 минут
+          </div>
+          <div class="form__row">
+            <div class="form__col">
+              <div class="input">
+                <div class="input__label">Имя</div>
+                <div class="input__field">
+                  <input
+                    type="text"
+                    name="firstname"
+                    data-validation='{"regex":["^[^\\d]+$","ig"],"maxlength":300,"messages":{"regex":"Поле может содержать только буквы и символы"}}'
+                    required />
+                </div>
+              </div>
+            </div>
+            <div class="form__col">
+              <div class="input">
+                <div class="input__label">Фамилия</div>
+                <div class="input__field">
+                  <input
+                    type="text"
+                    name="surname"
+                    data-validation='{"regex":["^[^\\d]+$","ig"],"maxlength":300,"messages":{"regex":"Поле может содержать только буквы и символы"}}'
+                    required />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="input">
+            <div class="input__label">E-mail</div>
+            <div class="input__field">
+              <input
+                type="email"
+                name="email"
+                data-validation='{"regex":["^\\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}\\b$","i"],"maxlength":254,"messages":{"regex":"Неверный или некорректный e-mail адрес."}}'
+                required />
+            </div>
+          </div>
+          <div class="input">
+            <div class="input__label">Телефон</div>
+            <div class="input__field">
+              <input type="tel" data-mask="+7(999) 999 99-99" name="tel" required />
+            </div>
+          </div>
+          <div class="input">
+            <div class="input__label">Комментарий</div>
+            <div class="input__field">
+              <textarea name="subject" data-validation='{"maxlength":300}' required></textarea>
+            </div>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="checkbox" required /><i>
+                <svg>
+                  <use xlink:href="./img/sprite.svg#check"></use></svg></i
+              ><span>Разрешаю обработку <a href="#">персональных данных</a></span>
+            </label>
+          </div>
+          <div class="form__button">
+            <button class="btn" type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+      <div class="is-hidden">
+        <form class="modal form" id="vrf-select" action="./ajax/callback.json" method="get" data-event="Feedback">
+          <div class="h3 form__title">Подобрать систему&nbsp;VRF</div>
+          <div class="form__text">
+            Наши специалисты обязательно помогут вам с&nbsp;подбором мультизональной системы для вашего объекта.
+            Оставьте ваши контакты и&nbsp;мы&nbsp;вам перезвоним.
+          </div>
+          <div class="form__subtitle">Укажите ваши контактные данные <span>*</span></div>
+          <div class="input">
+            <div class="input__label">Имя <span>*</span></div>
+            <div class="input__field">
+              <input type="text" name="firstname" data-name="firstname" />
+              <p class="input__error">Это поле необходимо заполнить.</p>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__col">
+              <div class="input">
+                <div class="input__label">E-mail <span>*</span></div>
+                <div class="input__field">
+                  <input type="email" name="email" data-name="email" />
+                  <p class="input__error">Неверный или некорректный e-mail адрес</p>
+                </div>
+              </div>
+            </div>
+            <div class="form__col">
+              <div class="input">
+                <div class="input__label">Телефон <span>*</span></div>
+                <div class="input__field">
+                  <input class="phone" type="tel" data-name="tel" name="tel" />
+                  <p class="input__error">Неверный номер телефона</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form__subtitle">Заполните информацию об&nbsp;объекте</div>
+          <div class="input" data-app="select" data-type="outside">
+            <div class="input__label">Тип объекта</div>
+            <div class="input__field">
+              <select name="object-type" data-placeholder="Не важно">
+                <option value=""></option>
+                <option value="1">Объект</option>
+                <option value="2">Объект 2</option>
+                <option value="3">Объект 3</option>
+                <option value="4">Объект 4</option>
+                <option value="5">Объект 5</option>
+              </select>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__col">
+              <div class="input" data-app="select" data-type="outside">
+                <div class="input__label">Площадь объекта</div>
+                <div class="input__field">
+                  <select name="object-square" data-placeholder="Не важно">
+                    <option value=""></option>
+                    <option value="1">10</option>
+                    <option value="2">20</option>
+                    <option value="3">30</option>
+                    <option value="4">40</option>
+                    <option value="5">50</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form__col">
+              <div class="input" data-app="select" data-type="outside">
+                <div class="input__label">Бренд</div>
+                <div class="input__field">
+                  <select name="brand" data-placeholder="Любой">
+                    <option value=""></option>
+                    <option value="1">Bosch</option>
+                    <option value="2">Bosch</option>
+                    <option value="3">Bosch</option>
+                    <option value="4">Bosch</option>
+                    <option value="5">Bosch</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="input">
+            <div class="input__label">Комментарий</div>
+            <div class="input__field">
+              <input type="text" name="comment" />
+            </div>
+          </div>
+          <div class="form__footer">
+            <div class="form__button">
+              <button class="btn" type="submit">Отправить</button>
+            </div>
+            <div class="form__footer-policy">
+              Нажимая кнопку «Отправить», я&nbsp;соглашаюсь с
+              <a href="#">политикой конфиденциальности</a>
+              и 
+              <a href="#">пользовательским соглашением</a>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="is-hidden">
+        <form class="modal form" id="get-price" action="./ajax/callback.json" method="get" data-event="Feedback">
+          <div class="h3 form__title">Получить цену</div>
+          <div class="form__text">
+            Оставьте ваши контакты, наши менеджеры в&nbsp;скором времени свяжутся с&nbsp;вами.
+          </div>
+          <div class="input">
+            <div class="input__label">Имя <span>*</span></div>
+            <div class="input__field">
+              <input type="text" name="firstname" data-name="firstname" />
+              <p class="input__error">Это поле необходимо заполнить.</p>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__col">
+              <div class="input">
+                <div class="input__label">E-mail <span>*</span></div>
+                <div class="input__field">
+                  <input type="email" name="email" data-name="email" />
+                  <p class="input__error">Неверный или некорректный e-mail адрес</p>
+                </div>
+              </div>
+            </div>
+            <div class="form__col">
+              <div class="input">
+                <div class="input__label">Телефон <span>*</span></div>
+                <div class="input__field">
+                  <input class="phone" type="tel" data-name="tel" name="tel" />
+                  <p class="input__error">Неверный номер телефона</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="input">
+            <div class="input__label">Город/регион</div>
+            <div class="input__field">
+              <input type="text" name="city" />
+            </div>
+          </div>
+          <div class="input">
+            <div class="input__label">Комментарий</div>
+            <div class="input__field">
+              <input type="text" name="comment" />
+            </div>
+          </div>
+          <div class="form__footer">
+            <div class="form__button">
+              <button class="btn" type="submit">Отправить</button>
+            </div>
+            <div class="form__footer-policy">
+              Нажимая кнопку «Отправить», я&nbsp;соглашаюсь с
+              <a href="#">политикой конфиденциальности</a>
+              и 
+              <a href="#">пользовательским соглашением</a>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="is-hidden">
+        <form class="modal form" id="request-success" action="./ajax/callback.json" method="get" data-event="Feedback">
+          <div class="modal__status-check">
+            <img src="./img/status-check.svg" alt="" />
+          </div>
+          <div class="h3 form__title">Спасибо!</div>
+          <div class="form__text">Наши менеджеры свяжутся с вами в ближайшее время.</div>
+        </form>
+      </div>
+      <a class="up" href="#">
+        <svg>
+          <use xlink:href="./img/sprite.svg#mark"></use>
+        </svg>
+      </a>
+    </div>
+    <script src="./js/vendor.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/script.min.js"></script>
+  </body>
+</html>
