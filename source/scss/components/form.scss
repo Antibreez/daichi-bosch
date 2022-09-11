@@ -763,6 +763,10 @@ input.error + .input__error {
   display: block;
 }
 
+textarea.error + .input__error {
+  display: block;
+}
+
 body {
   .select2-container--default {
     .select2-dropdown {

@@ -10,3 +10,5 @@ import "./for-partners-form-1";
 import "./maps";
 import "./buy-tabs";
 import "./country-popup";
+import "./tab-slider";
+import "./question-form";

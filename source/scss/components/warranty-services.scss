@@ -1,0 +1,141 @@
+.warranty-services {
+  padding-top: 40px;
+
+  @include desk-m {
+    padding-top: 8px;
+  }
+
+  @include tablet {
+    padding-top: 0;
+  }
+
+  &__wrapper {
+    &:not(:last-child) {
+      margin-bottom: 80px;
+    }
+
+    @include desk-m {
+      flex-direction: column;
+
+      &:not(:last-child) {
+        margin-bottom: 48px;
+      }
+    }
+
+    @include tablet {
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &__side-title {
+    font-size: 32px;
+    line-height: 1.15;
+    font-weight: 700;
+    margin: 0;
+    max-width: 272px;
+
+    @include desk-m {
+      font-size: 24px;
+      margin-bottom: 24px;
+      letter-spacing: -0.02em;
+      max-width: none;
+    }
+
+    @include mob {
+      font-size: 20px;
+      line-height: 1.3;
+    }
+  }
+
+  &__title {
+    font-size: 44px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin: 0 0 56px;
+    letter-spacing: -0.02em;
+
+    @include desk-m {
+      font-size: 30px;
+      line-height: 1.15;
+      margin: 0 0 48px;
+    }
+
+    @include tablet {
+      margin-bottom: 40px;
+    }
+
+    @include mob {
+      font-size: 24px;
+    }
+  }
+
+  &__part {
+    &:not(:last-child) {
+      margin-bottom: 56px;
+
+      @include desk-m {
+        margin-bottom: 48px;
+      }
+
+      @include tablet {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &__part-title {
+    font-size: 32px;
+    line-height: 1.15;
+    font-weight: 700;
+    margin: 0 0 24px;
+
+    @include desk-m {
+      font-size: 24px;
+      letter-spacing: -0.02em;
+    }
+
+    @include mob {
+      font-size: 20px;
+      line-height: 1.3;
+    }
+  }
+
+  &__list {
+    padding: 0;
+    padding-left: 26px;
+    margin: 0;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  .promo-catalogs__doc-link {
+    margin-bottom: 124px;
+    margin-top: 0;
+
+    @include desk-m {
+      margin-bottom: 48px;
+    }
+
+    @include tablet {
+      margin-bottom: 40px;
+    }
+  }
+
+  .page-partners__form {
+    textarea {
+      &:not(:hover):not(:focus):not(.error) {
+        border-color: $grey-100;
+      }
+    }
+  }
+
+  .wrapper__side {
+    margin-bottom: 0;
+  }
+}

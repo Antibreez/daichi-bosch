@@ -1,6 +1,30 @@
 .promo-catalogs {
   .page-title {
     max-width: 506px;
+
+    @include desk-m {
+      max-width: 295px;
+    }
+
+    @include tablet {
+      max-width: none;
+    }
+
+    @include mob {
+      margin-bottom: 32px;
+    }
+  }
+
+  .wrapper {
+    padding-top: 80px;
+
+    @include desk-m {
+      padding-top: 64px;
+    }
+
+    @include mob {
+      padding-top: 40px;
+    }
   }
 
   &__promo-img {
@@ -8,18 +32,98 @@
     height: 704px;
     margin-bottom: 80px;
 
+    @include desk-m {
+      height: 525px;
+      margin-bottom: 64px;
+    }
+
+    @include tablet {
+      height: 400px;
+      margin-bottom: 40px;
+    }
+
+    @include mob {
+      height: auto;
+      padding-top: 56.4%;
+      position: relative;
+      margin-bottom: 26px;
+    }
+
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+
+      @include mob {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
     }
   }
 
   .tab-list {
     border-bottom: 1px solid $grey-200;
+    margin-bottom: 0;
+    height: 46px;
 
     ul {
       overflow-x: auto;
+      // padding-left: 16px;
+      // padding-right: 16px;
+      height: 48px;
+      align-items: flex-start;
+      width: 100vw;
+      margin-left: calc((-100vw + 1248px) / 2);
+
+      @include desk-m {
+        margin-left: -48px;
+      }
+
+      @include tablet {
+        margin-left: -32px;
+      }
+
+      @include mob {
+        width: 100vw;
+        margin-left: -16px;
+      }
+    }
+
+    li {
+      min-height: auto;
+
+      &:first-child {
+        padding-left: calc((100vw - 1248px) / 2);
+
+        @include desk-m {
+          padding-left: 48px;
+        }
+
+        @include tablet {
+          padding-left: 32px;
+        }
+
+        @include mob {
+          padding-left: 16px;
+        }
+      }
+
+      &:last-child {
+        padding-right: calc((100vw - 1248px) / 2);
+
+        @include desk-m {
+          padding-right: 48px;
+        }
+
+        @include tablet {
+          padding-right: 32px;
+        }
+
+        @include mob {
+          padding-right: 16px;
+        }
+      }
     }
 
     li + li {
@@ -34,6 +138,22 @@
     font-size: 32px;
     line-height: 1.15;
     font-weight: 700;
+
+    @include desk-m {
+      max-width: 180px;
+      font-size: 24px;
+      line-height: 1.3;
+    }
+
+    @include tablet {
+      max-width: none;
+      padding-right: 0;
+    }
+
+    @include mob {
+      font-size: 20px;
+      line-height: 1.3;
+    }
   }
 
   &__docs {
@@ -44,6 +164,23 @@
     display: flex;
     padding: 32px;
     border: 1px solid $grey-300;
+    transition: $duration-normal / 2;
+    margin-top: 16px;
+
+    &:hover {
+      border-color: $grey-400;
+    }
+
+    @include tablet {
+      padding: 24px;
+    }
+
+    @include mob {
+      flex-wrap: wrap;
+      padding: 16px;
+      padding-bottom: 24px;
+      align-items: flex-start;
+    }
   }
 
   &__link-icon {
@@ -54,8 +191,273 @@
       width: 64px;
       height: 64px;
     }
+
+    @include mob {
+      order: 1;
+    }
+  }
+
+  &__link-info {
+    max-width: 480px;
+    padding-top: 8px;
+    padding-right: 24px;
+
+    .no-wrap {
+      white-space: nowrap;
+    }
+
+    @include tablet {
+      padding-top: 0;
+    }
+
+    @include mob {
+      order: 3;
+      width: 100%;
+      max-width: none;
+      padding-left: 8px;
+      padding-top: 23px;
+    }
   }
 
   &__link-info-name {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin: 0 0 8px;
+
+    @include desk-m {
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 4px;
+    }
+
+    @include mob {
+      max-width: 480px;
+    }
+  }
+
+  &__link-info-size {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    color: $grey-400;
+
+    @include desk-m {
+      font-size: 12px;
+    }
+
+    @include mob {
+      max-width: 480px;
+    }
+  }
+
+  &__link-actions {
+    display: flex;
+    flex-shrink: 0;
+    margin-left: auto;
+
+    @include mob {
+      order: 2;
+    }
+
+    a {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+
+      & + a {
+        margin-left: 8px;
+      }
+    }
+  }
+
+  &__docs-mini {
+    border-top: 1px solid $grey-200;
+  }
+
+  &__doc-mini-link {
+    padding: 24px 0 16px;
+    display: flex;
+    border-bottom: 1px solid $grey-200;
+
+    @include mob {
+      flex-wrap: wrap;
+      padding-bottom: 24px;
+    }
+
+    .promo-catalogs__link-info {
+      padding-top: 2px;
+
+      @include mob {
+        margin-top: 13px;
+        padding: 0;
+      }
+    }
+
+    .promo-catalogs__link-info-name {
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 4px;
+    }
+
+    .promo-catalogs__link-actions {
+      @include mob {
+        margin-top: -8px;
+      }
+    }
+  }
+
+  &__link-icon-mini {
+    margin-right: 16px;
+    flex-shrink: 0;
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__logos {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -24px;
+
+    @include tablet {
+      margin-top: -16px;
+    }
+
+    @include mob {
+      margin-top: -16px;
+    }
+  }
+
+  &__logo-link {
+    width: calc((100% - 24px) / 2);
+    margin-top: 24px;
+    padding: 24px;
+    border: 1px solid $grey-300;
+    display: flex;
+    flex-direction: column;
+    transition: $duration-normal / 2;
+
+    &:hover {
+      border-color: $grey-400;
+    }
+
+    &:not(:nth-child(2n)) {
+      margin-right: 24px;
+    }
+
+    @include tablet {
+      width: calc((100% - 16px) / 2);
+      margin-top: 16px;
+
+      &:not(:nth-child(2n)) {
+        margin-right: 16px;
+      }
+    }
+
+    @include mob {
+      width: 100%;
+      margin-top: 16px;
+
+      &:nth-child(n) {
+        margin-right: 0;
+      }
+
+      .promo-catalogs__link-actions {
+        order: 1;
+      }
+
+      .promo-catalogs__link-info {
+        order: 3;
+        padding: 0;
+      }
+    }
+  }
+
+  &__link-logo {
+    margin-top: 80px;
+    align-self: center;
+    margin-bottom: 75px;
+
+    @include mob {
+      margin-top: 65px;
+      margin-bottom: 54px;
+      order: 2;
+    }
+
+    img {
+      width: 134px;
+      height: auto;
+    }
+  }
+
+  &__images {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -32px;
+
+    @include tablet {
+      margin-top: -24px;
+    }
+  }
+
+  &__image-link {
+    position: relative;
+    width: calc((100% - 24px) / 2);
+    margin-top: 32px;
+
+    &:not(:nth-child(2n)) {
+      margin-right: 24px;
+    }
+
+    @include tablet {
+      margin-top: 24px;
+    }
+
+    @include mob {
+      width: 100%;
+
+      &:nth-child(n) {
+        margin-right: 0;
+      }
+    }
+
+    .promo-catalogs__link-actions {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      z-index: 2;
+
+      a {
+        width: 48px;
+        height: 48px;
+        background: $color-white;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &__link-img {
+    position: relative;
+    padding-top: 63%;
+    margin-bottom: 16px;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 }

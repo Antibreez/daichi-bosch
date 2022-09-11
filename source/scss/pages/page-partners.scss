@@ -360,6 +360,11 @@
     }
 
     .form__col {
+      &:nth-child(n) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
       @include mob {
         width: 100%;
 

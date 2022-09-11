@@ -116,7 +116,7 @@ if ($cards.length > 0) {
       }
 
       map.setBounds(map.geoObjects.getBounds(), { checkZoomRange: true }).then(function () {
-        if (map.getZoom() > 15) map.setZoom(15); // Если значение zoom превышает 15, то устанавливаем 15.
+        if (map.getZoom() > 10) map.setZoom(10); // Если значение zoom превышает 15, то устанавливаем 15.
       });
 
       // var markerLayout = ymaps.templateLayoutFactory.createClass('<div id="placemarkr" class="placemarkr">$</div>');

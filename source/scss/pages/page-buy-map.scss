@@ -1,5 +1,15 @@
 .page-buy-map {
   .page-title {
+    max-width: 470px;
+
+    @include desk-m {
+      max-width: 311px;
+    }
+
+    @include tablet {
+      max-width: none;
+    }
+
     @include mob {
       margin-bottom: 30px;
     }
@@ -7,6 +17,24 @@
 
   .tab-list {
     border-bottom: 1px solid $grey-200;
+    height: 48px;
+
+    ul {
+      align-items: flex-start;
+      height: 48px;
+
+      @include mob {
+        width: 100vw;
+        overflow-x: auto;
+        margin-left: -16px;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      li {
+        min-height: auto;
+      }
+    }
   }
 
   .page-product__market {
@@ -463,6 +491,7 @@
 
     @include mob {
       height: 500px;
+      width: 100vw;
     }
   }
 }

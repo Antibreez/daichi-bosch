@@ -183,6 +183,11 @@
       transition: $duration-normal;
       pointer-events: none;
 
+      &.catalog {
+        right: 50%;
+        transform: translateX(50%);
+      }
+
       @include desk-m {
         top: 46px;
       }
