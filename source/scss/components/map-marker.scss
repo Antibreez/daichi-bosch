@@ -20,7 +20,8 @@
     transition: $duration-normal / 2;
   }
 
-  &.placemarkr-hover {
+  &.placemarkr-hover,
+  &.is-active {
     width: 80px;
     height: 80px;
 
@@ -29,4 +30,13 @@
       height: 32px;
     }
   }
+}
+
+.map-marker-office {
+  width: 56px;
+  height: 56px;
+  background-image: url("../img/location.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translate(-50%, -100%);
 }

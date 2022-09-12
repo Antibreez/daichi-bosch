@@ -69,6 +69,12 @@ if ($cards.length > 0) {
         });
 
         squarePlacemark.events.add("click", function (e) {
+          if ($(`#placemarkr-${idx}`).hasClass("is-active")) return;
+
+          $(".map-marker").removeClass("is-active");
+
+          $(`#placemarkr-${idx}`).addClass("is-active");
+
           $mapCard.html($cards.eq(idx).html());
           $mapCardWrapper.addClass("opened");
         });
@@ -107,7 +113,7 @@ if ($cards.length > 0) {
         // );
       });
 
-      if ($(window).outerWidth >= 768) {
+      if ($(window).outerWidth() >= 768) {
         map.container.getElement().style.height = "704px";
         map.container.getElement().parentNode.style.height = "704px";
       } else {
@@ -147,5 +153,6 @@ if ($cards.length > 0) {
 
   $mapCardClose.on("click", function () {
     $mapCardWrapper.removeClass("opened");
+    $(".map-marker").removeClass("is-active");
   });
 }

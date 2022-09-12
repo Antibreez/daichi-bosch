@@ -389,6 +389,12 @@
       }
     }
 
+    @include tablet {
+      &.on-map {
+        width: 100%;
+      }
+    }
+
     @include only-desktop {
       &:not(.on-map):hover {
         background-color: $primary-200;
@@ -414,7 +420,7 @@
     transform: translateY(20px);
     transition: opacity 0s, transform 0s, visibility 0s;
 
-    @include mob {
+    @include tablet {
       position: static;
       height: 0;
     }
@@ -425,8 +431,43 @@
       transform: translateY(0);
       transition: opacity 0.3s, transform 0.3s, visibility 0s;
 
-      @include mob {
+      @include tablet {
         height: auto;
+      }
+    }
+
+    &.static {
+      opacity: 0;
+      transform: translateY(50px);
+      visibility: visible;
+
+      @include tablet {
+        height: auto;
+      }
+
+      .page-buy-map__places-card {
+        min-height: auto;
+        padding: 40px 24px 0 40px;
+
+        @include tablet {
+          padding: 25px 0 0;
+        }
+
+        @include mob {
+          padding: 25px 16px 0;
+        }
+
+        .page-buy-map__places-card__title {
+          margin-bottom: 16px;
+        }
+
+        .page-buy-map__places-card__item {
+          margin-bottom: 0;
+
+          &:not(:last-child) {
+            margin-bottom: 10px;
+          }
+        }
       }
     }
 
@@ -459,12 +500,38 @@
     transform: translateY(20px);
     transition: opacity 0.3s, transform 0.3s, visibility 0s 0.3s;
 
+    &.static {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+      transition: none;
+      height: 527px;
+
+      @include desk-m {
+        height: 560px;
+      }
+
+      @include tablet {
+        height: auto;
+      }
+
+      @include mob {
+        height: auto;
+        width: 100vw;
+        margin-left: -16px;
+      }
+    }
+
     &.is-visible {
       opacity: 1;
       visibility: visible;
       transform: translateY(0);
       transition-delay: 0s;
       height: 704px;
+
+      @include tablet {
+        height: auto;
+      }
 
       @include mob {
         height: auto;
@@ -478,10 +545,16 @@
       margin: 0;
       width: 400px;
 
+      @include tablet {
+        width: 100%;
+        padding: 40px 0 0;
+        min-height: auto;
+      }
+
       @include mob {
         width: 100%;
         min-height: auto;
-        padding-top: 46px;
+        padding: 46px 16px 0;
       }
     }
   }

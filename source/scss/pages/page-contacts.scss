@@ -1,0 +1,60 @@
+.page-contacts {
+  &__wrapper {
+    padding-top: 118px;
+
+    textarea {
+      &:not(:hover):not(:focus):not(.error) {
+        border-color: $grey-100;
+      }
+    }
+
+    @include desk-m {
+      flex-direction: column;
+      padding-top: 48px;
+
+      .wrapper__side {
+        width: 100%;
+        margin-bottom: 32px;
+      }
+    }
+
+    @include tablet {
+      .wrapper__side {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  &__side-title {
+    font-size: 32px;
+    line-height: 1.15;
+    font-weight: 700;
+    margin: 0 0 20px;
+
+    @include desk-m {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+
+    @include mob {
+      font-size: 20px;
+      line-height: 1.3;
+      margin-bottom: 6px;
+    }
+  }
+
+  &__side-tel {
+    font-size: 20px;
+    line-height: 1.3;
+    font-weight: 700;
+    color: $primary-150;
+
+    @include mob {
+      font-size: 18px;
+    }
+
+    &:hover {
+      color: $primary-200;
+    }
+  }
+}

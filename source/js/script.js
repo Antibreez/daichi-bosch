@@ -12,3 +12,5 @@ import "./buy-tabs";
 import "./country-popup";
 import "./tab-slider";
 import "./question-form";
+import "./office-map";
+import "./support-form";
