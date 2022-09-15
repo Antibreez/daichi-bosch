@@ -30,7 +30,19 @@
             </div>
             <div class="header__right">
               <ul class="header__menu for-desktop">
-                <li><a href="#">Каталог</a></li>
+                <li>
+                  <a class="is-arrow" href="#">Каталог</a>
+                  <div class="header__menu__drop catalog">
+                    <div class="header__menu__drop__content">
+                      <div class="header__menu__drop__wrap">
+                        <ul class="header__menu__drop__menu">
+                          <li><a href="#">Бытовые кондиционеры</a></li>
+                          <li><a href="#">Системы VRF</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
                 <li><a href="#">Для партнеров</a></li>
                 <li><a href="#">Где купить</a></li>
                 <li><a href="#">Новости</a></li>
@@ -153,7 +165,7 @@
         </div>
         <div class="mobile-menu__support">
           <div class="mobile-menu__support__location">
-            <a href="#">
+            <a href="#location" data-fancybox>
               <svg>
                 <use xlink:href="./img/sprite.svg#location"></use>
               </svg>
@@ -182,7 +194,7 @@
               </div>
               <div class="intro__video"><img src="./img/for-partners-intro.jpg" alt="" /></div>
             </div>
-            <div class="tab" data-app="tab" data-type="hash">
+            <div class="tab anime fadeUp" data-app="tab" data-type="hash">
               <div class="wrapper">
                 <div class="wrapper__side for-desktop"></div>
                 <div class="wrapper__content">
@@ -314,7 +326,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="wrapper">
+                  <div class="wrapper anime fadeUp">
                     <div class="wrapper__side show">
                       <div class="page-partners__image"><img src="./img/partners.jpg" alt="" /></div>
                     </div>
@@ -446,7 +458,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="wrapper">
+                  <div class="wrapper anime fadeUp">
                     <div class="wrapper__side show">
                       <div class="page-partners__image designer"><img src="./img/designer.jpg" alt="" /></div>
                     </div>

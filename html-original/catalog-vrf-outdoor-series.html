@@ -30,7 +30,19 @@
             </div>
             <div class="header__right">
               <ul class="header__menu for-desktop">
-                <li><a href="#">Каталог</a></li>
+                <li>
+                  <a class="is-arrow" href="#">Каталог</a>
+                  <div class="header__menu__drop catalog">
+                    <div class="header__menu__drop__content">
+                      <div class="header__menu__drop__wrap">
+                        <ul class="header__menu__drop__menu">
+                          <li><a href="#">Бытовые кондиционеры</a></li>
+                          <li><a href="#">Системы VRF</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
                 <li><a href="#">Для партнеров</a></li>
                 <li><a href="#">Где купить</a></li>
                 <li><a href="#">Новости</a></li>
@@ -153,7 +165,7 @@
         </div>
         <div class="mobile-menu__support">
           <div class="mobile-menu__support__location">
-            <a href="#">
+            <a href="#location" data-fancybox>
               <svg>
                 <use xlink:href="./img/sprite.svg#location"></use>
               </svg>
@@ -185,10 +197,10 @@
               </h1>
               <div class="page-product__head__text">Надежный и эффективный</div>
             </div>
-            <div class="page-product__main-image">
+            <div class="page-product__main-image anime fadeUp">
               <img src="./img/vrf.png" alt="" />
             </div>
-            <div class="page-product__advantages">
+            <div class="page-product__advantages anime fadeUp">
               <div class="page-product__advantages__item">
                 <div class="page-product__advantages__item__image">
                   <img src="./img/efficiency.svg" alt="" />
@@ -203,7 +215,7 @@
               </div>
               <div class="page-product__advantages__item">
                 <div class="page-product__advantages__item__image">
-                  <img src="./img/efficiency.svg" alt="" />
+                  <img src="./img/simple.svg" alt="" />
                 </div>
                 <div class="page-product__advantages__item__text">Простая конструкция</div>
               </div>
@@ -251,7 +263,7 @@
                 </ul>
               </div>
               <div class="tab__content">
-                <div class="tab__item visible">
+                <div class="tab__item visible anime fadeUp">
                   <div class="page-product__chars">
                     <div class="page-product__chars-slider swiper">
                       <div class="page-product__chars-slider-wrapper swiper-wrapper">
@@ -602,7 +614,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="tab__item visible">
+                <div class="tab__item visible anime fadeUp">
                   <div class="wrapper">
                     <div class="wrapper__side">
                       <div class="page-product__side-title">Дизайн</div>
@@ -615,12 +627,12 @@
                     </div>
                   </div>
                 </div>
-                <div class="tab__item visible">
+                <div class="tab__item visible anime fadeUp">
                   <div class="wrapper">
                     <div class="wrapper__side">
                       <div class="page-product__side-title">Комфорт</div>
                     </div>
-                    <div class="wrapper__content">
+                    <div class="wrapper__content comfort">
                       <div class="page-product__comfort-list">
                         <div class="page-product__comfort-item">
                           <div class="page-product__comfort-item-img">
@@ -669,34 +681,6 @@
                                 <img src="./img/comfort-vrf-2.jpg" alt="" />
                               </div>
                             </div>
-                            <div class="swiper-slide">
-                              <div
-                                class="page-series__comfort__gallery__item page-series__comfort__gallery__item--small">
-                                <img src="./images/temp/51.jpg" alt="" />
-                              </div>
-                            </div>
-                            <div class="swiper-slide">
-                              <div class="page-series__comfort__gallery__item">
-                                <img src="./images/temp/52.jpg" alt="" />
-                              </div>
-                            </div>
-                            <div class="swiper-slide">
-                              <div
-                                class="page-series__comfort__gallery__item page-series__comfort__gallery__item--small">
-                                <img src="./images/temp/53.jpg" alt="" />
-                              </div>
-                            </div>
-                            <div class="swiper-slide">
-                              <div class="page-series__comfort__gallery__item">
-                                <img src="./images/temp/54.jpg" alt="" />
-                              </div>
-                            </div>
-                            <div class="swiper-slide">
-                              <div
-                                class="page-series__comfort__gallery__item page-series__comfort__gallery__item--small">
-                                <img src="./images/temp/55.jpg" alt="" />
-                              </div>
-                            </div>
                           </div>
                         </div>
                         <div class="progress"></div>
@@ -704,7 +688,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="tab__item visible">
+                <div class="tab__item visible anime fadeUp">
                   <div class="wrapper">
                     <div class="wrapper__side">
                       <div class="page-product__side-title">Детали</div>
@@ -717,7 +701,7 @@
                               <div class="accordion__item__header__text">
                                 Комфорт
                                 <svg class="accordion__item__header__icon">
-                                  <use xlink:href="./images/sprites.svg#plus"></use>
+                                  <use xlink:href="./img/sprite.svg#plus_big"></use>
                                 </svg>
                               </div>
                             </div>
@@ -726,7 +710,7 @@
                                 <div class="accordion__item__col">
                                   <div class="accordion__item__point">
                                     <div class="accordion__item__point__icon">
-                                      <img src="./images/advantages/auto-mode.svg" alt="" />
+                                      <img src="./img/auto-mode.svg" alt="" />
                                     </div>
                                     <div class="accordion__item__point__content">
                                       <div class="accordion__item__point__title"><b>Автоматический режим</b></div>
@@ -740,7 +724,7 @@
                                 <div class="accordion__item__col">
                                   <div class="accordion__item__point">
                                     <div class="accordion__item__point__icon">
-                                      <img src="./images/advantages/auto.svg" alt="" />
+                                      <img src="./img/auto.svg" alt="" />
                                     </div>
                                     <div class="accordion__item__point__content">
                                       <div class="accordion__item__point__title"><b>Авто</b></div>
@@ -754,7 +738,7 @@
                                 <div class="accordion__item__col">
                                   <div class="accordion__item__point">
                                     <div class="accordion__item__point__icon">
-                                      <img src="./images/advantages/local-comfort.svg" alt="" />
+                                      <img src="./img/local-comfort.svg" alt="" />
                                     </div>
                                     <div class="accordion__item__point__content">
                                       <div class="accordion__item__point__title"><b>Локальный комфорт</b></div>
@@ -768,7 +752,7 @@
                                 <div class="accordion__item__col">
                                   <div class="accordion__item__point">
                                     <div class="accordion__item__point__icon">
-                                      <img src="./images/advantages/turbo.svg" alt="" />
+                                      <img src="./img/turbo.svg" alt="" />
                                     </div>
                                     <div class="accordion__item__point__content">
                                       <div class="accordion__item__point__title"><b>Турбо</b></div>
@@ -782,7 +766,7 @@
                                 <div class="accordion__item__col">
                                   <div class="accordion__item__point">
                                     <div class="accordion__item__point__icon">
-                                      <img src="./images/advantages/comfortable-air-distribution.svg" alt="" />
+                                      <img src="./img/comfortable-air-distribution.svg" alt="" />
                                     </div>
                                     <div class="accordion__item__point__content">
                                       <div class="accordion__item__point__title">
@@ -799,7 +783,7 @@
                                 <div class="accordion__item__col">
                                   <div class="accordion__item__point">
                                     <div class="accordion__item__point__icon">
-                                      <img src="./images/advantages/duty-mode.svg" alt="" />
+                                      <img src="./img/duty-mode.svg" alt="" />
                                     </div>
                                     <div class="accordion__item__point__content">
                                       <div class="accordion__item__point__title"><b>Режим «Дежурный»</b></div>
@@ -813,7 +797,7 @@
                                 <div class="accordion__item__col">
                                   <div class="accordion__item__point">
                                     <div class="accordion__item__point__icon">
-                                      <img src="./images/advantages/warm-start.svg" alt="" />
+                                      <img src="./img/warm-start.svg" alt="" />
                                     </div>
                                     <div class="accordion__item__point__content">
                                       <div class="accordion__item__point__title">
@@ -834,7 +818,7 @@
                               <div class="accordion__item__header__text">
                                 Энергосбережение
                                 <svg class="accordion__item__header__icon">
-                                  <use xlink:href="./images/sprites.svg#plus"></use>
+                                  <use xlink:href="./img/sprite.svg#plus_big"></use>
                                 </svg>
                               </div>
                             </div>
@@ -843,7 +827,7 @@
                                 <div class="accordion__item__col">
                                   <div class="accordion__item__point">
                                     <div class="accordion__item__point__icon">
-                                      <img src="./images/advantages/a-plus.svg" alt="" />
+                                      <img src="./img/a-plus.svg" alt="" />
                                     </div>
                                     <div class="accordion__item__point__content">
                                       <div class="accordion__item__point__title"><b>Высокий показатель SEER</b></div>
@@ -858,7 +842,7 @@
                                 <div class="accordion__item__col">
                                   <div class="accordion__item__point">
                                     <div class="accordion__item__point__icon">
-                                      <img src="./images/advantages/energy-saving.svg" alt="" />
+                                      <img src="./img/energy-saving.svg" alt="" />
                                     </div>
                                     <div class="accordion__item__point__content">
                                       <div class="accordion__item__point__title"><b>Режим энергосбережения</b></div>
@@ -872,7 +856,7 @@
                                 <div class="accordion__item__col">
                                   <div class="accordion__item__point">
                                     <div class="accordion__item__point__icon">
-                                      <img src="./images/advantages/dc-inverter.svg" alt="" />
+                                      <img src="./img/dc-inverter.svg" alt="" />
                                     </div>
                                     <div class="accordion__item__point__content">
                                       <div class="accordion__item__point__title"><b>DC-инвертор</b></div>
@@ -886,7 +870,7 @@
                                 <div class="accordion__item__col">
                                   <div class="accordion__item__point">
                                     <div class="accordion__item__point__icon">
-                                      <img src="./images/advantages/compressor-soft-start.svg" alt="" />
+                                      <img src="./img/compressor-soft-start.svg" alt="" />
                                     </div>
                                     <div class="accordion__item__point__content">
                                       <div class="accordion__item__point__title"><b>Плавный пуск компрессора</b></div>
@@ -905,7 +889,7 @@
                               <div class="accordion__item__header__text">
                                 Надежнсть
                                 <svg class="accordion__item__header__icon">
-                                  <use xlink:href="./images/sprites.svg#plus"></use>
+                                  <use xlink:href="./img/sprite.svg#plus_big"></use>
                                 </svg>
                               </div>
                             </div>
@@ -914,7 +898,7 @@
                                 <div class="accordion__item__col">
                                   <div class="accordion__item__point">
                                     <div class="accordion__item__point__icon">
-                                      <img src="./images/advantages/automatic-restart.svg" alt="" />
+                                      <img src="./img/automatic-restart.svg" alt="" />
                                     </div>
                                     <div class="accordion__item__point__content">
                                       <div class="accordion__item__point__title"><b>Автоматический перезапуск</b></div>
@@ -927,7 +911,7 @@
                                 <div class="accordion__item__col">
                                   <div class="accordion__item__point">
                                     <div class="accordion__item__point__icon">
-                                      <img src="./images/advantages/reliable-work.svg" alt="" />
+                                      <img src="./img/reliable-work.svg" alt="" />
                                     </div>
                                     <div class="accordion__item__point__content">
                                       <div class="accordion__item__point__title"><b>Надежная работа</b></div>
@@ -942,7 +926,7 @@
                                 <div class="accordion__item__col">
                                   <div class="accordion__item__point">
                                     <div class="accordion__item__point__icon">
-                                      <img src="./images/advantages/resistant-voltage-surges.svg" alt="" />
+                                      <img src="./img/resistant-voltage-surges.svg" alt="" />
                                     </div>
                                     <div class="accordion__item__point__content">
                                       <div class="accordion__item__point__title">
@@ -958,7 +942,7 @@
                                 <div class="accordion__item__col">
                                   <div class="accordion__item__point">
                                     <div class="accordion__item__point__icon">
-                                      <img src="./images/advantages/corrosion-resistance.svg" alt="" />
+                                      <img src="./img/corrosion-resistance.svg" alt="" />
                                     </div>
                                     <div class="accordion__item__point__content">
                                       <div class="accordion__item__point__title"><b>Коррозионная стойкость</b></div>
@@ -977,7 +961,7 @@
                               <div class="accordion__item__header__text">
                                 Здоровье
                                 <svg class="accordion__item__header__icon">
-                                  <use xlink:href="./images/sprites.svg#plus"></use>
+                                  <use xlink:href="./img/sprite.svg#plus_big"></use>
                                 </svg>
                               </div>
                             </div>
@@ -986,7 +970,7 @@
                                 <div class="accordion__item__col">
                                   <div class="accordion__item__point">
                                     <div class="accordion__item__point__icon">
-                                      <img src="./images/advantages/anti-mold-treatment.svg" alt="" />
+                                      <img src="./img/anti-mold-treatment.svg" alt="" />
                                     </div>
                                     <div class="accordion__item__point__content">
                                       <div class="accordion__item__point__title"><b>Противоплесневая обработка</b></div>
@@ -1001,7 +985,7 @@
                                 <div class="accordion__item__col">
                                   <div class="accordion__item__point">
                                     <div class="accordion__item__point__icon">
-                                      <img src="./images/advantages/pre-filter.svg" alt="" />
+                                      <img src="./img/pre-filter.svg" alt="" />
                                     </div>
                                     <div class="accordion__item__point__content">
                                       <div class="accordion__item__point__title">
@@ -1021,7 +1005,7 @@
                               <div class="accordion__item__header__text">
                                 Управление
                                 <svg class="accordion__item__header__icon">
-                                  <use xlink:href="./images/sprites.svg#plus"></use>
+                                  <use xlink:href="./img/sprite.svg#plus_big"></use>
                                 </svg>
                               </div>
                             </div>
@@ -1030,7 +1014,7 @@
                                 <div class="accordion__item__col">
                                   <div class="accordion__item__point">
                                     <div class="accordion__item__point__icon">
-                                      <img src="./images/advantages/online-management.svg" alt="" />
+                                      <img src="./img/online-management.svg" alt="" />
                                     </div>
                                     <div class="accordion__item__point__content">
                                       <div class="accordion__item__point__title"><b>Wi-Fi, онлайн управление</b></div>
@@ -1044,7 +1028,7 @@
                                 <div class="accordion__item__col">
                                   <div class="accordion__item__point">
                                     <div class="accordion__item__point__icon">
-                                      <img src="./images/advantages/blocking.svg" alt="" />
+                                      <img src="./img/blocking.svg" alt="" />
                                     </div>
                                     <div class="accordion__item__point__content">
                                       <div class="accordion__item__point__title"><b>Блокирока</b></div>
@@ -1057,7 +1041,7 @@
                                 <div class="accordion__item__col">
                                   <div class="accordion__item__point">
                                     <div class="accordion__item__point__icon">
-                                      <img src="./images/advantages/timer-operation.svg" alt="" />
+                                      <img src="./img/timer-operation.svg" alt="" />
                                     </div>
                                     <div class="accordion__item__point__content">
                                       <div class="accordion__item__point__title"><b>Работа по таймеру</b></div>
@@ -1071,7 +1055,7 @@
                                 <div class="accordion__item__col">
                                   <div class="accordion__item__point">
                                     <div class="accordion__item__point__icon">
-                                      <img src="./images/advantages/cooling.svg" alt="" />
+                                      <img src="./img/cooling.svg" alt="" />
                                     </div>
                                     <div class="accordion__item__point__content">
                                       <div class="accordion__item__point__title">
@@ -1087,7 +1071,7 @@
                                 <div class="accordion__item__col">
                                   <div class="accordion__item__point">
                                     <div class="accordion__item__point__icon">
-                                      <img src="./images/advantages/self-diagnosis.svg" alt="" />
+                                      <img src="./img/self-diagnosis.svg" alt="" />
                                     </div>
                                     <div class="accordion__item__point__content">
                                       <div class="accordion__item__point__title"><b>Самодиагностика</b></div>
@@ -1101,7 +1085,7 @@
                                 <div class="accordion__item__col">
                                   <div class="accordion__item__point">
                                     <div class="accordion__item__point__icon">
-                                      <img src="./images/advantages/information-led-display.svg" alt="" />
+                                      <img src="./img/information-led-display.svg" alt="" />
                                     </div>
                                     <div class="accordion__item__point__content">
                                       <div class="accordion__item__point__title"><b>Информационный LED дисплей</b></div>
