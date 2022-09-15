@@ -77,6 +77,12 @@ if ($cards.length > 0) {
 
           $mapCard.html($cards.eq(idx).html());
           $mapCardWrapper.addClass("opened");
+
+          const delta = $(window).scrollTop() + $(window).outerHeight() - $mapCardWrapper.offset().top;
+
+          if ($(window).outerWidth() < 1024 && delta < 150) {
+            $(window).scrollTop($mapCardWrapper.offset().top - $(window).outerHeight() + 150);
+          }
         });
 
         // map.geoObjects.add(

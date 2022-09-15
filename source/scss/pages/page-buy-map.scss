@@ -196,7 +196,7 @@
     .input__field .select2-container--default .select2-selection__rendered {
       height: auto;
       padding: 0;
-      padding-right: 56px;
+      padding-right: 26px;
       display: flex;
       font-size: 16px;
       line-height: 1.5;
@@ -210,6 +210,9 @@
     }
 
     .input__field .select2-container--default .select2-selection__arrow {
+      margin-top: 0;
+      top: 0;
+      right: 0;
       width: 24px;
       height: 24px;
       margin-top: 2px;
@@ -217,7 +220,7 @@
     }
 
     .input__field .select2-container--open.select2-container--default .select2-selection__arrow {
-      transform: translateY(-50%) rotate(180deg);
+      transform: rotate(180deg);
     }
   }
 

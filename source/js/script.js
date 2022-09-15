@@ -14,3 +14,4 @@ import "./tab-slider";
 import "./question-form";
 import "./office-map";
 import "./support-form";
+import "./product-slider";

@@ -837,17 +837,19 @@
     }
 
     .swiper-wrapper {
-      justify-content: center;
+      //justify-content: center;
     }
 
     .swiper-slide {
       width: 400px;
+      margin: 0 auto;
 
       @include desk-m {
         width: 30%;
       }
 
       @include tablet {
+        width: 100%;
         // width: 30% !important;
       }
       // @include desktop {
@@ -1258,6 +1260,14 @@
   &__tab {
     .wrapper__side {
       align-self: stretch;
+    }
+
+    .wrapper__content.comfort {
+      min-width: 100%;
+
+      @include tablet {
+        min-width: auto;
+      }
     }
 
     &__wrapper {

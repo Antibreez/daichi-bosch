@@ -852,6 +852,15 @@ h4,
     background: $primary-200;
   }
 
+  &.swiper-pagination-progressbar.swiper-pagination-horizontal {
+    height: 1px;
+    top: auto;
+  }
+
+  &.swiper-pagination-lock {
+    display: block;
+  }
+
   .swiper-scrollbar-drag {
     background: $primary-200;
 
