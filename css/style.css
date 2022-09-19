@@ -5073,6 +5073,12 @@ h4,
     @media (max-width: 1439px) {
       .header::before {
         width: 16px; } }
+  .header__phone {
+    font-size: 14px;
+    line-height: 1.15;
+    font-weight: 700;
+    margin-left: 48px;
+    margin-right: 32px; }
   .header__container {
     position: relative;
     display: -webkit-box;
@@ -5235,6 +5241,7 @@ h4,
           margin-bottom: 4px;
           font-weight: 400;
           font-size: 18px;
+          font-weight: 700;
           line-height: 1.3;
           color: #007bc0; }
           @media (max-width: 1439px) {
@@ -5309,6 +5316,24 @@ h4,
           margin-right: 5px;
           width: 24px;
           height: 24px; }
+      .header__menu__drop:hover {
+        visibility: visible;
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none;
+        pointer-events: all; }
+        .header__menu__drop:hover::before {
+          opacity: 1;
+          -webkit-transition: none;
+          -o-transition: none;
+          transition: none;
+          -webkit-animation: showMenuDrop 0.4s;
+                  animation: showMenuDrop 0.4s; }
+        .header__menu__drop:hover .header__menu__drop__content {
+          opacity: 1;
+          -webkit-transition: 0.4s 0.4s;
+          -o-transition: 0.4s 0.4s;
+          transition: 0.4s 0.4s; }
       @media (min-width: 1440px) {
         .header__menu__drop {
           right: -56px;
