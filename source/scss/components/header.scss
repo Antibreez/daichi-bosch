@@ -360,13 +360,13 @@
             // }
           }
 
-          @include desktop-xl {
-            font-size: 14px;
-          }
+          // @include desktop-xl {
+          //   font-size: 14px;
+          // }
 
-          @include desktop-xxl {
-            font-size: px(14);
-          }
+          // @include desktop-xxl {
+          //   font-size: px(14);
+          // }
         }
       }
 
@@ -469,17 +469,17 @@
         }
       }
 
-      @include desktop-xl {
-        right: -56px;
-        top: 56px;
-        width: 400px;
-      }
+      // @include desktop-xl {
+      //   right: -56px;
+      //   top: 56px;
+      //   width: 400px;
+      // }
 
-      @include desktop-xxl {
-        right: px(-56);
-        top: px(56);
-        width: px(400);
-      }
+      // @include desktop-xxl {
+      //   right: px(-56);
+      //   top: px(56);
+      //   width: px(400);
+      // }
     }
   }
 
