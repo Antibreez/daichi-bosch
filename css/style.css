@@ -5264,12 +5264,6 @@ h4,
             margin-right: 5px;
             width: 24px;
             height: 24px; }
-          @media (min-width: 1440px) {
-            .header__menu__drop__contacts__callback {
-              font-size: 14px; } }
-          @media (min-width: 2000px) {
-            .header__menu__drop__contacts__callback {
-              font-size: 19.44444px; } }
       .header__menu__drop__footer {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -5334,16 +5328,6 @@ h4,
           -webkit-transition: 0.4s 0.4s;
           -o-transition: 0.4s 0.4s;
           transition: 0.4s 0.4s; }
-      @media (min-width: 1440px) {
-        .header__menu__drop {
-          right: -56px;
-          top: 56px;
-          width: 400px; } }
-      @media (min-width: 2000px) {
-        .header__menu__drop {
-          right: -77.77778px;
-          top: 77.77778px;
-          width: 555.55556px; } }
   .header__search-open {
     margin-left: 32px; }
     .header__search-open svg {
