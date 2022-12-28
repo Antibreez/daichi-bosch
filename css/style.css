@@ -5466,8 +5466,6 @@ h4,
   .is-show-mobile-menu .header {
     -webkit-box-shadow: 0 0 1px 1px #f4f4f8;
             box-shadow: 0 0 1px 1px #f4f4f8; }
-    .is-show-mobile-menu .header::before {
-      height: 100vh; }
   @media (max-width: 1023px) {
     .header {
       -webkit-box-shadow: 0px 2px 16px rgba(70, 119, 189, 0.1);
