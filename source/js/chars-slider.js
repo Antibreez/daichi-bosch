@@ -8,5 +8,6 @@ const slider = new Swiper(".page-product__chars-slider", {
   },
   scrollbar: {
     el: ".page-product__chars .progress",
+    draggable: true
   },
 });

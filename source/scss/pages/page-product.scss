@@ -1033,6 +1033,28 @@
   }
 
   &__chars {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 50px;
+      height: 50px;
+      background-image: url('../img/dragable.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      z-index: 10;
+      pointer-events: none;
+      transform: translateY(-100%);
+
+      @include mob {
+        height: 40px;
+        width: 40px;
+      }
+    }
+
     .swiper {
       overflow: visible;
     }
