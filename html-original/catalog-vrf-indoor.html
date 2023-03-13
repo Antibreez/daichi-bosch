@@ -25,115 +25,271 @@
         <div class="header__line"></div>
         <div class="container">
           <div class="header__container">
-            <div class="header__logo">
-              <a href=""><img src="./img/logo.svg" alt="" /></a>
-            </div>
-            <div class="header__right">
-              <ul class="header__menu for-desktop">
-                <li>
-                  <a class="is-arrow" href="#">Каталог</a>
-                  <div class="header__menu__drop catalog">
-                    <div class="header__menu__drop__content">
-                      <div class="header__menu__drop__wrap">
-                        <ul class="header__menu__drop__menu">
-                          <li><a href="#">Бытовые кондиционеры</a></li>
-                          <li><a href="#">Системы VRF</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li><a href="#">Для партнеров</a></li>
-                <li><a href="#">Где купить</a></li>
-                <li><a href="#">Новости</a></li>
-                <li>
-                  <a class="is-arrow" href="#">Еще</a>
-                  <div class="header__menu__drop">
-                    <div class="header__menu__drop__content">
-                      <div class="header__menu__drop__wrap">
-                        <ul class="header__menu__drop__menu">
-                          <li><a href="#">Поддержка</a></li>
-                          <li><a href="#">Контакты</a></li>
-                        </ul>
-                        <div class="header__menu__drop__contacts">
-                          <div class="header__menu__drop__contacts__phone">
-                            <a href="tel:8 800 200 00 05">8 800 200 00 05</a>
-                          </div>
-                          <div class="header__menu__drop__contacts__phone-label">Служба поддержки</div>
-                          <div class="header__menu__drop__contacts__callback">
-                            <a href="#callback" data-fancybox>
-                              <svg>
-                                <use xlink:href="./img/sprite.svg#comment"></use>
-                              </svg>
-                              Обратная связь
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="header__menu__drop__footer">
-                        <div class="header__menu__drop__location">
-                          <a href="#location" data-fancybox>
-                            <svg>
-                              <use xlink:href="./img/sprite.svg#location"></use>
-                            </svg>
-                            <span>Москва</span>
-                          </a>
-                        </div>
-                        <div class="is-hidden">
-                          <div class="modal form location" id="location" data-param="change-city">
-                            <div class="h3 form__title">Выбор города</div>
-                            <div
-                              class="location__field input"
-                              data-app="select-location"
-                              data-ajax="./ajax/location.json">
-                              <div class="input__field input__field--search">
-                                <select data-placeholder="Введите название города">
-                                  <option></option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="location__list">
-                              <ul>
-                                <li><a href="?change-city=Москва">Москва</a></li>
-                                <li><a href="?change-city=Петербург">Санкт-Петербург</a></li>
-                                <li><a href="?change-city=Калининград">Калининград</a></li>
-                                <li><a href="?change-city=Краснодар">Краснодар</a></li>
-                                <li><a href="?change-city=Красноярск">Красноярск</a></li>
-                                <li><a href="?change-city=Севастополь">Севастополь</a></li>
-                                <li><a href="?change-city=Симферополь">Симферополь</a></li>
-                                <li><a href="?change-city=Уфа">Уфа</a></li>
-                                <li><a href="?change-city=Ялта">Ялта</a></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-              <div class="header__search-open">
-                <a href="#">
-                  <svg>
-                    <use xlink:href="./img/sprite.svg#search"></use>
-                  </svg>
-                </a>
+            <div class="header__top">
+              <div class="header__logo">
+                <a href=""><img src="./img/logo.svg" alt="" /></a>
               </div>
-              <form class="header__search" action="search.html" method="get" data-type="submit">
-                <input
-                  class="header__search__field"
-                  type="text"
-                  name="q"
-                  placeholder="Поиск по сайту"
-                  data-validation='{"maxlength":300,"messages":{"required":"Введите поисковый запрос"}}'
-                  required />
-                <button class="header__search__submit" type="submit">
-                  <svg>
-                    <use xlink:href="./img/sprite.svg#search"></use>
-                  </svg>
-                </button>
-              </form>
+              <div class="header__top-right for-desktop">
+                <div class="header__top-right-catalog">
+                  <button class="header__catalog-btn"><span></span>Каталог</button>
+                  <div class="header__catalog-drop">
+                    <ul class="header__menu__drop__menu">
+                      <li><a href="#">Бытовые кондиционеры</a></li>
+                      <li><a href="#">Системы VRF</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <form class="header__search visible" action="search.html" method="get" data-type="submit">
+                  <input
+                    class="header__search__field"
+                    type="text"
+                    name="q"
+                    placeholder="Поиск по сайту"
+                    data-validation='{"maxlength":300,"messages":{"required":"Введите поисковый запрос"}}'
+                    required />
+                  <button class="header__search__submit" type="submit">
+                    <svg>
+                      <use xlink:href="./img/sprite.svg#search"></use>
+                    </svg>
+                  </button>
+                  <button class="header__search__close" type="button">
+                    <svg>
+                      <use xlink:href="./img/sprite.svg#close-big"></use>
+                    </svg>
+                  </button>
+                  <div class="header__search-result">
+                    <ul class="header__search-result-list">
+                      <li><a href="#">Наружные блоки для систем VRF</a></li>
+                      <li><a href="#">MDCI — системы Mini VRF</a></li>
+                      <li><a href="#">Кассетные блоки для систем VRF</a></li>
+                      <li><a href="#">Канальные блоки для систем VRF</a></li>
+                      <li><a href="#">Консольные блоки для систем VRF</a></li>
+                      <li><a href="#">Консольные блоки для систем VRF</a></li>
+                      <li><a href="#">Консольные блоки для систем VRF</a></li>
+                      <li><a href="#">Консольные блоки для систем VRF</a></li>
+                    </ul>
+                  </div>
+                </form>
+              </div>
+              <a class="header__top-buy-btn btn btn-m for-desktop" href="#">Где купить</a>
+              <button class="header__search-btn for-mobile">
+                <svg>
+                  <use xlink:href="./img/sprite.svg#search"></use>
+                </svg>
+              </button>
               <button class="header__burger for-mobile"><i></i><i></i><i></i></button>
+            </div>
+            <div class="header__bottom for-desktop">
+              <a class="header__bottom-location" href="#location" data-fancybox>
+                <svg>
+                  <use xlink:href="./img/sprite.svg#location"></use>
+                </svg>
+                <span>Москва</span>
+              </a>
+              <div class="is-hidden">
+                <div class="modal form location" id="location" data-param="change-city">
+                  <div class="h3 form__title">Выбор страны и города</div>
+                  <div
+                    class="location__field input"
+                    data-app="select-location"
+                    data-ajax="./ajax/location.json">
+                    <div class="input-block input-block--search">
+                      <input type="text" placeholder="Город или страна"/>
+                      <div class="input-block__search-icon">
+                        <svg>
+                          <use xlink:href="./img/sprite.svg#search"></use>
+                        </svg>
+                      </div>
+                      <button class="input-block__close-btn" type="button">
+                        <svg>
+                          <use xlink:href="./img/sprite.svg#close-big"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <!-- <div class="input__field input__field--search">
+                      <select data-placeholder="Введите название города">
+                        <option></option>
+                      </select>
+                    </div> -->
+                  </div>
+                  <div class="location__list">
+                    <ul>
+                      <li>
+                        <div class="location__label">
+                          <input class="visually-hidden" type="radio" name="location-city" value="moscow">
+                          <span></span>
+                        </div>
+                        <a href="?change-city=Москва">
+                          <span>Москва</span>
+                          <span>Россия</span>
+                        </a>
+                      </li>
+                      <li>
+                        <div class="location__label">
+                          <input class="visually-hidden" type="radio" name="location-city" value="saint-petesburg" checked>
+                          <span></span>
+                        </div>
+                        <a href="?change-city=Петербург">
+                          <span>Санкт-Петербург</span>
+                          <span>Россия</span>
+                        </a>
+                      </li>
+                      <li>
+                        <div class="location__label">
+                          <input class="visually-hidden" type="radio" name="location-city" value="kaliningrad">
+                          <span></span>
+                        </div>
+                        <a href="?change-city=Калининград">
+                          <span>Калининград</span>
+                          <span>Россия</span>
+                        </a>
+                      </li>
+                      <li>
+                        <div class="location__label">
+                          <input class="visually-hidden" type="radio" name="location-city" value="krasnodar">
+                          <span></span>
+                        </div>
+                        <a href="?change-city=Краснодар">
+                          <span>Краснодар</span>
+                          <span>Россия</span>
+                        </a>
+                      </li>
+                      <li>
+                        <div class="location__label">
+                          <input class="visually-hidden" type="radio" name="location-city" value="krasnoyarsk">
+                          <span></span>
+                        </div>
+                        <a href="?change-city=Красноярск">
+                          <span>Красноярск</span>
+                          <span>Россия</span>
+                        </a>
+                      </li>
+                      <li>
+                        <div class="location__label">
+                          <input class="visually-hidden" type="radio" name="location-city" value="sevastopol">
+                          <span></span>
+                        </div>
+                        <a href="?change-city=Севастополь">
+                          <span>Севастополь</span>
+                          <span>Россия</span>
+                        </a>
+                      </li>
+                      <li>
+                        <div class="location__label">
+                          <input class="visually-hidden" type="radio" name="location-city" value="simpheropol">
+                          <span></span>
+                        </div>
+                        <a href="?change-city=Симферополь">
+                          <span>Симферополь</span>
+                          <span>Россия</span>
+                        </a>
+                      </li>
+                      <li>
+                        <div class="location__label">
+                          <input class="visually-hidden" type="radio" name="location-city" value="ufa">
+                          <span></span>
+                        </div>
+                        <a href="?change-city=Уфа">
+                          <span>Уфа</span>
+                          <span>Россия</span>
+                        </a>
+                      </li>
+                      <li>
+                        <div class="location__label">
+                          <input class="visually-hidden" type="radio" name="location-city" value="yalta">
+                          <span></span>
+                        </div>
+                        <a href="?change-city=Ялта">
+                          <span>Ялта</span>
+                          <span>Россия</span>
+                        </a>
+                      </li>
+                      <li>
+                        <div class="location__label">
+                          <input class="visually-hidden" type="radio" name="location-city" value="yalta">
+                          <span></span>
+                        </div>
+                        <a href="?change-city=Ялта">
+                          <span>Ялта</span>
+                          <span>Россия</span>
+                        </a>
+                      </li>
+                      <li>
+                        <div class="location__label">
+                          <input class="visually-hidden" type="radio" name="location-city" value="yalta">
+                          <span></span>
+                        </div>
+                        <a href="?change-city=Ялта">
+                          <span>Ялта</span>
+                          <span>Россия</span>
+                        </a>
+                      </li>
+                      <li>
+                        <div class="location__label">
+                          <input class="visually-hidden" type="radio" name="location-city" value="yalta">
+                          <span></span>
+                        </div>
+                        <a href="?change-city=Ялта">
+                          <span>Ялта</span>
+                          <span>Россия</span>
+                        </a>
+                      </li>
+                      <li>
+                        <div class="location__label">
+                          <input class="visually-hidden" type="radio" name="location-city" value="yalta">
+                          <span></span>
+                        </div>
+                        <a href="?change-city=Ялта">
+                          <span>Ялта</span>
+                          <span>Россия</span>
+                        </a>
+                      </li>
+                      <li>
+                        <div class="location__label">
+                          <input class="visually-hidden" type="radio" name="location-city" value="yalta">
+                          <span></span>
+                        </div>
+                        <a href="?change-city=Ялта">
+                          <span>Ялта</span>
+                          <span>Россия</span>
+                        </a>
+                      </li>
+                      <li>
+                        <div class="location__label">
+                          <input class="visually-hidden" type="radio" name="location-city" value="yalta">
+                          <span></span>
+                        </div>
+                        <a href="?change-city=Ялта">
+                          <span>Ялта</span>
+                          <span>Россия</span>
+                        </a>
+                      </li>
+                      <li>
+                        <div class="location__label">
+                          <input class="visually-hidden" type="radio" name="location-city" value="yalta">
+                          <span></span>
+                        </div>
+                        <a href="?change-city=Ялта">
+                          <span>Ялта</span>
+                          <span>Россия</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <ul class="header__menu for-desktop">
+                <li><a href="#">О бренде</a></li>
+                <li><a href="#">Партнёрам</a></li>
+                <li><a href="#">Поддержка</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+              <a class="header__bottom-tel" href="tel:8 800 200 00 05">
+                <svg>
+                  <use xlink:href="./img/sprite.svg#tel"></use>
+                </svg>
+                8 800 200 00 05
+              </a>
             </div>
             <div class="modal header__location for-desktop">
               <div class="h3 form__title">Ваш город — Москва?</div>
@@ -178,6 +334,62 @@
         <div class="mobile-menu__button">
           <a class="btn btn-m" href="#callback" data-fancybox>Обратная связь</a>
         </div>
+      </div>
+      <div class="mobile-menu mobile-menu--search for-mobile" data-app="mobile-menu">
+        <div class="mobile-menu__search-header">
+          <form class="mobile-menu__search-form" action="search.html" method="get" data-type="submit">
+            <button class="mobile-menu__search-back" type="button">
+              <svg>
+                <use xlink:href="./img/sprite.svg#arrow-left"></use>
+              </svg>
+            </button>
+            <input
+              class="mobile-menu__search-input"
+              type="text"
+              name="q"
+              placeholder="Поиск по сайту"
+              data-validation='{"maxlength":300,"messages":{"required":"Введите поисковый запрос"}}'
+              required />
+            <button class="header__search__close" type="button">
+              <svg>
+                <use xlink:href="./img/sprite.svg#close-big"></use>
+              </svg>
+            </button>
+            <!-- <div class="header__search-result">
+              <ul class="header__search-result-list">
+                <li><a href="#">Наружные блоки для систем VRF</a></li>
+                <li><a href="#">MDCI — системы Mini VRF</a></li>
+                <li><a href="#">Кассетные блоки для систем VRF</a></li>
+                <li><a href="#">Канальные блоки для систем VRF</a></li>
+                <li><a href="#">Консольные блоки для систем VRF</a></li>
+                <li><a href="#">Консольные блоки для систем VRF</a></li>
+                <li><a href="#">Консольные блоки для систем VRF</a></li>
+                <li><a href="#">Консольные блоки для систем VRF</a></li>
+              </ul>
+            </div> -->
+          </form>
+        </div>
+        <div class="mobile-menu__search-popular">
+          <p class="mobile-menu__search-popular-title">
+            Популярные запросы
+          </p>
+          <ul>
+            <li><a href="#">Наружные блоки для систем VRF</a></li>
+            <li><a href="#">MDCI — системы Mini VRF</a></li>
+            <li><a href="#">Кассетные блоки для систем VRF</a></li>
+            <li><a href="#">Канальные блоки для систем VRF</a></li>
+            <li><a href="#">Консольные блоки для систем VRF</a></li>
+          </ul>
+        </div>
+        <!-- <div class="mobile-menu__search-result">
+          <ul>
+            <li><a href="#">Наружные блоки для систем VRF</a></li>
+            <li><a href="#">MDCI — системы Mini VRF</a></li>
+            <li><a href="#">Кассетные блоки для систем VRF</a></li>
+            <li><a href="#">Канальные блоки для систем VRF</a></li>
+            <li><a href="#">Консольные блоки для систем VRF</a></li>
+          </ul>
+        </div> -->
       </div>
       <div class="content">
         <div class="container">
@@ -234,7 +446,7 @@
               <div class="page-split__item__content">
                 <h2 class="page-split__item__title">Внутренние одно поточные кассетные блоки VRF Air Flux AF-1C</h2>
                 <div class="h3 page-split__item__subtitle">Современный и индивидуальный</div>
-                <div class="page-split__item__image indoor">
+                <div class="page-split__item__image">
                   <img src="./img/one-way.png" alt="" />
                 </div>
                 <div class="page-split__item__advantages">
@@ -265,7 +477,7 @@
               <div class="page-split__item__content">
                 <h2 class="page-split__item__title">Внутренние двух поточные кассетные блоки VRF Air Flux AF-2C</h2>
                 <div class="h3 page-split__item__subtitle">Безопасный и надежный</div>
-                <div class="page-split__item__image indoor">
+                <div class="page-split__item__image">
                   <img src="./img/af-2c.png" alt="" />
                 </div>
                 <div class="page-split__item__advantages">
@@ -296,7 +508,7 @@
               <div class="page-split__item__content">
                 <h2 class="page-split__item__title">Внутренние 4-х поточные кассетные блоки VRF Air Flux AF-4C</h2>
                 <div class="h3 page-split__item__subtitle">Современный и индивидуальный</div>
-                <div class="page-split__item__image indoor">
+                <div class="page-split__item__image">
                   <img src="./img/af-4c.png" alt="" />
                 </div>
                 <div class="page-split__item__advantages">
@@ -329,7 +541,7 @@
                   Внутренние 4-х поточные компактные кассетные блоки VRF Air Flux AF-4CC
                 </h2>
                 <div class="h3 page-split__item__subtitle">Безопасный и надежный</div>
-                <div class="page-split__item__image indoor">
+                <div class="page-split__item__image">
                   <img src="./img/af-4cc.png" alt="" />
                 </div>
                 <div class="page-split__item__advantages">
@@ -364,7 +576,7 @@
                   Внутренние 4-х поточные кассетные блоки VRF Air Flux серии Round AF-4CR
                 </h2>
                 <div class="h3 page-split__item__subtitle">Современный и индивидуальный</div>
-                <div class="page-split__item__image indoor">
+                <div class="page-split__item__image">
                   <img src="./img/af-4cr.png" alt="" />
                 </div>
                 <div class="page-split__item__advantages">
