@@ -15,3 +15,6 @@ import "./question-form";
 import "./office-map";
 import "./support-form";
 import "./product-slider";
+import "./catalog-btn";
+import "./news-slider";
+import "./design-slider";

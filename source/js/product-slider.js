@@ -9,3 +9,13 @@ const slider = new Swiper(".page-product__slider .swiper", {
     type: "progressbar",
   },
 });
+
+// const slider2 = new Swiper(".page-product__slider .swiper-container", {
+//   modules: [Pagination],
+//   slidesPerView: "auto",
+//   centeredSlides: true,
+//   pagination: {
+//     el: ".page-product__slider .progress",
+//     type: "progressbar",
+//   },
+// });

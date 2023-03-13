@@ -1,15 +1,15 @@
 .page-product {
   &__head {
-    margin-bottom: 30px;
+    margin-bottom: 64px;
     display: flex;
     flex-wrap: wrap;
 
     @include desk-m {
-      margin-bottom: 45px;
+      margin-bottom: 64px;
     }
 
     @include mob {
-      margin-bottom: 60px;
+      margin-bottom: 24px;
     }
 
     &__content {
@@ -137,7 +137,7 @@
     line-height: 1.1;
     letter-spacing: -0.02em;
     margin-bottom: 0;
-    max-width: 612px;
+    // max-width: 612px;
 
     span {
       display: block;
@@ -776,7 +776,28 @@
 
   &__slider {
     position: relative;
-    margin-bottom: 180px;
+    margin-bottom: 160px;
+
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 72px;
+      height: 72px;
+      background-image: url('../img/dragable.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      z-index: 10;
+      pointer-events: none;
+      transform: translateY(calc(-100% + 25px));
+
+      @include mob {
+        height: 48px;
+        width: 48px;
+      }
+    }
 
     @include desk-m {
       margin-bottom: 150px;
@@ -844,14 +865,25 @@
       width: 400px;
       margin: 0 auto;
 
+      &:not(:last-child) {
+        margin-right: 24px;
+
+        @include mob {
+          margin-right: 0;
+        }
+      }
+
       @include desk-m {
-        width: 30%;
+        //width: 30%;
       }
 
       @include tablet {
-        width: 100%;
+        display: flex;
+        justify-content: center;
+        //width: 100%;
         // width: 30% !important;
       }
+
       // @include desktop {
       //   width: vw(400);
       // }
@@ -867,17 +899,18 @@
 
     &__image {
       position: relative;
-      padding-bottom: 70%;
-      background: 50% 50% no-repeat;
-      background-size: contain;
+      width: 400px;
+      height: 320px;
+
+      @include mob {
+        width: calc(100% - 32px);
+        max-width: 400px;
+      }
 
       img {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        max-width: 80%;
-        max-height: 80%;
-        transform: translate(-50%, -50%);
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
       }
 
       // @include desktop {
@@ -1040,18 +1073,18 @@
       position: absolute;
       top: 50%;
       right: 0;
-      width: 50px;
-      height: 50px;
+      width: 72px;
+      height: 72px;
       background-image: url('../img/dragable.svg');
       background-size: contain;
       background-repeat: no-repeat;
       z-index: 10;
       pointer-events: none;
-      transform: translateY(-100%);
+      transform: translateY(calc(-100% + 25px));
 
       @include mob {
-        height: 40px;
-        width: 40px;
+        height: 48px;
+        width: 48px;
       }
     }
 
@@ -1136,14 +1169,14 @@
   }
 
   &__side-text {
-    margin: 80px 0 auto;
+    margin: 24px 0 auto;
 
     & ~ .page-product__side-title {
       margin-bottom: 0;
     }
 
     @include desk-m {
-      margin-top: 40px;
+      margin-top: 24px;
     }
 
     @include tablet {
@@ -1151,20 +1184,21 @@
     }
 
     @include mob {
-      margin-top: 32px;
+      margin-top: 24px;
     }
   }
 
   &__comfort-list {
     display: flex;
     max-width: calc(100% - 424px);
-    margin: 0 0 90px;
+    //margin: 0 0 90px;
+    margin-bottom: 0;
 
     @include desk-m {
       max-width: 66%;
       flex-wrap: wrap;
       margin-top: -24px;
-      margin-bottom: 84px;
+      //margin-bottom: 84px;
     }
 
     @include tablet {
@@ -2610,5 +2644,74 @@
     @include desktop-xxl {
       height: px(440);
     }
+  }
+}
+
+.page-product__benefits {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+
+  @include desk-m {
+    flex-direction: column-reverse;
+  }
+
+  .page-product__advantages {
+    width: 506px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 0;
+    max-width: none;
+    margin-top: -24px;
+
+    @include desk-m {
+      width: 100%;
+    }
+  }
+
+  .page-product__advantages__item {
+    width: calc((100% - 24px) / 2);
+    margin: 0;
+    margin-top: 24px;
+
+    &:not(:nth-child(2n)) {
+      margin-right: 24px;
+    }
+
+    @include desk-m {
+      width: calc((100% - 72px) / 4);
+
+      &:not(:nth-child(2n)) {
+        margin-right: 0;
+      }
+
+      &:not(:nth-child(4n)) {
+        margin-right: 24px;
+      }
+    }
+
+    @include mob {
+      width: calc((100% - 24px) / 2);
+
+      &:not(:nth-child(4n)) {
+        margin-right: 0;
+      }
+
+      &:not(:nth-child(2n)) {
+        margin-right: auto;
+      }
+    }
+  }
+}
+
+.page-product__benefits-text {
+  width: 49%;
+  max-width: 609px;
+
+  @include desk-m {
+    width: 100%;
+    max-width: none;
+    margin-top: 48px;
   }
 }

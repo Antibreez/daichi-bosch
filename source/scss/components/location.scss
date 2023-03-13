@@ -1,6 +1,24 @@
 .location {
   max-width: 832px;
 
+  @include tablet {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .form__title {
+    @include tablet {
+      font-size: 16px;
+      line-height: 150%;
+      font-weight: 500;
+      padding: 20px 0 20px 56px;
+      border-bottom: 1px solid $grey-200;
+      width: calc(100% + 40px);
+      transform: translateX(-20px);
+      margin-bottom: 40px;
+    }
+  }
+
   &__field {
   }
 
@@ -10,17 +28,89 @@
       margin-top: 10px;
       list-style: none;
       padding: 0;
+      max-height: 336px;
+      overflow-y: auto;
+
+      @include tablet {
+        max-height: calc(100vh - 210px);
+
+      }
 
       li {
         margin-top: 12px;
+        display: flex;
+
+        .location__label {
+          margin-right: 12px;
+
+          span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background-color: $grey-100;
+            border: 1px solid $grey-300;
+          }
+
+          input:checked + span {
+            background-color: $primary-150;
+            border-color: $primary-150;
+
+            &::after {
+              content: "";
+              display: block;
+              width: 8px;
+              height: 8px;
+              border-radius: 50%;
+              background-color: #fff;
+            }
+          }
+        }
 
         a {
+          display: inline-block;
           color: $primary-150;
 
           &:hover {
             color: $primary-200;
           }
+
+          span {
+            display: block;
+
+            &:first-child {
+              font-size: 16px;
+              left: 150%;
+              color: #323232;
+            }
+
+            &:last-child {
+              font-size: 12px;
+              line-height: 150%;
+              color: $grey-400;
+              margin-top: 2px;
+            }
+          }
         }
+      }
+    }
+  }
+
+  .fancybox-close-small {
+
+    @include tablet {
+      right: auto;
+      left: 16px;
+      top: 20px;
+
+      background-image: url('data:image/svg+xml;utf8,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.0001 12.5H4.20722L7.35372 15.6464L6.64647 16.3536L2.29297 12L6.64647 7.64636L7.35372 8.35361L4.20722 11.5H22.0001V12.5Z" fill="black"/></svg>');
+      background-size: contain;
+
+      &::before,
+      &::after {
+        display: none;
       }
     }
   }

@@ -79,11 +79,11 @@
 }
 
 .content {
-  padding-top: 107px;
+  padding-top: 170px;
   padding-bottom: 80px;
 
   @include desk-m {
-    padding-top: 90px;
+    padding-top: 140px;
   }
 
   @include tablet {
@@ -110,9 +110,13 @@
 }
 
 .content--index {
-  padding-top: 120px;
+  padding-top: 170px;
 
   @include desk-m {
+    padding-top: 140px;
+  }
+
+  @include tablet {
     padding-top: 64px;
   }
   // @include desktop {

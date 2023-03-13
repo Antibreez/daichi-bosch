@@ -320,10 +320,11 @@
     }
 
     &__content {
-      padding: 52px 30px 76px;
+      padding: 52px;
       display: flex;
       flex-direction: column;
       align-items: center;
+      height: 100%;
 
       @include desk-m {
         padding: 52px 30px 52px;
@@ -347,8 +348,8 @@
     }
 
     &__title {
-      max-width: 492px;
-      font-size: 32px;
+      max-width: 616px;
+      font-size: 24px;
       line-height: 1.15;
       font-weight: 700;
       letter-spacing: -0.02em;
@@ -360,7 +361,7 @@
       }
 
       @include tablet {
-        font-size: 32px;
+        font-size: 24px;
       }
 
       @include mob {
@@ -371,23 +372,23 @@
 
     &__subtitle {
       font-weight: 400;
-      font-size: 20px;
+      font-size: 16px;
       line-height: 1.3;
       margin-bottom: 40px;
 
       @include desk-m {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 1.3;
         margin-bottom: 45px;
       }
 
       @include tablet {
-        font-size: 20px;
+        font-size: 16px;
         margin-bottom: 33px;
       }
 
       @include mob {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 1.3;
       }
 
@@ -408,7 +409,28 @@
     }
 
     &__image {
-      margin-bottom: 52px;
+      margin-bottom: 48px;
+      width: 400px;
+      height: 181px;
+      margin-top: auto;
+
+      @include mob {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+      }
+
+      img {
+        width: 400px;
+        height: 181px;
+        object-fit: contain;
+
+        @include mob {
+          width: 100%;
+          height: auto;
+          max-width: 400px;
+        }
+      }
 
       @include desk-m {
         margin-bottom: 30px;

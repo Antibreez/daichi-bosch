@@ -148,13 +148,15 @@
   &.anime {
     .index-section {
       &__title,
-      &__link {
+      &__link,
+      &__about-link {
         opacity: 0;
         transform: translateY(50px);
         transition: $duration-normal * 2;
       }
 
-      &__link {
+      &__link,
+      &__about-link {
         transition-delay: 0.1s;
       }
 
@@ -189,7 +191,8 @@
   &.animated {
     .index-section {
       &__title,
-      &__link {
+      &__link,
+      &__about-link {
         opacity: 1;
         transform: translateY(0);
       }
@@ -205,5 +208,21 @@
         }
       }
     }
+  }
+}
+
+.index-section__about-link {
+  margin-top: 55px;
+
+  @include desk-m {
+    margin-top: 40px;
+  }
+
+  @include tablet {
+    margin-top: 24px;
+  }
+
+  @include mob {
+    margin-top: 16px;
   }
 }

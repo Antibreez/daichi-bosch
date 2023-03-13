@@ -91,3 +91,162 @@
     // }
   }
 }
+
+.page-index__news-slider {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 96px;
+    width: 72px;
+    height: 72px;
+    background-image: url('../img/dragable.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+    pointer-events: none;
+    transform: translateY(calc(-100% + 25px));
+
+    @include desk-m {
+      right: 48px;
+    }
+
+    @include tablet {
+      right: 32px;
+    }
+
+    @include mob {
+      right: 16px;
+      height: 48px;
+      width: 48px;
+    }
+  }
+}
+
+.page-index__news-slider-wrapper {
+  padding-bottom: 25px;
+}
+
+.page-index__news-pagination.swiper-pagination-progressbar {
+  top: auto;
+  bottom: 0;
+  width: calc(100% - 192px);
+  left: 96px;
+  height: 1px;
+  background: $grey-200;
+
+  @include desk-m {
+    width: calc(100% - 96px);
+    left: 48px;
+  }
+
+  @include tablet {
+    width: calc(100% - 64px);
+    left: 32px;
+  }
+
+  @include mob {
+    width: calc(100% - 32px);
+    left: 16px;
+  }
+
+  .swiper-pagination-progressbar-fill {
+    background: $primary-200;
+  }
+}
+
+.page-index__news-title {
+  padding-left: 96px;
+
+  @include desk-m {
+    padding-left: 48px;
+  }
+
+  @include tablet {
+    padding-left: 32px;
+  }
+
+  @include mob {
+    padding-left: 16px;
+  }
+}
+
+.page-index__news {
+  margin-bottom: 120px;
+  width: calc(100% + 192px);
+  transform: translateX(-96px);
+
+  @include desk-m {
+    width: calc(100% + 96px);
+    transform: translateX(-48px);
+    margin-bottom: 96px;
+  }
+
+  @include tablet {
+    width: calc(100% + 64px);
+    transform: translateX(-32px);
+    margin-bottom: 64px;
+  }
+
+  @include mob {
+    width: calc(100% + 32px);
+    transform: translateX(-16px);
+    margin-bottom: 48px;
+  }
+
+  .news-page__item {
+    &:nth-child(n) {
+      margin: 0;
+      width: auto;
+      padding-left: 24px;
+
+      @include mob {
+        width: calc(100% - 32px);
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+    }
+
+    &:first-child {
+      padding-left: 96px;
+
+      @include desk-m {
+        padding-left: 48px;
+      }
+
+      @include tablet {
+        padding-left: 32px;
+      }
+
+      @include mob {
+        padding-left: 16px;
+      }
+    }
+
+    &:last-child {
+      padding-right: 96px;
+
+      @include desk-m {
+        padding-right: 48px;
+      }
+
+      @include tablet {
+        padding-right: 32px;
+      }
+
+      @include mob {
+        padding-right: 16px;
+      }
+    }
+  }
+
+  .news-page__link {
+    min-height: 440px;
+    width: 400px;
+
+    @include mob {
+      min-height: 325px;
+      width: 100%;
+    }
+  }
+}

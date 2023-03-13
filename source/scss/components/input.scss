@@ -1,0 +1,53 @@
+.input-block {
+  position: relative;
+
+  input {
+    padding: 16px;
+    outline: none;
+    border: 1px solid $grey-300;
+    width: 100%;
+
+    &:hover {
+      border-color: $grey-400;
+    }
+
+    &:focus {
+      border-color: $primary-150;
+    }
+  }
+
+  &--search {
+    input {
+      padding-right: 56px;
+    }
+  }
+}
+
+.input-block__search-icon,
+.input-block__close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 24px;
+  height: 24px;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.input-block__close-btn {
+  background-color: #fff;
+  border: none;
+  padding: 0;
+  display: none;
+
+  &.show {
+    display: block;
+  }
+
+  &:hover {
+    color: $primary-150;
+  }
+}

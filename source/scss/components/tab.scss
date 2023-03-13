@@ -162,7 +162,7 @@
       display: block;
 
       & + .tab__item.visible {
-        margin-top: 128px;
+        margin-top: 80px;
 
         @include desk-m {
           margin-top: 80px;
