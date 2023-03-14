@@ -5574,7 +5574,8 @@ h4,
   visibility: hidden;
   -webkit-transition: opacity 0.3s, visibility 0s 0.3s;
   -o-transition: opacity 0.3s, visibility 0s 0.3s;
-  transition: opacity 0.3s, visibility 0s 0.3s; }
+  transition: opacity 0.3s, visibility 0s 0.3s;
+  z-index: 2; }
   .header__catalog-drop.opened {
     opacity: 1;
     visibility: visible;
