@@ -145,18 +145,30 @@
     }
   }
 
+  &__desc {
+    font-size: 16px;
+    line-height: 150%;
+    margin-top: 24px;
+
+    @include mob {
+      font-size: 14px;
+    }
+  }
+
   &.anime {
     .index-section {
       &__title,
       &__link,
-      &__about-link {
+      &__about-link,
+      &__desc {
         opacity: 0;
         transform: translateY(50px);
         transition: $duration-normal * 2;
       }
 
       &__link,
-      &__about-link {
+      &__about-link,
+      &__desc {
         transition-delay: 0.1s;
       }
 
@@ -192,7 +204,8 @@
     .index-section {
       &__title,
       &__link,
-      &__about-link {
+      &__about-link,
+      &__desc {
         opacity: 1;
         transform: translateY(0);
       }

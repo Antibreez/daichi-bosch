@@ -1,0 +1,1319 @@
+.about-brand__promo {
+  margin-bottom: 64px;
+
+  @include tablet {
+    padding-top: 24px;
+    margin-bottom: 40px;
+  }
+
+  @include mob {
+    padding-top: 8px;
+    margin-bottom: 111px;
+  }
+
+  &.anime {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: 1.2s;
+  }
+
+  &.animated {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &-block {
+    height: 500px;
+    width: 100%;
+    position: relative;
+
+    @include desk-m {
+      height: 416px;
+    }
+
+    @include tablet {
+      height: 315px;
+    }
+
+    @include mob {
+      height: auto;
+      padding-top: 44.7%;
+    }
+  }
+
+  &-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top -15px left 50%;
+
+    @include mob {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &-slogan {
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+    padding: 24px;
+    background-color: #fff;
+    background-color: $primary-150;
+    font-size: 44px;
+    line-height: 110%;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+
+    @include desk-m {
+      font-size: 40px;
+    }
+
+    @include tablet {
+      font-size: 24px;
+      line-height: 115%;
+    }
+
+    @include mob {
+      bottom: auto;
+      top: 100%;
+      width: 100%;
+      font-size: 18px;
+      line-height: 130%;
+    }
+  }
+}
+
+.about-brand__stats {
+  margin-bottom: 80px;
+
+  @include tablet {
+    margin-bottom: 64px;
+  }
+
+  &-block {
+    display: flex;
+    justify-content: space-between;
+
+    @include desk-m {
+      flex-direction: column;
+    }
+  }
+
+  &-text {
+    width: 100%;
+    max-width: 636px;
+    padding-right: 24px;
+    font-size: 16px;
+    line-height: 150%;
+    margin: 0;
+
+    @include desk-m {
+      padding-right: 0;
+      margin-bottom: 48px;
+      max-width: none;
+    }
+
+    @include tablet {
+      margin-bottom: 40px;
+    }
+
+    @include mob {
+      font-size: 14px;
+    }
+  }
+
+  &-cards {
+    display: flex;
+    flex-shrink: 0;
+    align-self: flex-start;
+
+    @include desk-m {
+      width: 100%;
+    }
+
+    @include mob {
+      flex-direction: column;
+    }
+  }
+
+  &-card {
+    padding: 32px;
+    background-color: $primary-150;
+    width: 241px;
+
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+
+    @include desk-m {
+      width: calc((100% - 24px) / 2);
+    }
+
+    @include mob {
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+
+      &:nth-child(n) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &-card-value {
+    display: block;
+    font-size: 44px;
+    line-height: 110%;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 16px;
+
+    @include mob {
+      font-size: 24px;
+      line-height: 130%;
+    }
+  }
+
+  &-card-text {
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff;
+    display: block;
+
+    @include mob {
+      font-size: 14px;
+    }
+  }
+}
+
+.about-brand__tabs {
+  @include only-desktop {
+    &.fixed {
+      .about-brand__tabs-block {
+        position: fixed;
+        top: 126px;
+        left: 0;
+        background-color: $grey-100;
+        z-index: 10;
+        width: 100%;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .about-brand__tabs-item {
+        padding: 10px 0;
+
+        &::before,
+        &::after {
+          display: none;
+        }
+
+        &.active {
+          color: $primary-150;
+        }
+      }
+
+      .about-brand__tabs-wrapper {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .about-brand__tabs-wrapper {
+    &::after {
+      content: "";
+      width: calc(100% - 192px);
+      height: 1px;
+      background-color: $grey-200;
+      position: absolute;
+      left: 96px;
+      bottom: 0;
+
+      @include desk-m {
+        width: calc(100% - 96px);
+        left: 48px;
+      }
+
+      @include tablet {
+        width: calc(100% - 64px);
+        left: 32px;
+      }
+
+      @include mob {
+        width: calc(100% - 32px);
+        left: 16px;
+      }
+    }
+  }
+
+  &-slide {
+    width: auto;
+
+    &:first-child {
+      padding-left: 96px;
+
+      @include desk-m {
+        padding-left: 48px;
+      }
+
+      @include tablet {
+        padding-left: 32px;
+      }
+
+      @include mob {
+        padding-left: 16px;
+      }
+    }
+
+    &:last-child {
+      padding-right: 96px;
+
+      @include desk-m {
+        padding-right: 48px;
+      }
+
+      @include tablet {
+        padding-right: 32px;
+      }
+
+      @include mob {
+        padding-right: 16px;
+      }
+    }
+
+    &:not(:first-child) {
+      .about-brand__tabs-item {
+        padding-left: 24px;
+      }
+    }
+  }
+
+  &-item {
+    display: block;
+    padding-bottom: 24px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $grey-200;
+    }
+
+    &.active {
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 1px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $primary-200;
+        z-index: 2;
+      }
+    }
+  }
+}
+
+.about-brand__ancor {
+  position: absolute;
+  top: -110px;
+  left: 0;
+  display: block;
+  width: 1px;
+  height: 1px;
+
+  @include tablet {
+    top: -30px;
+  }
+}
+
+.about-brand__our-values {
+  padding-top: 120px;
+  position: relative;
+
+  @include tablet {
+    padding-top: 64px;
+  }
+
+  @include mob {
+    padding-top: 40px;
+  }
+
+  .index-section__side {
+    @include tablet {
+      display: block;
+      width: 100%;
+      margin: 0 0 40px;
+    }
+  }
+}
+
+.about-brand__our-values-block {
+  margin-bottom: 0;
+
+  .h2 {
+    max-width: none;
+  }
+}
+
+.about-brand__values-block {
+  padding-left: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -20px;
+
+  @include tablet {
+    padding: 0;
+  }
+
+  @include mob {
+    margin-top: -8px;
+  }
+}
+
+.about-brand__values-item {
+  width: calc((100% - 24px) / 2);
+  padding: 32px;
+  background-color: $grey-100;
+  margin-top: 20px;
+
+  &:not(:nth-child(2n)) {
+    margin-right: 24px;
+  }
+
+  @include desk-m {
+    width: 100%;
+
+    &:not(:nth-child(2n)) {
+      margin-right: 0;
+    }
+  }
+
+  @include tablet {
+    width: calc((100% - 20px) / 2);
+
+    &:not(:nth-child(2n)) {
+      margin-right: 20px;
+    }
+  }
+
+  @include mob {
+    width: 100%;
+    margin-top: 8px;
+
+    &:nth-child(n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.about-brand__values-num {
+  display: block;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 110%;
+  margin: 0 0 16px;
+
+  @include mob {
+    font-size: 24px;
+    line-height: 130%;
+  }
+}
+
+.about-brand__values-title {
+  font-size: 18px;
+  line-height: 130%;
+  font-weight: 700;
+  margin: 0 0 16px;
+  display: block;
+
+  @include mob {
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
+
+.about-brand__values-desc {
+  display: block;
+
+  @include mob {
+    font-size: 14px;
+  }
+}
+
+.about-brand__in-world {
+  position: relative;
+  padding-top: 120px;
+
+  @include tablet {
+    padding-top: 64px;
+  }
+}
+
+.about-brand__in-world-block {
+  margin-bottom: 0;
+
+  @include tablet {
+    .index-section__side {
+      display: block;
+      width: auto;
+    }
+  }
+}
+
+.about-brand__in-world-side-block {
+  padding-left: 60px;
+
+  @include tablet {
+    padding: 0;
+  }
+}
+
+.about-brand__in-world-image {
+  margin-bottom: 40px;
+  width: 100%;
+  height: 440px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @include desk-m {
+    height: 318px;
+    margin-bottom: 28px;
+  }
+
+  @include tablet {
+    height: 407px;
+  }
+
+  @include mob {
+    height: auto;
+    padding-top: 58%;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.about-brand__in-world-slogan {
+  display: block;
+  font-size: 24px;
+  line-height: 130%;
+  font-weight: bold;
+  margin: 0 0 24px;
+
+  @include tablet {
+    letter-spacing: -0.02em;
+  }
+
+  @include mob {
+    font-size: 16px;
+    margin-bottom: 16px;
+    letter-spacing: unset;
+  }
+}
+
+.about-brand__in-world-desc {
+  margin: 0;
+
+  @include mob {
+    font-size: 14px;
+  }
+}
+
+.about-brand__in-world {
+  &-stats {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -20px;
+    padding-top: 64px;
+
+    &.anime {
+      opacity: 0;
+      transform: translateY(25px);
+    }
+
+    &.animated {
+      opacity: 1;
+      transform: translateY(0);
+      transition: 1.2s;
+    }
+
+    @include tablet {
+      padding-top: 40px;
+    }
+
+    @include mob {
+      margin-top: -8px;
+    }
+  }
+
+  &-stat-item {
+    width: calc((100% - 48px) / 3);
+    margin-top: 20px;
+    padding: 32px;
+    background-color: $grey-100;
+
+    &:not(:nth-child(3n)) {
+      margin-right: 24px;
+    }
+
+    @include desk-m {
+      width: calc((100% - 24px) / 2);
+
+      &:nth-child(n) {
+        margin-right: 0;
+      }
+
+      &:not(:nth-child(2n)) {
+        margin-right: 24px;
+      }
+    }
+
+    @include mob {
+      width: 100%;
+      margin-top: 8px;
+
+      &:nth-child(n) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &-stat-pic {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 24px;
+
+    @include mob {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  &-stat-value {
+    display: block;
+    font-size: 18px;
+    line-height: 130%;
+    font-weight: 700;
+    margin: 0 0 16px;
+  }
+}
+
+.about-brand__areas {
+  padding-top: 120px;
+  position: relative;
+
+  @include tablet {
+    padding-top: 64px;
+  }
+
+  &.anime {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  &.animated {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1.2s;
+  }
+
+  &-inner {
+    .h2 {
+      @include desk-m {
+        margin-bottom: 64px;
+      }
+
+      @include tablet {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  &-block {
+    display: flex;
+    justify-content: space-between;
+
+    @include tablet {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &-tabs,
+  &-image {
+    width: calc((100% - 24px) / 2);
+
+    @include tablet {
+      width: 100%;
+    }
+  }
+
+  &-tabs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-tab {
+    padding: 37px 84px 37px 32px;
+    background-color: $grey-100;
+    color: #000;
+    position: relative;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    svg {
+      width: 36px;
+      height: 36px;
+      position: absolute;
+      top: 32px;
+      right: 32px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    @include mob {
+      padding: 31px 76px 31px 24px;
+
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+
+      svg {
+        top: 24px;
+        right: 24px;
+      }
+    }
+  }
+
+  &-tab-title {
+    font-size: 18px;
+    line-height: 130%;
+    font-weight: bold;
+    margin: 0;
+    display: block;
+
+    @include mob {
+      font-size: 16px;
+      line-height: 140%;
+    }
+  }
+
+  &-tab-desc {
+    display: block;
+    margin-top: 0;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+
+    @include mob {
+      font-size: 14px;
+    }
+  }
+
+  &-tab.opened {
+    color: #fff;
+    background-color: $primary-150;
+    padding-right: 32px;
+    flex-grow: 1;
+    transition: flex-grow 0.3s ease;
+
+    @include mob {
+      padding-right: 24px;
+    }
+
+    &:hover {
+      cursor: default;
+    }
+
+    svg {
+      display: none;
+    }
+
+    .about-brand__areas-tab-desc {
+      max-height: 500px;
+      opacity: 1;
+      margin-top: 23px;
+      transition: max-height 0.3s ease;
+    }
+  }
+
+  &-image {
+    height: 632px;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.2s, visibility 0s 0.2s;
+
+      &.opened {
+        opacity: 1;
+        visibility: visible;
+        transition-delay: 0s;
+      }
+    }
+
+    @include desk-m {
+      height: 724px;
+    }
+
+    @include tablet {
+      height: 400px;
+      margin-bottom: 24px;
+    }
+
+    @include mob {
+      height: auto;
+      padding-top: 56.7%;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.about-brand__production {
+  padding-top: 120px;
+  position: relative;
+
+  @include tablet {
+    padding-top: 64px;
+  }
+
+  .h2 {
+    @include desk-m {
+      margin-bottom: 64px;
+    }
+
+    @include tablet {
+      margin-bottom: 24px;
+    }
+  }
+
+  &.anime {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  &.animated {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1.2s;
+  }
+
+  &-chars {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+
+    @include tablet {
+      flex-direction: column;
+      margin-bottom: 24px;
+    }
+  }
+
+  &-image,
+  &-info {
+    width: calc((100% - 24px) / 2);
+
+    @include tablet {
+      width: 100%;
+    }
+  }
+
+  &-image {
+    //height: 653px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @include desk-m {
+      height: auto;
+    }
+
+    @include tablet {
+      height: 400px;
+      margin-bottom: 24px;
+    }
+
+    @include mob {
+      height: auto;
+      padding-top: 56.7%;
+      position: relative;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+
+  &-info {
+    padding: 60px;
+    background-color: $grey-100;
+
+    @include desk-m {
+      padding: 48px;
+    }
+
+    @include mob {
+      padding: 24px;
+    }
+  }
+
+  &-info-title {
+    font-size: 30px;
+    line-height: 115%;
+    font-weight: bold;
+    margin: 0 0 16px;
+
+    @include mob {
+      font-size: 16px;
+      line-height: 140%;
+    }
+  }
+
+  &-info-desc {
+    margin: 0 0 36px;
+
+    @include mob {
+      font-size: 14px;
+    }
+  }
+
+  &-info-block {
+    margin-bottom: 36px;
+  }
+
+  &-item {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &-item-title {
+    display: block;
+    margin-bottom: 4px;
+
+    @include mob {
+      font-size: 14px;
+    }
+  }
+
+  &-item-value {
+    font-size: 18px;
+    line-height: 130%;
+    font-weight: bold;
+    display: block;
+  }
+
+  &-text {
+    margin-bottom: 64px;
+
+    @include tablet {
+      margin-bottom: 24px;
+    }
+
+    @include mob {
+      font-size: 14px;
+    }
+  }
+
+  &-video {
+    margin-bottom: 64px;
+
+    @include tablet {
+      margin-bottom: 24px;
+    }
+
+    @include mob {
+      width: calc(100% + 32px);
+      transform: translateX(-16px);
+      position: relative;
+      padding-top: 61.9%;
+    }
+  }
+
+  &-video-wrapper {
+    width: 100%;
+    height: 702px;
+
+    @include tablet {
+      height: 398px;
+    }
+
+    @include mob {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+    }
+  }
+
+  &-benefits {
+    padding: 32px;
+    background-color: $primary-150;
+  }
+
+  &-benefits-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -16px;
+  }
+
+  &-benefits-item {
+    color: #fff;
+    width: calc((100% - 88px) / 2);
+    margin-top: 16px;
+
+    &.gap {
+      margin-right: 56px;
+    }
+
+    span {
+      display: block;
+
+      &:first-child {
+        font-size: 20px;
+        line-height: 130%;
+        font-weight: bold;
+        margin: 0 0 8px;
+      }
+
+      &:nth-child(2) {
+        @include mob {
+          font-size: 14px;
+        }
+      }
+    }
+
+    @include desk-m {
+      width: calc((100% - 24px) / 2);
+
+      &.gap {
+        margin-right: 24px;
+      }
+    }
+
+    @include tablet {
+      width: 100%;
+      order: 1 !important;
+
+      &.gap {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.about-brand__objects {
+  padding-top: 120px;
+  position: relative;
+
+  @include tablet {
+    padding-top: 64px;
+  }
+
+  &.anime {
+    opacity: 0;
+    margin-bottom: -25px;
+  }
+
+  &.animated {
+    opacity: 1;
+    margin-bottom: 0;
+    transition: 1.2s;
+  }
+}
+
+.about-brand__objects-desc {
+  margin: 0 0 36px;
+  padding: 0 96px;
+
+  @include desk-m {
+    padding: 0 48px;
+  }
+
+  @include tablet {
+    padding: 0 32px;
+  }
+
+  @include mob {
+    padding: 0 16px;
+  }
+}
+
+.about-brand__objects-slider {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 96px;
+    width: 72px;
+    height: 72px;
+    background-image: url("../img/dragable.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+    pointer-events: none;
+    transform: translateY(calc(-50% - 55px));
+
+    @include desk-m {
+      right: 48px;
+    }
+
+    @include tablet {
+      right: 32px;
+    }
+
+    @include mob {
+      right: 16px;
+      height: 48px;
+      width: 48px;
+    }
+  }
+}
+
+.about-brand__objects-slider-wrapper {
+  padding-bottom: 25px;
+}
+
+.about-brand__objects-pagination.swiper-pagination-progressbar {
+  top: auto;
+  bottom: 0;
+  width: calc(100% - 192px);
+  left: 96px;
+  height: 1px;
+  background: $grey-200;
+
+  @include desk-m {
+    width: calc(100% - 96px);
+    left: 48px;
+  }
+
+  @include tablet {
+    width: calc(100% - 64px);
+    left: 32px;
+  }
+
+  @include mob {
+    width: calc(100% - 32px);
+    left: 16px;
+  }
+
+  .swiper-pagination-progressbar-fill {
+    background: $primary-200;
+  }
+}
+
+.about-brand__objects-title {
+  padding-left: 96px;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  svg {
+    width: 48px;
+    height: 48px;
+    margin-left: 24px;
+    flex-shrink: 0;
+  }
+
+  @include desk-m {
+    padding-left: 48px;
+
+    &.h2 {
+      margin-bottom: 40px;
+    }
+  }
+
+  @include tablet {
+    padding-left: 32px;
+
+    &.h2 {
+      margin-bottom: 24px;
+    }
+  }
+
+  @include mob {
+    padding-left: 16px;
+    padding-right: 16px;
+
+    a {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+}
+
+.about-brand__objects {
+  margin-bottom: 120px;
+  width: calc(100% + 192px);
+  transform: translateX(-96px);
+
+  @include desk-m {
+    width: calc(100% + 96px);
+    transform: translateX(-48px);
+    margin-bottom: 96px;
+  }
+
+  @include tablet {
+    width: calc(100% + 64px);
+    transform: translateX(-32px);
+    margin-bottom: 64px;
+  }
+
+  @include mob {
+    width: calc(100% + 32px);
+    transform: translateX(-16px);
+    margin-bottom: 48px;
+  }
+
+  .about-brand__object-item {
+    &:nth-child(n) {
+      margin: 0;
+      width: auto;
+      padding-left: 24px;
+
+      @include mob {
+        width: calc(100% - 32px);
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+    }
+
+    &:first-child {
+      padding-left: 96px;
+
+      @include desk-m {
+        padding-left: 48px;
+      }
+
+      @include tablet {
+        padding-left: 32px;
+      }
+
+      @include mob {
+        padding-left: 16px;
+      }
+    }
+
+    &:last-child {
+      padding-right: 96px;
+
+      @include desk-m {
+        padding-right: 48px;
+      }
+
+      @include tablet {
+        padding-right: 32px;
+      }
+
+      @include mob {
+        padding-right: 16px;
+      }
+    }
+  }
+}
+
+.about-brand__objects-desc {
+  @include mob {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+}
+
+.about-brand__object-link {
+  display: block;
+  width: 400px;
+
+  @include mob {
+    min-height: 325px;
+    width: 100%;
+  }
+}
+
+.about-brand__object-img {
+  width: 100%;
+  height: 280px;
+  margin-bottom: 25px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @include mob {
+    height: auto;
+    padding-top: 69.7%;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.about-brand__object-city {
+  font-size: 14px;
+  line-height: 150%;
+  color: $grey-400;
+  margin: 0 0 10px;
+}
+
+.about-brand__object-name {
+  font-size: 18px;
+  line-height: 130%;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+.about-brand__object-type {
+  font-size: 14px;
+  line-height: 150%;
+  color: $primary-150;
+}

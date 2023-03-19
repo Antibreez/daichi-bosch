@@ -100,7 +100,7 @@
     right: 96px;
     width: 72px;
     height: 72px;
-    background-image: url('../img/dragable.svg');
+    background-image: url("../img/dragable.svg");
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 10;
@@ -158,6 +158,18 @@
 .page-index__news-title {
   padding-left: 96px;
 
+  a {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  svg {
+    width: 48px;
+    height: 48px;
+    margin-left: 24px;
+    flex-shrink: 0;
+  }
+
   @include desk-m {
     padding-left: 48px;
   }
@@ -168,6 +180,13 @@
 
   @include mob {
     padding-left: 16px;
+    padding-right: 16px;
+
+    a {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
   }
 }
 
@@ -247,6 +266,111 @@
     @include mob {
       min-height: 325px;
       width: 100%;
+    }
+  }
+}
+
+.page-index__objects {
+  margin-bottom: 120px;
+  width: calc(100% + 192px);
+  transform: translateX(-96px);
+
+  &.anime {
+    opacity: 0;
+    transform: translate(-96px, 25px);
+
+    @include desk-m {
+      transform: translate(-48px, 25px);
+    }
+
+    @include tablet {
+      transform: translate(-32px, 25px);
+    }
+
+    @include mob {
+      transform: translate(-16px, 25px);
+    }
+  }
+
+  &.animated {
+    opacity: 1;
+    transform: translate(-96px, 0);
+    transition: 1.2s;
+
+    @include desk-m {
+      transform: translate(-48px, 0);
+    }
+
+    @include tablet {
+      transform: translate(-32px, 0);
+    }
+
+    @include mob {
+      transform: translate(-16px, 0);
+    }
+  }
+
+  @include desk-m {
+    width: calc(100% + 96px);
+    transform: translateX(-48px);
+    margin-bottom: 96px;
+  }
+
+  @include tablet {
+    width: calc(100% + 64px);
+    transform: translateX(-32px);
+    margin-bottom: 64px;
+  }
+
+  @include mob {
+    width: calc(100% + 32px);
+    transform: translateX(-16px);
+    margin-bottom: 48px;
+  }
+
+  .about-brand__object-item {
+    &:nth-child(n) {
+      margin: 0;
+      width: auto;
+      padding-left: 24px;
+
+      @include mob {
+        width: calc(100% - 32px);
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+    }
+
+    &:first-child {
+      padding-left: 96px;
+
+      @include desk-m {
+        padding-left: 48px;
+      }
+
+      @include tablet {
+        padding-left: 32px;
+      }
+
+      @include mob {
+        padding-left: 16px;
+      }
+    }
+
+    &:last-child {
+      padding-right: 96px;
+
+      @include desk-m {
+        padding-right: 48px;
+      }
+
+      @include tablet {
+        padding-right: 32px;
+      }
+
+      @include mob {
+        padding-right: 16px;
+      }
     }
   }
 }
