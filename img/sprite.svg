@@ -4,6 +4,8 @@
 </clipPath>
 </defs><symbol id="arrow-left" viewBox="0 0 24 24">
 <path d="M22.0001 12.5H4.20722L7.35372 15.6464L6.64647 16.3536L2.29297 12L6.64647 7.64636L7.35372 8.35361L4.20722 11.5H22.0001V12.5Z" fill="currentColor"/>
+</symbol><symbol id="arrow-right" viewBox="0 0 48 48">
+<path d="M43.4142 24.0002L34.7072 32.7075L33.2928 31.293L39.5858 25.0002H4V23.0002H39.5858L33.2928 16.7075L34.7072 15.293L43.4142 24.0002Z" fill="currentColor"/>
 </symbol><symbol id="check" viewBox="0 0 10 7">
 <path d="M1 3L4 6.00001L9 1" stroke="currentColor" stroke-linecap="square" fill="none"/>
 </symbol><symbol id="close-big" viewBox="0 0 24 24">
