@@ -23135,7 +23135,9 @@ body .select2-search--dropdown {
       width: 100vw; } }
 
 .select2-container--default .select2-dropdown {
-  min-width: 150px !important; }
+  min-width: -webkit-min-content !important;
+  min-width: -moz-min-content !important;
+  min-width: min-content !important; }
 
 .news-page .tab-list {
   border-bottom: 1px solid #dfdfe0; }
