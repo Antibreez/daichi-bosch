@@ -11,6 +11,7 @@ const swiper = new Swiper(".about-brand__tabs-slider", {
 });
 
 $(window).on("scroll", function () {
+  if ($tabs.length === 0) return;
   const gap = $(window).outerWidth() >= 1024 ? 126 : 64;
 
   console.log(gap);

@@ -121,6 +121,12 @@
       width: 48px;
     }
   }
+
+  &.locked {
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .page-index__news-slider-wrapper {

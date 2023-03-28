@@ -778,7 +778,6 @@
     position: relative;
     margin-bottom: 160px;
 
-
     &::after {
       content: "";
       position: absolute;
@@ -786,7 +785,7 @@
       right: 0;
       width: 72px;
       height: 72px;
-      background-image: url('../img/dragable.svg');
+      background-image: url("../img/dragable.svg");
       background-size: contain;
       background-repeat: no-repeat;
       z-index: 10;
@@ -796,6 +795,12 @@
       @include mob {
         height: 48px;
         width: 48px;
+      }
+    }
+
+    &.locked {
+      &::after {
+        display: none;
       }
     }
 
@@ -1075,7 +1080,7 @@
       right: 0;
       width: 72px;
       height: 72px;
-      background-image: url('../img/dragable.svg');
+      background-image: url("../img/dragable.svg");
       background-size: contain;
       background-repeat: no-repeat;
       z-index: 10;
@@ -1085,6 +1090,12 @@
       @include mob {
         height: 48px;
         width: 48px;
+      }
+    }
+
+    &.locked {
+      &::after {
+        display: none;
       }
     }
 
