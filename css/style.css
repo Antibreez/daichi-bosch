@@ -5528,7 +5528,7 @@ h4,
   line-height: 150%;
   padding: 9px 18px;
   background-color: #fff;
-  border: 1px solid #9C9D9E;
+  border: 1px solid #9c9d9e;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5542,21 +5542,12 @@ h4,
   .header__catalog-btn:hover {
     border-color: #007bc0; }
   .header__catalog-btn span {
+    width: 16px;
+    height: 10px;
+    background-image: url('data:image/svg+xml;utf8,<svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.1714 0.909091H0.171448V0H15.1714V0.909091ZM15.1714 4.54545H0.171448V5.45455H15.1714V4.54545ZM15.1714 9.09091H0.171448V10H15.1714V9.09091Z" fill="black"/></svg>');
     display: block;
-    width: 15px;
-    height: 11px;
-    margin-right: 11px;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-    position: relative; }
-    .header__catalog-btn span::before {
-      content: "";
-      position: absolute;
-      top: 4px;
-      left: 0;
-      width: 100%;
-      height: 1px;
-      background-color: #000; }
+    background-size: contain;
+    margin-right: 11px; }
 
 .header__top-right-catalog {
   position: relative; }
@@ -5621,14 +5612,14 @@ h4,
   visibility: visible;
   height: 41px; }
   .header__search.visible input {
-    border: 1px solid #CFD0D1;
+    border: 1px solid #cfd0d1;
     padding-left: 16px;
     padding-right: 56px;
     -webkit-transition: border-color 0.2s;
     -o-transition: border-color 0.2s;
     transition: border-color 0.2s; }
     .header__search.visible input:hover {
-      border-color: #9C9D9E; }
+      border-color: #9c9d9e; }
     .header__search.visible input:focus {
       border-color: #007bc0; }
   .header__search.visible button {
