@@ -313,9 +313,14 @@
   &-items {
     display: flex;
     flex-wrap: wrap;
+    margin-top: -48px;
 
     @include tablet {
       flex-direction: column;
+    }
+
+    @include mob {
+      margin-top: -24px;
     }
   }
 
@@ -323,8 +328,9 @@
     width: calc((100% - 24px) / 2);
     display: flex;
     justify-content: space-between;
+    margin-top: 48px;
 
-    &:not(:last-child) {
+    &:not(:nth-child(2n)) {
       margin-right: 24px;
     }
 
@@ -334,18 +340,11 @@
       &:nth-child(n) {
         margin-right: 0;
       }
-
-      &:not(:last-child) {
-        margin-bottom: 48px;
-      }
     }
 
     @include mob {
       flex-direction: column;
-
-      &:not(:last-child) {
-        margin-bottom: 24px;
-      }
+      margin-top: 24px;
     }
   }
 
