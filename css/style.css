@@ -5056,10 +5056,7 @@ h4,
   top: 0;
   z-index: 95;
   width: 100%;
-  background: #fff;
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s; }
+  background: #fff; }
   .header::before {
     content: "";
     position: absolute;
@@ -11296,7 +11293,9 @@ body .select2-search--dropdown {
             background-color: #fff; }
       .location__list ul li a {
         display: inline-block;
-        color: #007bc0; }
+        color: #007bc0;
+        padding-left: 36px;
+        margin-left: -36px; }
         .location__list ul li a:hover {
           color: #005587; }
         .location__list ul li a span {
