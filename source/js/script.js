@@ -25,3 +25,4 @@ import "./production-benefits";
 import "./objects-slider";
 import "./select";
 import "./feedback-form";
+import "./location-modal";

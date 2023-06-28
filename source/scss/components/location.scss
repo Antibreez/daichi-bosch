@@ -72,6 +72,8 @@
         a {
           display: inline-block;
           color: $primary-150;
+          padding-left: 36px;
+          margin-left: -36px;
 
           &:hover {
             color: $primary-200;
